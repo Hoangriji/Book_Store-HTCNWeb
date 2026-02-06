@@ -259,9 +259,13 @@
         color: var(--color-text-light);
     }
 
+    .inner-nav{
+        width: 100%;
+    }
+
     .inner-nav ul {
         flex-direction: column;
-        width: 250px;
+        width: 100%;
     }
 
     .inner-nav ul li {
@@ -376,8 +380,7 @@
         /* tăng right lên vì để -100% thấy menu lấn vào màn viewport khi chưa active*/
         right: -200%; 
     }
-
-    .inner-nav ul,
+    
     .user-actions {
         width: 100%;
     }
