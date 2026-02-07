@@ -4,15 +4,18 @@ export const header = () => {
     <div class="container">
       <div class="header-wrapper">
         <!-- logo -->
-        <div class="logo">
+        <a class="logo" href="/">
           <img src="assets/imgs/homePage/logo.png" alt="">
           <h3>FiveH Book Store</h3>
-        </div>
+        </a>
 
         <!-- hamburger btn -->
         <button class="hamburger-btn" aria-label="Toggle menu">
           <i class="fa-solid fa-bars"></i>
         </button>
+
+        <!-- overlay -->
+        <div class="menu-overlay" style="display: none;"></div>
 
         <!-- menu -->
         <div class="menu">
@@ -40,13 +43,17 @@ export const header = () => {
 
           <!-- user -->
           <div class="user-actions">
-            <a href="#" class="cart-link">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span class="cart-count">(0)</span>
+            <a href="#" class="user-actions-link">
+              <div class="user-actions-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">(0)</span>
+              </div>
             </a>
-            <a href="#" class="login-link">
-              <i class="fa-solid fa-user"></i>
-              <span>Login</span>
+            <a href="#" class="user-actions-link">
+              <div class="user-actions-btn">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+              </div>
             </a>
           </div>
         </div>
@@ -66,8 +73,12 @@ export const header = () => {
     if (hamburgerBtn && menu) {
       hamburgerBtn.addEventListener("click", () => {
         menu.classList.add("active");
-        document.body.style.overflow = "hidden"; 
-        hamburgerBtn.style.zIndex = "999"; 
+        document.body.style.overflow = "hidden";
+        hamburgerBtn.style.zIndex = "999";
+        const menuOverlay = headerElement.querySelector(".menu-overlay");
+        if (menuOverlay) {
+          menuOverlay.style.display = "block";
+        }
       });
     }
 
@@ -75,7 +86,11 @@ export const header = () => {
     if (closeBtn && menu) {
       closeBtn.addEventListener("click", () => {
         menu.classList.remove("active");
-        document.body.style.overflow = ""; 
+        document.body.style.overflow = "";
+        const menuOverlay = headerElement.querySelector(".menu-overlay");
+        if (menuOverlay) {
+          menuOverlay.style.display = "none";
+        }
       });
     }
 
@@ -85,6 +100,10 @@ export const header = () => {
         if (window.innerWidth <= 992) {
           menu.classList.remove("active");
           document.body.style.overflow = "";
+          const menuOverlay = headerElement.querySelector(".menu-overlay");
+          if (menuOverlay) {
+            menuOverlay.style.display = "none";
+          }
         }
       });
     });
@@ -98,6 +117,10 @@ export const header = () => {
       ) {
         menu.classList.remove("active");
         document.body.style.overflow = "";
+        const menuOverlay = headerElement.querySelector(".menu-overlay");
+        if (menuOverlay) {
+          menuOverlay.style.display = "none";
+        }
       }
     });
 
@@ -106,6 +129,10 @@ export const header = () => {
       if (window.innerWidth > 992) {
         menu.classList.remove("active");
         document.body.style.overflow = "";
+        const menuOverlay = headerElement.querySelector(".menu-overlay");
+        if (menuOverlay) {
+          menuOverlay.style.display = "none";
+        }
       }
     });
   }

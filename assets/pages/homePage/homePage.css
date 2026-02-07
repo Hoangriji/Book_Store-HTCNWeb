@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -36,6 +36,7 @@
     line-height: 1.2;
     text-shadow: 3px 3px 4px var(--color-primary);
     font-style: italic;
+    text-align: center;
 }
 
 .hero_section-description {
@@ -43,6 +44,7 @@
     color: var(--color-text-light);
     margin-bottom: 30px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .hero_section-btn {

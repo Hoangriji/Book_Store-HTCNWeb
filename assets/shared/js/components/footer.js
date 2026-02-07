@@ -29,7 +29,7 @@ export const footer = () => {
                     <div class="footer-section">
                         <h4 class="footer-section-title">Quick Links</h4>
                         <ul>
-                            <li><i class="fa-solid fa-arrow-right"></i><a href="/assets/pages/homePage/index.html">Home</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="index.html">Home</a></li>
                             <li><i class="fa-solid fa-arrow-right"></i><a href="#">Categories</a></li>
                             <li><i class="fa-solid fa-arrow-right"></i><a href="#">New releases</a></li>
                             <li><i class="fa-solid fa-arrow-right"></i><a href="#">About Us</a></li>
