@@ -47,26 +47,6 @@
     text-align: center;
 }
 
-.hero_section-btn {
-    padding: 8px 30px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 10px;
-    background: var(--color-primary) ;
-    color: var(--color-text-light) ;
-    border: 2px solid var(--color-primary);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.hero_section-btn:hover {
-    box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.5),
-                inset 3px 3px 6px rgba(255, 255, 255, 0.5);
-    background: var(--color-primary);
-    color: var(--color-text-light);
-    border: 2px solid var(--color-primary);
-}
-
 /* product-section */
 .product_best_section {
     margin: 60px 0;
@@ -81,14 +61,6 @@
 }
 
 /* card */
-.card-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 40px;
-    justify-content: center;
-}
-
 .card-product {
     width: 300px;
     height: 500px;
@@ -141,20 +113,7 @@
 .card-btn {
     width: 100%;
     padding: 10px;
-    background: var(--color-primary);
-    color: var(--color-text-light);
-    border: none;
-    border-radius: 8px;
     font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.card-btn:hover {
-    box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.5),
-                inset 3px 3px 6px rgba(255, 255, 255, 0.5);
-    background: var(--color-button-hover);
 }
 
 /* testimonials-section */
@@ -168,12 +127,6 @@
     color: var(--color-text-dark);
     text-align: center;
     margin-bottom: 30px;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
 }
 
 .testimonial-card {
@@ -233,20 +186,12 @@
         width: 280px;
         height: 500px;
     }
-    
-    .card-group {
-        gap: 25px;
-    }
 }
 
 @media (max-width: 991.98px) {
     .card-product {
         width: 260px;
         height: 480px;
-    }
-    
-    .card-group {
-        gap: 20px;
     }
     
     .card-img-top {
@@ -276,14 +221,6 @@
         width: 240px;
         height: 460px;
     }
-    
-    .card-group {
-        gap: 20px;
-    }
-
-    .card-btn{
-        padding: 5px 10px;
-    }
 
     .card-img-top {
         height: 260px;
@@ -303,16 +240,8 @@
         width: 280px;
         height: 450px;
     }
-    
-    .card-group {
-        gap: 20px;
-    }
 
     .card-img-top {
         height: 250px;
-    }
-
-    .testimonials-grid {
-        grid-template-columns: 1fr;
     }
 }
