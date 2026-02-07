@@ -74,7 +74,6 @@ export const header = () => {
       hamburgerBtn.addEventListener("click", () => {
         menu.classList.add("active");
         document.body.style.overflow = "hidden";
-        hamburgerBtn.style.zIndex = "999";
         const menuOverlay = headerElement.querySelector(".menu-overlay");
         if (menuOverlay) {
           menuOverlay.style.display = "block";
