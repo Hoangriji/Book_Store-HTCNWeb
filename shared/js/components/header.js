@@ -5,7 +5,7 @@ export const header = () => {
       <div class="header-wrapper">
         <!-- logo -->
         <a class="logo" href="/">
-          <img src="assets/imgs/homePage/logo.png" alt="">
+          <img src="imgs/homePage/logo.png" alt="">
           <h3>FiveH Book Store</h3>
         </a>
 

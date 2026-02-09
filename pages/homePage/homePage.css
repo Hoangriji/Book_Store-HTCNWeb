@@ -1,4 +1,4 @@
-@import url('/assets/shared/css/style.css');
+@import url('/shared/css/style.css');
 
 .main{
     padding: 0;
@@ -9,7 +9,7 @@
 .hero_section {
     width: 100%;
     height: calc(100vh - 96px);
-    background-image: url(/assets/imgs/homePage/bg-herosection.webp);
+    background-image: url(/imgs/homePage/bg-herosection.webp);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;

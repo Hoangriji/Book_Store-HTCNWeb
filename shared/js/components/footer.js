@@ -5,7 +5,7 @@ export const footer = () => {
             <div class="footer-wrapper">
                 <div class="row g-4 footer-content">
                     <div class="col-12 col-md-6 col-lg-5 footer-section">
-                        <img src="assets/imgs/homePage/logo.png" alt="">
+                        <img src="imgs/homePage/logo.png" alt="">
                         <h4 class="footer-section-title">FiveH Book Store</h4>
                         <p>Your one-stop shop for all your reading needs. Discover, explore, and indulge in the world of books with us!</p>
                     </div>

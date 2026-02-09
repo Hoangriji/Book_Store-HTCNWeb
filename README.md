@@ -11,33 +11,31 @@ Book_Store/
 ├── index.html                      # Trang chủ chính
 ├── README.md                       # Tài liệu dự án
 │
-├── assets/                         # Tài nguyên tĩnh
-│   ├── imgs/                       # Thư mục hình ảnh (theo từng module)
-│   │   └── homePage/              # Hình ảnh trang chủ
+├── imgs/                           # Thư mục hình ảnh (theo từng module)
+│   └── homePage/                  # Hình ảnh trang chủ
+│
+├── pages/                          # Các trang con
+│   ├── homePage/                  # Module trang chủ
+│   │   ├── homePage.css           # CSS riêng
+│   │   └── homePage.js            # Logic riêng
 │   │
-│   ├── pages/                      # Các trang con
-│   │   ├── homePage/              # Module trang chủ
-│   │   │   ├── index.html         # HTML trang chủ
-│   │   │   ├── homePage.css       # CSS riêng
-│   │   │   └── homePage.js        # Logic riêng
-│   │   │
-│   │   └── products/              # Module sản phẩm
-│   │
-│   └── shared/                     # Tài nguyên dùng chung
-│       ├── css/                    # Stylesheets chung
-│       │   ├── bootstrap.min.css  # Bootstrap framework
-│       │   ├── style.css          # Global styles + layout 
-│       │   ├── variables.css      # Biến CSS
-│       │   └── components/        # Components CSS
-│       │       ├── header.css     # Styles header
-│       │       └── footer.css     # Styles footer
-│       │
-│       └── js/                     # JavaScript chung
-│           ├── bootstrap.bundle.min.js # Bootstrap JS
-│           ├── main.js            # Entry point chính
-│           └── components/        # Components tái sử dụng
-│               ├── header.js      # Component header
-│               └── footer.js      # Component footer
+│   └── products/                  # Module sản phẩm
+│
+└── shared/                         # Tài nguyên dùng chung
+    ├── css/                        # Stylesheets chung
+    │   ├── bootstrap.min.css      # Bootstrap framework
+    │   ├── style.css              # Global styles + layout 
+    │   ├── variables.css          # Biến CSS
+    │   └── components/            # Components CSS
+    │       ├── header.css         # Styles header
+    │       └── footer.css         # Styles footer
+    │
+    └── js/                         # JavaScript chung
+        ├── bootstrap.bundle.min.js # Bootstrap JS
+        ├── main.js                # Entry point chính
+        └── components/            # Components tái sử dụng
+            ├── header.js          # Component header
+            └── footer.js          # Component footer
 ```
 
 ## Nguyên Tắc Tổ Chức Code
