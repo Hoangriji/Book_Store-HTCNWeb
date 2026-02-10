@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveH Book Store</title>
+    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="/shared/css/bootstrap.min.css">
+    <!-- icon awesome free -->
+    <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- header -->
+    <header class="inner-header"></header>
+
+    <!-- main -->
+    <div class="main">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="page-header-container">
+                <div class="page-header__content">
+                    <h1 class="page-header__title">Bookstore</h1>
+                    <p class="page-header__subtitle">Discover over 100 titles curated for your academic journey.</p>
+                </div>
+
+                <div class="page-header__actions">
+                    <label class="page-header__sort-label">Sort by:</label>
+                    <select class="page-header__sort-select">
+                        <option selected>Most Popular</option>
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Best Rating</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="categories-main">
+            <div class="row g-4">
+                <!-- Sidebar filter -->
+                <aside class="col-lg-3">
+                    <div class="filter">
+                        <div class="filter__header">
+                            <i class="fas fa-filter filter__header-icon"></i>
+                            <h2 class="filter__header-title">Bộ lọc tìm kiếm</h2>
+                        </div>
+
+                        <div class="filter__section">
+                            <h3 class="filter__section-title">CHUYÊN NGÀNH</h3>
+                            <div class="filter__option">
+                                <input type="checkbox" id="major1" class="filter__option-input" checked>
+                                <label for="major1" class="filter__option-label">Văn học</label>
+                            </div>
+                            <div class="filter__option">
+                                <input type="checkbox" id="major2" class="filter__option-input">
+                                <label for="major2" class="filter__option-label">Khoa học</label>
+                            </div>
+                            <div class="filter__option">
+                                <input type="checkbox" id="major3" class="filter__option-input">
+                                <label for="major3" class="filter__option-label">Công nghệ</label>
+                            </div>
+                            <div class="filter__option">
+                                <input type="checkbox" id="major4" class="filter__option-input">
+                                <label for="major4" class="filter__option-label">Kinh tế</label>
+                            </div>
+                        </div>
+
+                        <div class="filter__section">
+                            <h3 class="filter__section-title">KHOẢNG GIÁ</h3>
+                            <div class="filter__price-range">
+                                <input type="range" class="filter__price-slider" min="0" max="1000000" value="100000" id="minPrice">
+                                <input type="range" class="filter__price-slider" min="0" max="1000000" value="700000" id="maxPrice">
+                                <div class="filter__price-labels">
+                                    <span class="filter__price-label" id="minPriceLabel">100.000đ</span>
+                                    <span class="filter__price-label" id="maxPriceLabel">700.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="categories.js"></script>
+    <script type="module" src="/shared/js/main.js"></script>
+</body>
+</html>

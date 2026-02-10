@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveH Book Store</title>
+    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="/shared/css/bootstrap.min.css">
+    <!-- icon awesome free -->
+    <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="inner-header"></header>
+
+    <!-- main -->
+    <div class="main">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="page-header-container">
+                <div class="page-header__content">
+                    <h1 class="page-header__title">Bookstore</h1>
+                    <p class="page-header__subtitle">Discover over 100 titles curated for your academic journey.</p>
+                </div>
+
+                <div class="page-header__actions">
+                    <label class="page-header__sort-label">Sort by:</label>
+                    <select class="page-header__sort-select">
+                        <option selected>Most Popular</option>
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Best Rating</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="categories-main">
+            <div class="row g-4">
+                <!-- Sidebar filter -->
+                <aside class="col-lg-3">
+                    <div class="filter">
+                        <div class="filter__header">
+                            <i class="fas fa-filter filter__header-icon"></i>
+                            <h2 class="filter__header-title">Search Filters</h2>
+                        </div>
+
+                        <div class="filter__section">
+                            <h3 class="filter__section-title">CATEGORIES</h3>
+                            <div class="filter__option">
+                                <input type="checkbox" id="major1" class="filter__option-input" checked>
+                                <label for="major1" class="filter__option-label">Literature</label>
+                            </div>
+                            <div class="filter__option">
+                                <input type="checkbox" id="major2" class="filter__option-input">
+                                <label for="major2" class="filter__option-label">Science</label>
+                            </div>
+                            <div class="filter__option">
+                                <input type="checkbox" id="major3" class="filter__option-input">
+                                <label for="major3" class="filter__option-label">Technology</label>
+                            </div>
+                            <div class="filter__option">
+                                <input type="checkbox" id="major4" class="filter__option-input">
+                                <label for="major4" class="filter__option-label">Economics</label>
+                            </div>
+                        </div>
+
+                        <div class="filter__section">
+                            <div class="filter__section-header">
+                                <h3 class="filter__section-title">PRICE RANGE</h3>
+                                <span class="filter__range-text" id="priceRangeText">$10 - $70</span>
+                            </div>
+
+                            <div class="filter__price-range">
+                                <div class="range-slider">
+                                    <div class="range-track"></div>
+                                    <input type="range" min="0" max="100" value="10" id="minPrice" class="range-input">
+                                    <input type="range" min="0" max="100" value="70" id="maxPrice" class="range-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__section">
+                            <h3 class="filter__section-title">BOOK CONDITION</h3>
+                            <div class="filter__option">
+                                <input type="radio" name="bookStatus" id="status1" class="filter__option-input" checked>
+                                <label for="status1" class="filter__option-label">New</label>
+                            </div>
+                            <div class="filter__option">
+                                <input type="radio" name="bookStatus" id="status2" class="filter__option-input">
+                                <label for="status2" class="filter__option-label">Used</label>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="col-lg-9">
+                    <div class="products-wrapper">
+                        <div class="products-header">
+                            <p class="products-header__result">Hiển thị 12 trong 100 kết quả</p>
+                        </div>
+
+                        <div class="row g-4" id="booksGrid">
+                            <!-- Book Card 1 -->
+                            <div class="col-auto">
+                                <div class="book-card">
+                                    <div class="book-card__image-wrapper">
+                                        <img src="/imgs/categories/productBook1.png" alt="" class="book-card__image">
+                                        <span class="book-card__badge book-card__badge--new">MỚI</span>
+                                    </div>
+
+                                    <div class="book-card__body">
+                                        <div class="book-card__content">
+                                            <h4 class="book-card__title">Thunmanhandiya</h4>
+                                            <p class="book-card__description">Mahagamasekara</p>
+
+                                            <div class="book-card__price-wrapper">
+                                                <span class="book-card__price">129.000 đ</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="book-card__actions">
+                                            <button class="btn btn-outline-primary book-card__cart-btn">
+                                                <i class="fas fa-shopping-cart me-1"></i>
+                                            </button>
+
+                                            <button class="btn btn-primary book-card__detail-btn">
+                                                Xem chi tiết
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book Card 2 -->
+                            <div class="col-auto">
+                                <div class="book-card">
+                                    <div class="book-card__image-wrapper">
+                                        <img src="/imgs/categories/productBook2.png" alt="" class="book-card__image">
+                                        <span class="book-card__badge book-card__badge--new">MỚI</span>
+                                    </div>
+
+                                    <div class="book-card__body">
+                                        <div class="book-card__content">
+                                            <h4 class="book-card__title">Thunmanhandiya</h4>
+                                            <p class="book-card__description">Mahagamasekara</p>
+
+                                            <div class="book-card__price-wrapper">
+                                                <span class="book-card__price">129.000 đ</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="book-card__actions">
+                                            <button class="btn btn-outline-primary book-card__cart-btn">
+                                                <i class="fas fa-shopping-cart me-1"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="categories.js"></script>
+    <script type="module" src="/shared/js/main.js"></script>
+</body>
+</html>

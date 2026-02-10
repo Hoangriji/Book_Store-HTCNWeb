@@ -1,0 +1,91 @@
+@import url('/shared/css/style.css');
+
+.main {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.page-header {
+    color: var(--color-text-);
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.page-header-container {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.page-header__content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.page-header__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.page-header__subtitle {
+    color: rgba(250, 251, 245, 0.85);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.page-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-header__sort-label {
+    color: rgba(250, 251, 245, 0.9);
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.page-header__sort-select {
+    background: rgba(250, 251, 245, 0.15);
+    border: 1px solid rgba(250, 251, 245, 0.3);
+    color: var(--color-text-light);
+    padding: 0.75rem 3rem 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    min-width: 200px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='%23FAFBF5' d='M7 10L2 5h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+}
+
+.page-header__sort-select:hover {
+    background-color: rgba(250, 251, 245, 0.25);
+    border-color: rgba(250, 251, 245, 0.4);
+}
+
+.page-header__sort-select:focus {
+    outline: none;
+    background-color: rgba(250, 251, 245, 0.25);
+    border-color: rgba(250, 251, 245, 0.5);
+    box-shadow: 0 0 0 3px rgba(250, 251, 245, 0.1);
+}
+
+.page-header__sort-select option {
+    background: var(--color-secondary);
+    color: var(--color-text-light);
+    padding: 0.75rem;
+}
