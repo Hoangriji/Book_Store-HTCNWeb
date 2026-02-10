@@ -1,3 +1,4 @@
+// ================= BOOK DATA =================
 const books = [
     {
         id: 1,
@@ -49,7 +50,10 @@ const books = [
     }
 ];
 
+// ================= DOM READY =================
 document.addEventListener("DOMContentLoaded", function () {
+
+    // ===== Carousel Init =====
     const carousel = document.getElementById("pageCarousel");
     if (carousel && typeof bootstrap !== "undefined") {
         const bsCarousel = new bootstrap.Carousel(carousel, {
@@ -60,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         bsCarousel.cycle();
     }
 
+    // ===== Range Elements =====
     const minInput = document.getElementById("minPrice");
     const maxInput = document.getElementById("maxPrice");
     const rangeText = document.getElementById("priceRangeText");
@@ -100,9 +105,11 @@ document.addEventListener("DOMContentLoaded", function () {
         updateRange();
     }
 
+    // ===== Render Books =====
     renderBooks(books);
 });
 
+// ================= RENDER FUNCTION =================
 function renderBooks(bookList) {
     const booksGrid = document.getElementById("booksGrid");
     if (!booksGrid) return;
@@ -148,9 +155,47 @@ function renderBooks(bookList) {
     }
 }
 
+// ================= DETAIL PAGE =================
 function goToDetail(bookId) {
     window.location.href = `book-detail.html?id=${bookId}`;
 }
+
+// ================= ADD TO CART =================
+function addToCart(event, bookId) {
+    event.stopPropagation();
+
+    const book = books.find(b => b.id === bookId);
+    if (!book) return;
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existingItem = cart.find(item => item.id === book.id);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({
+            id: book.id,
+            title: book.title,
+            price: book.price,
+            image: book.image,
+            quantity: 1
+        });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    const btn = event.currentTarget;
+    const originalHTML = btn.innerHTML;
+
+    btn.innerHTML = '<i class="fas fa-check"></i>';
+    btn.style.backgroundColor = "#10b981";
+
+    setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.style.backgroundColor = "";
+    }, 1000);
+}
+
 
 window.goToDetail = goToDetail;
 window.addToCart = addToCart;

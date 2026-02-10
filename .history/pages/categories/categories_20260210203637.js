@@ -49,64 +49,21 @@ const books = [
     }
 ];
 
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.getElementById("pageCarousel");
-    if (carousel && typeof bootstrap !== "undefined") {
-        const bsCarousel = new bootstrap.Carousel(carousel, {
-            interval: 3000,
-            pause: false,
-            ride: "carousel"
-        });
-        bsCarousel.cycle();
-    }
+const minInput = document.getElementById("minPrice");
+const maxInput = document.getElementById("maxPrice");
+const rangeText = document.getElementById("priceRangeText");
 
-    const minInput = document.getElementById("minPrice");
-    const maxInput = document.getElementById("maxPrice");
-    const rangeText = document.getElementById("priceRangeText");
-    const rangeSlider = document.querySelector(".range-slider");
-
-    let progress;
-
-    if (rangeSlider) {
-        progress = document.createElement("div");
-        progress.classList.add("range-progress");
-        rangeSlider.appendChild(progress);
-    }
-
-    function updateRange() {
-        if (!minInput || !maxInput || !progress || !rangeText) return;
-
-        let min = parseInt(minInput.value);
-        let max = parseInt(maxInput.value);
-
-        if (min > max) {
-            [min, max] = [max, min];
-            minInput.value = min;
-            maxInput.value = max;
-        }
-
-        const percentMin = (min / minInput.max) * 100;
-        const percentMax = (max / maxInput.max) * 100;
-
-        progress.style.left = percentMin + "%";
-        progress.style.width = (percentMax - percentMin) + "%";
-
-        rangeText.textContent = `$${min} - $${max}`;
-    }
-
-    if (minInput && maxInput) {
-        minInput.addEventListener("input", updateRange);
-        maxInput.addEventListener("input", updateRange);
-        updateRange();
-    }
-
-    renderBooks(books);
-});
+const progress = document.createElement("div");
+progress.classList.add("range-progress");
+const rangeSlider = document.querySelector(".range-slider");
+if (rangeSlider) {
+    rangeSlider.appendChild(progress);
+}
 
 function renderBooks(bookList) {
     const booksGrid = document.getElementById("booksGrid");
     if (!booksGrid) return;
-
+    
     booksGrid.innerHTML = "";
 
     bookList.forEach(book => {
@@ -148,9 +105,80 @@ function renderBooks(bookList) {
     }
 }
 
+function updateRange() {
+    if (!minInput || !maxInput || !progress || !rangeText) return;
+    
+    let min = parseInt(minInput.value);
+    let max = parseInt(maxInput.value);
+
+    if (min > max) {
+        [min, max] = [max, min];
+        minInput.value = min;
+        maxInput.value = max;
+    }
+
+    const percentMin = (min / minInput.max) * 100;
+    const percentMax = (max / maxInput.max) * 100;
+
+    progress.style.left = percentMin + "%";
+    progress.style.width = (percentMax - percentMin) + "%";
+
+    rangeText.textContent = `$${min} - $${max}`;
+}
+
+// Navigate to book detail page
 function goToDetail(bookId) {
     window.location.href = `book-detail.html?id=${bookId}`;
 }
 
+// Add to cart function
+function addToCart(event, bookId) {
+    event.stopPropagation(); // Prevent card click
+    
+    const book = books.find(b => b.id === bookId);
+    if (!book) return;
+    
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingItem = cart.find(item => item.id === book.id);
+    
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({
+            id: book.id,
+            title: book.title,
+            price: book.price,
+            image: book.image,
+            quantity: 1
+        });
+    }
+    
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    // Visual feedback
+    const btn = event.currentTarget;
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i>';
+    btn.style.backgroundColor = '#10b981';
+    
+    setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.style.backgroundColor = '';
+    }, 1000);
+}
+
+// Event listeners
+if (minInput && maxInput) {
+    minInput.addEventListener("input", updateRange);
+    maxInput.addEventListener("input", updateRange);
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+    updateRange();
+    renderBooks(books);
+});
+
+// Make functions available globally
 window.goToDetail = goToDetail;
 window.addToCart = addToCart;

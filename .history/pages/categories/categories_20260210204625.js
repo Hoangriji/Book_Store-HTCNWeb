@@ -1,3 +1,4 @@
+// ================= BOOK DATA =================
 const books = [
     {
         id: 1,
@@ -49,7 +50,9 @@ const books = [
     }
 ];
 
+// ================= DOM READY =================
 document.addEventListener("DOMContentLoaded", function () {
+
     const carousel = document.getElementById("pageCarousel");
     if (carousel && typeof bootstrap !== "undefined") {
         const bsCarousel = new bootstrap.Carousel(carousel, {

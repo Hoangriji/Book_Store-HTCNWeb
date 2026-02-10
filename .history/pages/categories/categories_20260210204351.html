@@ -142,5 +142,19 @@
     <script src="/shared/js/bootstrap.bundle.min.js"></script>
     <script src="categories.js"></script>
     <script type="module" src="/shared/js/main.js"></script>
+    <script>
+        // Initialize carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.getElementById('pageCarousel');
+            if (carousel) {
+                const bsCarousel = new bootstrap.Carousel(carousel, {
+                    interval: 3000,
+                    pause: false,
+                    ride: 'carousel'
+                });
+                bsCarousel.cycle();
+            }
+        });
+    </script>
 </body>
 </html>

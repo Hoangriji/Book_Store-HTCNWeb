@@ -49,64 +49,48 @@ const books = [
     }
 ];
 
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.getElementById("pageCarousel");
-    if (carousel && typeof bootstrap !== "undefined") {
-        const bsCarousel = new bootstrap.Carousel(carousel, {
-            interval: 3000,
-            pause: false,
-            ride: "carousel"
-        });
-        bsCarousel.cycle();
+const minInput = document.getElementById("minPrice");
+const maxInput = document.getElementById("maxPrice");
+const rangeText = document.getElementById("priceRangeText");
+
+const progress = document.createElement("div");
+progress.classList.add("range-progress");
+const rangeSlider = document.querySelector(".range-slider");
+if (rangeSlider) {
+    rangeSlider.appendChild(progress);
+}
+
+function updateRange() {
+    if (!minInput || !maxInput || !progress || !rangeText) return;
+    
+    let min = parseInt(minInput.value);
+    let max = parseInt(maxInput.value);
+
+    if (min > max) {
+        [min, max] = [max, min];
+        minInput.value = min;
+        maxInput.value = max;
     }
 
-    const minInput = document.getElementById("minPrice");
-    const maxInput = document.getElementById("maxPrice");
-    const rangeText = document.getElementById("priceRangeText");
-    const rangeSlider = document.querySelector(".range-slider");
+    const percentMin = (min / minInput.max) * 100;
+    const percentMax = (max / maxInput.max) * 100;
 
-    let progress;
+    progress.style.left = percentMin + "%";
+    progress.style.width = (percentMax - percentMin) + "%";
 
-    if (rangeSlider) {
-        progress = document.createElement("div");
-        progress.classList.add("range-progress");
-        rangeSlider.appendChild(progress);
-    }
+    rangeText.textContent = `$${min} - $${max}`;
+}
 
-    function updateRange() {
-        if (!minInput || !maxInput || !progress || !rangeText) return;
-
-        let min = parseInt(minInput.value);
-        let max = parseInt(maxInput.value);
-
-        if (min > max) {
-            [min, max] = [max, min];
-            minInput.value = min;
-            maxInput.value = max;
-        }
-
-        const percentMin = (min / minInput.max) * 100;
-        const percentMax = (max / maxInput.max) * 100;
-
-        progress.style.left = percentMin + "%";
-        progress.style.width = (percentMax - percentMin) + "%";
-
-        rangeText.textContent = `$${min} - $${max}`;
-    }
-
-    if (minInput && maxInput) {
-        minInput.addEventListener("input", updateRange);
-        maxInput.addEventListener("input", updateRange);
-        updateRange();
-    }
-
-    renderBooks(books);
-});
+// Event listeners for price range
+if (minInput && maxInput) {
+    minInput.addEventListener("input", updateRange);
+    maxInput.addEventListener("input", updateRange);
+}
 
 function renderBooks(bookList) {
     const booksGrid = document.getElementById("booksGrid");
     if (!booksGrid) return;
-
+    
     booksGrid.innerHTML = "";
 
     bookList.forEach(book => {
@@ -152,5 +136,55 @@ function goToDetail(bookId) {
     window.location.href = `book-detail.html?id=${bookId}`;
 }
 
+function initializeCarousel() {
+    const carousel = document.getElementById('pageCarousel');
+    if (carousel && typeof bootstrap !== 'undefined') {
+        const bsCarousel = new bootstrap.Carousel(carousel, {
+            interval: 3000,
+            pause: false,
+            ride: 'carousel'
+        });
+        bsCarousel.cycle();
+    }
+}
+
+function setupFilters() {
+    // Category filters
+    const categoryCheckboxes = document.querySelectorAll('.filter__option-input[type="checkbox"]');
+    categoryCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            console.log('Category:', this.nextElementSibling.textContent, 'Checked:', this.checked);
+            // Add your filter logic here
+        });
+    });
+
+    // Condition filters
+    const conditionRadios = document.querySelectorAll('.filter__option-input[type="radio"]');
+    conditionRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            console.log('Condition:', this.nextElementSibling.textContent);
+        });
+    });
+}
+
+function setupSort() {
+    const sortSelect = document.querySelector('.products-header__sort-select');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', function() {
+            console.log('Sort by:', this.value);
+            // Add your sorting logic here
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initializeCarousel();
+    updateRange();
+    renderBooks(books);
+    setupFilters();
+    setupSort();
+});
+
+// Make functions available globally
 window.goToDetail = goToDetail;
 window.addToCart = addToCart;

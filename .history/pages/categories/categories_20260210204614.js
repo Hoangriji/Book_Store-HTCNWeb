@@ -1,3 +1,4 @@
+// ================= BOOK DATA =================
 const books = [
     {
         id: 1,
@@ -49,7 +50,10 @@ const books = [
     }
 ];
 
+// ================= DOM READY =================
 document.addEventListener("DOMContentLoaded", function () {
+
+    // ===== Carousel Init =====
     const carousel = document.getElementById("pageCarousel");
     if (carousel && typeof bootstrap !== "undefined") {
         const bsCarousel = new bootstrap.Carousel(carousel, {
@@ -60,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         bsCarousel.cycle();
     }
 
+    // ===== Range Elements =====
     const minInput = document.getElementById("minPrice");
     const maxInput = document.getElementById("maxPrice");
     const rangeText = document.getElementById("priceRangeText");
@@ -100,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateRange();
     }
 
+    // ===== Render Books =====
     renderBooks(books);
 });
 
