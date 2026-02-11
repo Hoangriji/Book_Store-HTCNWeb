@@ -29,7 +29,6 @@ export const header = () => {
             <ul>
               <li><a href="/"> Home</a></li>
               <li><a href="/pages/categories/categories.html">Categories</a></li>
-              <li><a href="#">New releases</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
