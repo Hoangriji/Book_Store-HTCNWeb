@@ -67,7 +67,7 @@
 .carousel-item:nth-child(1) .page-header-container {
     justify-content: flex-start;
     text-align: left;
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 7.5rem;
 }
 
 .carousel-item:nth-child(2) .page-header-container {
@@ -78,7 +78,7 @@
 .carousel-item:nth-child(3) .page-header-container {
     justify-content: flex-end;
     text-align: right;
-    padding: 0 1rem 0 0;
+    padding: 0 7.5rem 0 0;
 }
 
 /* Sort */
@@ -462,8 +462,12 @@
 
 /* responsize */
 @media (max-width: 1199.98px) {
-    .page-header-container {
-        padding: 0 1.5rem;
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 3rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 3rem 0 0;
     }
 
     .products-wrapper {
@@ -474,17 +478,18 @@
         font-size: 2.5rem;
     }
 
-    .page-header__subtitle {
-    }
-
     .book-card {
         width: 260px;
     }
 }
 
 @media (max-width: 991.98px) {
-    .page-header-container {
-        padding: 0 1.5rem;
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 2rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 2rem 0 0;
     }
 
     .page-header__title {
@@ -540,8 +545,19 @@
 }
 
 @media (max-width: 767.98px) {
-    .page-header-container {
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 1.5rem;
+    }
+
+    .carousel-item:nth-child(2) .page-header-container {
         padding: 0 1rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 1.5rem 0 0;
+    }
+
+    .page-header-container {
         min-height: 150px;
     }
 
@@ -637,8 +653,15 @@
 }
 
 @media (max-width: 575.98px) {
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 1.5rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 1.5rem 0 0;
+    }
+
     .page-header-container {
-        padding: 0 0.8rem;
         min-height: 130px;
     }
 
@@ -744,8 +767,19 @@
 }
 
 @media (max-width: 319.98px) {
-    .page-header-container {
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 0.8rem;
+    }
+
+    .carousel-item:nth-child(2) .page-header-container {
         padding: 0 0.5rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 0.8rem 0 0;
+    }
+
+    .page-header-container {
         min-height: 120px;
     }
 
