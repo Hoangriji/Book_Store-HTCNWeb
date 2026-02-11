@@ -15,123 +15,125 @@
 
     <!-- main -->
     <div class="main">
-        <!-- Page Header Carousel -->
-        <div class="page-header">
-            <div id="pageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#pageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#pageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#pageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" style="background-image: url('/imgs/categories/background.png');">
-                        <div class="page-header-container">
-                            <div class="page-header__content">
-                                <h1 class="page-header__title">Bookstore</h1>
-                                <p class="page-header__subtitle">Discover over 100 titles curated for your academic journey.</p>
+        <div class="container">
+            <!-- Page Header Carousel -->
+            <div class="page-header">
+                <div id="pageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#pageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#pageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#pageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background-image: url('/imgs/categories/carousel1.jpg');">
+                            <div class="page-header-container">
+                                <div class="page-header__content">
+                                    <h1 class="page-header__title">Bookstore</h1>
+                                    <p class="page-header__subtitle">Discover over 100 titles curated for your academic journey.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item" style="background-image: url('/imgs/categories/carousel1.jpg');">
-                        <div class="page-header-container">
-                            <div class="page-header__content">
-                                <h1 class="page-header__title">Bookstore</h1>
-                                <p class="page-header__subtitle">Discover over 100 titles curated for your academic journey.</p>
+                        <div class="carousel-item" style="background-image: url('/imgs/categories/background.png');">
+                            <div class="page-header-container">
+                                <div class="page-header__content">
+                                    <h1 class="page-header__title">Bookstore</h1>
+                                    <p class="page-header__subtitle">Discover over 100 titles curated for your academic journey.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item" style="background-image: url('/imgs/categories/carousel2.jpg');">
-                        <div class="page-header-container">
-                            <div class="page-header__content">
-                                <h1 class="page-header__title">Bookstore</h1>
-                                <p class="page-header__subtitle">Discover over 100 titles curated for your academic journey.</p>
+                        <div class="carousel-item" style="background-image: url('/imgs/categories/carousel2.jpg');">
+                            <div class="page-header-container">
+                                <div class="page-header__content">
+                                    <h1 class="page-header__title">Bookstore</h1>
+                                    <p class="page-header__subtitle">Discover over 100 titles curated for your academic journey.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Main Content -->
-        <div class="categories-main">
-            <div class="row g-4">
-                <!-- Sidebar filter -->
-                <aside class="col-lg-3">
-                    <div class="filter">
-                        <div class="filter__header">
-                            <i class="fas fa-filter filter__header-icon"></i>
-                            <h2 class="filter__header-title">Search Filters</h2>
-                        </div>
-
-                        <div class="filter__section">
-                            <h3 class="filter__section-title">CATEGORIES</h3>
-                            <div class="filter__option">
-                                <input type="checkbox" id="major1" class="filter__option-input" checked>
-                                <label for="major1" class="filter__option-label">Literature</label>
-                            </div>
-                            <div class="filter__option">
-                                <input type="checkbox" id="major2" class="filter__option-input">
-                                <label for="major2" class="filter__option-label">Science</label>
-                            </div>
-                            <div class="filter__option">
-                                <input type="checkbox" id="major3" class="filter__option-input">
-                                <label for="major3" class="filter__option-label">Technology</label>
-                            </div>
-                            <div class="filter__option">
-                                <input type="checkbox" id="major4" class="filter__option-input">
-                                <label for="major4" class="filter__option-label">Economics</label>
-                            </div>
-                        </div>
-
-                        <div class="filter__section">
-                            <div class="filter__section-header">
-                                <h3 class="filter__section-title">PRICE RANGE</h3>
-                                <span class="filter__range-text" id="priceRangeText">$10 - $70</span>
+            <!-- Main Content -->
+            <div class="categories-main">
+                <div class="row g-4">
+                    <!-- Sidebar filter -->
+                    <aside class="col-lg-3">
+                        <div class="filter">
+                            <div class="filter__header">
+                                <i class="fas fa-filter filter__header-icon"></i>
+                                <h2 class="filter__header-title">Search Filters</h2>
                             </div>
 
-                            <div class="filter__price-range">
-                                <div class="range-slider">
-                                    <div class="range-track"></div>
-                                    <input type="range" min="0" max="100" value="10" id="minPrice" class="range-input">
-                                    <input type="range" min="0" max="100" value="70" id="maxPrice" class="range-input">
+                            <div class="filter__section">
+                                <h3 class="filter__section-title">CATEGORIES</h3>
+                                <div class="filter__option">
+                                    <input type="checkbox" id="major1" class="filter__option-input" checked>
+                                    <label for="major1" class="filter__option-label">Literature</label>
+                                </div>
+                                <label class="filter__option">
+                                    <input type="checkbox" id="major2" class="filter__option-input">
+                                    <label for="major2" class="filter__option-label">Science</label>
+                                </label>
+                                <label class="filter__option">
+                                    <input type="checkbox" id="major3" class="filter__option-input">
+                                    <label for="major3" class="filter__option-label">Technology</label>
+                                </label>
+                                <label class="filter__option">
+                                    <input type="checkbox" id="major4" class="filter__option-input">
+                                    <label for="major4" class="filter__option-label">Economics</label>
+                                </label>
+                            </div>
+
+                            <div class="filter__section">
+                                <div class="filter__section-header">
+                                    <h3 class="filter__section-title">PRICE RANGE</h3>
+                                    <span class="filter__range-text" id="priceRangeText">$10 - $70</span>
+                                </div>
+
+                                <div class="filter__price-range">
+                                    <div class="range-slider">
+                                        <div class="range-track"></div>
+                                        <input type="range" min="0" max="100" value="10" id="minPrice" class="range-input">
+                                        <input type="range" min="0" max="100" value="70" id="maxPrice" class="range-input">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="filter__section">
-                            <h3 class="filter__section-title">BOOK CONDITION</h3>
-                            <div class="filter__option">
-                                <input type="radio" name="bookStatus" id="status1" class="filter__option-input" checked>
-                                <label for="status1" class="filter__option-label">New</label>
-                            </div>
-                            <div class="filter__option">
-                                <input type="radio" name="bookStatus" id="status2" class="filter__option-input">
-                                <label for="status2" class="filter__option-label">Used</label>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- Products Grid -->
-                <main class="col-lg-9">
-                    <div class="products-wrapper">
-                        <div class="products-header">
-                            <p class="products-header__result">Hiển thị 12 trong 100 kết quả</p>
-                            <div class="products-header__actions">
-                                <label class="products-header__sort-label">Sort by:</label>
-                                <select class="products-header__sort-select">
-                                    <option selected>Most Popular</option>
-                                    <option>Newest</option>
-                                    <option>Price: Low to High</option>
-                                    <option>Price: High to Low</option>
-                                    <option>Best Rating</option>
-                                </select>
+                            <div class="filter__section">
+                                <h3 class="filter__section-title">BOOK CONDITION</h3>
+                                <label class="filter__option">
+                                    <input type="radio" name="bookStatus" id="status1" class="filter__option-input" checked>
+                                    <label for="status1" class="filter__option-label">New</label>
+                                </label>
+                                <label class="filter__option">
+                                    <input type="radio" name="bookStatus" id="status2" class="filter__option-input">
+                                    <label for="status2" class="filter__option-label">Used</label>
+                                </label>
                             </div>
                         </div>
+                    </aside>
 
-                        <div class="row g-4" id="booksGrid"></div>
-                    </div>
-                </main>
+                    <!-- Products Grid -->
+                    <main class="col-lg-9">
+                        <div class="products-wrapper">
+                            <div class="products-header">
+                                <p class="products-header__result">Hiển thị 12 trong 100 kết quả</p>
+                                <div class="products-header__actions">
+                                    <label class="products-header__sort-label">Sort by:</label>
+                                    <select class="products-header__sort-select">
+                                        <option selected>Most Popular</option>
+                                        <option>Newest</option>
+                                        <option>Price: Low to High</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Best Rating</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row g-4" id="booksGrid"></div>
+                        </div>
+                    </main>
+                </div>
             </div>
         </div>
     </div>

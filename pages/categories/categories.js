@@ -33,7 +33,7 @@ const books = [
     },
     {
         id: 5,
-        image: "/imgs/categories/productBook5.png",
+        image: "/imgs/categories/productBook3.png",
         badge: "Mới",
         title: "Literature Classics",
         description: "Classic Author",
@@ -41,7 +41,7 @@ const books = [
     },
     {
         id: 6,
-        image: "/imgs/categories/productBook6.png",
+        image: "/imgs/categories/productBook2.png",
         badge: "Mới",
         title: "Business Management",
         description: "Management Guru",
@@ -149,7 +149,7 @@ function renderBooks(bookList) {
 }
 
 function goToDetail(bookId) {
-    window.location.href = `book-detail.html?id=${bookId}`;
+    window.location.href = `../detailProduct/detailProduct.html?id=${bookId}`;
 }
 
 window.goToDetail = goToDetail;
