@@ -46,7 +46,6 @@
 
 /* Content */
 .page-header__content {
-    flex: 1;
     min-width: 300px;
 }
 
@@ -56,7 +55,6 @@
     line-height: 1.2;
     text-shadow: 3px 3px 4px var(--color-primary);
     margin: 0;
-    margin: 0 0 0 7.5rem;
 }
 
 .page-header__subtitle {
@@ -64,7 +62,23 @@
     font-size: 1.2rem;
     line-height: 1.6;
     max-width: 500px;
-    margin: 0 0 0 7.5rem;
+}
+
+.carousel-item:nth-child(1) .page-header-container {
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0 0 0 7.5rem;
+}
+
+.carousel-item:nth-child(2) .page-header-container {
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-item:nth-child(3) .page-header-container {
+    justify-content: flex-end;
+    text-align: right;
+    padding: 0 7.5rem 0 0;
 }
 
 /* Sort */
@@ -158,7 +172,7 @@
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0;
-   color: var(--color-text-light);
+    color: var(--color-text-light);
 }
 
 .filter__section {
@@ -295,8 +309,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 1rem 2rem;
-    padding: 1.5rem 4rem 0 0;
+    margin: 1rem 2rem;
     gap: 2rem;
 }
 
@@ -335,16 +348,17 @@
 /* Card */
 .book-card {
     background: var(--color-background);
-    border-radius: 1rem;
+    border-radius: 24px;
     overflow: hidden;
     transition: 0.3s ease;
-    width: 280px;
+    width: 260px;
     border: 1px solid var(--color-primary);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .book-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0, 191, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .book-card__image-wrapper {
@@ -448,8 +462,12 @@
 
 /* responsize */
 @media (max-width: 1199.98px) {
-    .page-header-container {
-        padding: 0 1.5rem;
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 3rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 3rem 0 0;
     }
 
     .products-wrapper {
@@ -458,11 +476,6 @@
 
     .page-header__title {
         font-size: 2.5rem;
-        margin: 0 0 0 5rem;
-    }
-
-    .page-header__subtitle {
-        margin: 0 0 0 5rem;
     }
 
     .book-card {
@@ -471,18 +484,20 @@
 }
 
 @media (max-width: 991.98px) {
-    .page-header-container {
-        padding: 0 1.5rem;
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 2rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 2rem 0 0;
     }
 
     .page-header__title {
         font-size: 2rem;
-        margin: 0 0 0 3rem;
     }
 
     .page-header__subtitle {
         font-size: 1rem;
-        margin: 0 0 0 3rem;
     }
 
     .page-header__actions {
@@ -530,19 +545,28 @@
 }
 
 @media (max-width: 767.98px) {
-    .page-header-container {
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 1.5rem;
+    }
+
+    .carousel-item:nth-child(2) .page-header-container {
         padding: 0 1rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 1.5rem 0 0;
+    }
+
+    .page-header-container {
         min-height: 150px;
     }
 
     .page-header__title {
         font-size: 1.5rem;
-        margin: 0 0 0 1.5rem;
     }
 
     .page-header__subtitle {
         font-size: 0.9rem;
-        margin: 0 0 0 1.5rem;
     }
 
     .page-header__actions {
@@ -629,19 +653,24 @@
 }
 
 @media (max-width: 575.98px) {
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 1.5rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 1.5rem 0 0;
+    }
+
     .page-header-container {
-        padding: 0 0.8rem;
         min-height: 130px;
     }
 
     .page-header__title {
         font-size: 1.25rem;
-        margin: 0 0 0 1rem;
     }
 
     .page-header__subtitle {
         font-size: 0.8rem;
-        margin: 0 0 0 1rem;
     }
 
     .page-header__actions {
@@ -737,22 +766,30 @@
     }
 }
 
-/* Ultra small devices (200px - 320px) */
 @media (max-width: 319.98px) {
-    .page-header-container {
+    .carousel-item:nth-child(1) .page-header-container {
+        padding: 0 0 0 0.8rem;
+    }
+
+    .carousel-item:nth-child(2) .page-header-container {
         padding: 0 0.5rem;
+    }
+
+    .carousel-item:nth-child(3) .page-header-container {
+        padding: 0 0.8rem 0 0;
+    }
+
+    .page-header-container {
         min-height: 120px;
     }
 
     .page-header__title {
         font-size: 1rem;
-        margin: 0 0 0 1rem;
     }
 
     .page-header__subtitle {
         font-size: 0.65rem;
         line-height: 1.3;
-        margin: 0 0 0 1rem;
     }
 
     .page-header__actions {
