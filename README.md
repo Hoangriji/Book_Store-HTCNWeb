@@ -68,8 +68,8 @@ Book_Store/
 
 ## Contact
 
-- **Maintainer**: Hoangriji
 - **Repository**: [Book_Store-HTCNWeb](https://github.com/Hoangriji/Book_Store-HTCNWeb)
+- **Deloy**: [FiveH Book Store](https://book-store-htcn-web.vercel.app)
 
 ---
 
