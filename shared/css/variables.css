@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color-primary: #00BFFF;
@@ -11,5 +11,5 @@
     --color-text-dark: #010409;
     --color-text-light: #FAFBF5;
     --color-accent: #40E0D0;
-    --font-main: "Bova Nova", serif;
+    --font-main: "Roboto", sans-serif;
 }

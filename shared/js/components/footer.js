@@ -12,9 +12,9 @@ export const footer = () => {
 
                     <div class="col-12 col-md-6 col-lg footer-section">
                         <h4 class="footer-section-title">Contact Us</h4>
-                        <p>Email: contact@bookstore.com</p>
-                        <p>Phone: +1 234 567 890</p>
-                        <p>Address: 123 Book St, City, Country</p>
+                        <p>Email: contact@fivehbookstore.com</p>
+                        <p>Phone: +84 123 456 789</p>
+                        <p>Address: 12 Nguyen Van Bao Street, Ho Chi Minh City</p>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg footer-section">
@@ -30,10 +30,9 @@ export const footer = () => {
                         <h4 class="footer-section-title">Quick Links</h4>
                         <ul>
                             <li><i class="fa-solid fa-arrow-right"></i><a href="index.html">Home</a></li>
-                            <li><i class="fa-solid fa-arrow-right"></i><a href="#">Categories</a></li>
-                            <li><i class="fa-solid fa-arrow-right"></i><a href="#">New releases</a></li>
-                            <li><i class="fa-solid fa-arrow-right"></i><a href="#">About Us</a></li>
-                            <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contact Us</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="/pages/categories/categories.html">Categories</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="/pages/aboutPage/aboutPage.html">About Us</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="/pages/contactPage/contactPage.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

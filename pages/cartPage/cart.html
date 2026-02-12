@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../../shared/css/bootstrap.min.css">
+
+    <!-- cart css -->
+    <link rel="stylesheet" href="./cartPage.css">
+
+    <!-- icon awesome free -->
+    <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- header -->
+<header class="inner-header"></header>
+
+<!-- Cart -->
+<div class="page-wrapper">    
+    <div class="container">
+
+        <!--inner-cart-->
+        <div class="inner-cart">
+
+            <div class="cart-container">
+                <div class="cart-detail text-center fw-bold text-primary fs-2 mb-4">
+                    Your Cart Details</div>
+                <!-- header row -->
+              <div class="cart-header row fw-bold border-bottom pb-3 d-none d-md-flex">
+                 <div class="col-md-2"></div>
+                    <div class="col-md-3 text-start">Book</div>
+                    <div class="col-md-3 text-center">Quantity</div>
+                    <div class="col-md-1 text-center">Price</div>
+                    <div class="col-md-1 text-center">Total</div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="cart-book">
+                    <!-- item -->
+                    <div class="cart-part row align-items-center">
+
+                        <div class="cart-img col-4 col-md-2">
+                            <img src="../../imgs/homePage/Book1.png" class="img-fluid">
+                        </div>
+
+                        <div class="cart-desc col-8 col-md-3 text-md-start">
+                            <h5>The Great Gatsby</h5>
+                        </div>
+
+                        <div class="cart-quantity col-6 col-md-3">
+                            <input type="number" class="form-control" min="0" placeholder="Quantity" value="1"> 
+                        </div>
+
+                        <div class="cart-price col-3 col-md-1 mt-3 mt-md-0">
+                            <h5>$15.99</h5>
+                        </div>
+
+                        <div class="cart-total col-3 col-md-1 mt-3 mt-md-0">
+                            <h5>$15.99</h5>
+                        </div>
+
+                        <div class="cart-remove col-12 col-md-1 mt-3 mt-md-0">
+                            <button class="btn btn-danger btn-lg">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- item -->
+                   <div class="cart-part row align-items-center">
+
+                        <div class="cart-img col-4 col-md-2">
+                            <img src="../../imgs/homePage/Book2.png" class="img-fluid">
+                        </div>
+
+                        <div class="cart-desc col-8 col-md-3 text-md-start">
+                            <h5>To Kill a Mockingbird</h5>
+                        </div>
+
+                        <div class="cart-quantity col-6 col-md-3">
+                            <input type="number" class="form-control" min="0" placeholder="Quantity" value="1"> 
+                        </div>
+
+                        <div class="cart-price col-3 col-md-1 mt-3 mt-md-0">
+                            <h5>$18.99</h5>
+                        </div>
+
+                        <div class="cart-total col-3 col-md-1 mt-3 mt-md-0">
+                            <h5>$18.99</h5>
+                        </div>
+
+                        <div class="cart-remove col-12 col-md-1 mt-3 mt-md-0">
+                            <button class="btn btn-danger btn-lg">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div> <!-- cart-book -->
+            </div> <!-- cart-container -->
+
+            <div class="cart-summary mt-4">
+                <div class="row align-items-center p-4 border rounded bg-light shadow-sm">
+
+                    <div class="col-md-6">
+                        <h4 class="mb-0 fw-bold">
+                            Total Price:
+                            <span id="total" class="text-success">$100</span>
+                        </h4>
+                    </div>
+
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <button onclick="openPopup()" class="btn btn-primary text-white me-2 px-4">
+                            Proceed to Checkout
+                        </button>
+                        <button id="clearCart" class="btn btn-outline-danger px-4 btn-clear">
+                            Clear Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div> <!-- inner-cart -->
+
+    </div> <!-- container -->
+</div> <!-- page-wrapper -->
+
+
+        <!-- popup checkout -->
+        <div class="checkout-popup" id="checkoutPopup">
+            <div class="popup-box">
+                <h2>Order Successful
+                    <i class="fa-solid fa-circle-check"></i>
+                </h2>
+                <p>Thank you for your purchase!</p>
+                <button onclick="closePopup()" class="btn btn-primary">OK</button>
+            </div>
+        </div>
+
+
+<!-- footer -->
+<footer class="inner-footer"></footer>
+
+<script type="module" src="../../shared/js/main.js"></script>
+<script src="../cartPage/cartPage.js"></script>
+
+</body>
+</html>

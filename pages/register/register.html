@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css"/>
     <link rel="stylesheet" href="/shared/css/bootstrap.min.css" />
 
     <script
@@ -18,12 +18,23 @@
       <div class="wrapper">
         <div class="wrapper-left">
           <button class="return" type="button"><i class="fa-solid fa-arrow-left"></i> Return</button>
-          <img src="/imgs/login/img-login.png" alt="Login Image" />
+          <img src="/imgs/login/img-login.png" alt="Register Image" />
         </div>
         <div class="wrapper-right">
-          <h2>Welcome Back to FiveH Book Store</h2>
-          <p>Please enter your credentials to access your account.</p>
-          <form action="/login" method="POST">
+          <h2>Create Your FiveH Account</h2>
+          <p>Join us to explore books and manage your orders easily.</p>
+          <form action="/register" method="POST">
+            <div class="mb-3 floating-field">
+              <input
+                type="text"
+                class="form-control"
+                id="fullname"
+                name="fullname"
+                required
+              />
+              <label for="fullname" class="form-label">Full Name</label>
+            </div>
+
             <div class="mb-3 floating-field">
               <input
                 type="text"
@@ -37,6 +48,17 @@
 
             <div class="mb-3 floating-field">
               <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+              <label for="email" class="form-label">Email</label>
+            </div>
+
+            <div class="mb-3 floating-field">
+              <input
                 type="password"
                 class="form-control"
                 id="password"
@@ -46,20 +68,27 @@
               <label for="password" class="form-label">Password</label>
             </div>
 
-            <div class="mb-3">
-              <a href="#">Forgot Password?</a>
+            <div class="mb-3 floating-field">
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
             </div>
 
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary">Create Account</button>
           </form>
           <div class="register-links">
             <p>
-              Don't have an account?
+              Already have an account?
             </p>
-            <a href="../register/register.html">Register here</a>
+            <a href="../login/login.html">Login here</a>
           </div>
 
-          <div class="login-gg">
+          <div class="register-gg">
             <a href="#" class="google-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -86,12 +115,12 @@
                   d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
                 ></path>
               </svg>
-              Login with Google</a
+              Sign up with Google</a
             >
           </div>
         </div>
       </div>
     </div>
-    <script src="login.js"></script>
+    <script src="register.js"></script>
   </body>
 </html>

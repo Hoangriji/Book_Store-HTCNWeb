@@ -1,0 +1,112 @@
+@import url("/shared/css/style.css");
+
+.title-about {
+  width: 100%;
+  height: 57vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/imgs/aboutPage/about_us.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.title-about h2 {
+  color: var(--color-text-light);
+  text-align: center;
+  padding-top: 25vh;
+  font-size: 56px;
+  font-weight: 700;
+  text-shadow: 4px 4px 6px var(--color-primary);
+}
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: var(--color-text-dark);
+  font-family: var(--font-main);
+}
+
+.about-page h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 20px !important;
+  color: var(--color-primary);
+}
+
+.about-page p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.gold-text {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.branches-section {
+  margin-top: 80px;
+}
+
+.branch-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.branch-card h4 {
+  margin-bottom: 15px;
+}
+
+.about-page h3:last-of-type {
+  margin-top: 80px;
+}
+
+.about-card {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.about-card i {
+  font-size: 40px;
+  color: var(--color-secondary);
+  margin-bottom: 15px;
+}
+
+.about-card h4,
+.about-card h5 {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.stat-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-box h2 {
+  font-size: 42px;
+  color: var(--color-secondary);
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about-page section {
+  margin-bottom: 80px;
+}

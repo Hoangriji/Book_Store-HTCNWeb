@@ -29,26 +29,26 @@ export const header = () => {
             <ul>
               <li><a href="/"> Home</a></li>
               <li><a href="/pages/categories/categories.html">Categories</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="/pages/aboutPage/aboutPage.html">About Us</a></li>
+              <li><a href="/pages/contactPage/contactPage.html">Contact Us</a></li>
             </ul>
           </nav>
 
           <!-- search -->
           <div class="search-bar">
             <input type="text" placeholder="Search for books...">
-            <button type="submit"><i class="fa-solid fa-search"></i></button>
+            <button type="submit" class="search-btn btn-primary"><i class="fa-solid fa-search"></i></button>
           </div>
 
           <!-- user -->
           <div class="user-actions">
-            <a href="#" class="user-actions-link">
+            <a href="/pages/cartPage/cart.html" class="user-actions-link">
               <div class="user-actions-btn">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span class="cart-count">(0)</span>
               </div>
             </a>
-            <a href="#" class="user-actions-link">
+            <a href="/pages/login/login.html" class="user-actions-link">
               <div class="user-actions-btn">
                 <i class="fa-solid fa-user"></i>
                 <span>Login</span>
