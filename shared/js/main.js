@@ -28,16 +28,16 @@ const header = () => {
                     <!-- nav -->
                     <nav class="inner-nav">
                         <ul>
-                            <li><a href="/"> Home</a></li>
-                            <li><a href="/pages/categories/categories.html">Categories</a></li>
-                            <li><a href="/pages/aboutPage/aboutPage.html">About Us</a></li>
-                            <li><a href="/pages/contactPage/contactPage.html">Contact Us</a></li>
+                            <li><a href="/">Trang chủ</a></li>
+                            <li><a href="/pages/categories/categories.html">Sản phẩm</a></li>
+                            <li><a href="/pages/aboutPage/aboutPage.html">Về chúng tôi</a></li>
+                            <li><a href="/pages/contactPage/contactPage.html">Liên hệ</a></li>
                         </ul>
                     </nav>
 
                     <!-- search -->
                     <div class="search-bar">
-                        <input type="text" placeholder="Search for books...">
+                        <input type="text" placeholder="Tìm kiếm sách...">
                         <button type="submit" class="search-btn btn-primary"><i class="fa-solid fa-search"></i></button>
                     </div>
 
@@ -46,13 +46,13 @@ const header = () => {
                         <a href="/pages/cartPage/cart.html" class="user-actions-link">
                             <div class="user-actions-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
-                                <span class="cart-count">(0)</span>
+                                <span class="cart-badge">0</span>
                             </div>
                         </a>
                         <a href="/pages/login/login.html" class="user-actions-link">
                             <div class="user-actions-btn">
                                 <i class="fa-solid fa-user"></i>
-                                <span>Login</span>
+                                <span>Đăng nhập</span>
                             </div>
                         </a>
                     </div>
@@ -140,48 +140,63 @@ const header = () => {
 /* Footer */
 const footer = () => {
     const footerElement = document.querySelector(".inner-footer");
-    const footerTemplate = /* html */ `
-                <div class="container">
-                        <div class="footer-wrapper">
-                                <div class="row g-4 footer-content">
-                                        <div class="col-12 col-md-6 col-lg-5 footer-section">
-                                                <img src="/imgs/homePage/logo.png" alt="">
-                                                <h4 class="footer-section-title">FiveH Book Store</h4>
-                                                <p>Your one-stop shop for all your reading needs. Discover, explore, and indulge in the world of books with us!</p>
-                                        </div>
+    const footerTemplate = /* html */ `          
+    <div class="container">
+    <div class="footer-wrapper">
+        <div class="row g-4 footer-content">
+        <div class="col-12 col-md-6 col-lg-5 footer-section">
+            <img src="/imgs/homePage/logo.png" alt="" />
+            <h4 class="footer-section-title">FiveH Book Store</h4>
+            <p>
+            Nơi đáp ứng mọi nhu cầu đọc sách của bạn. Khám phá, trải nghiệm và đắm
+            chìm trong thế giới sách cùng chúng tôi!
+            </p>
+        </div>
 
-                                        <div class="col-12 col-md-6 col-lg footer-section">
-                                                <h4 class="footer-section-title">Contact Us</h4>
-                                                <p>Email: contact@fivehbookstore.com</p>
-                                                <p>Phone: +84 123 456 789</p>
-                                                <p>Address: 12 Nguyen Van Bao Street, Ho Chi Minh City</p>
-                                        </div>
+        <div class="col-12 col-md-6 col-lg footer-section">
+            <h4 class="footer-section-title">Liên hệ:</h4>
+            <p>Email: contact@fivehbookstore.com</p>
+            <p>Số điện thoại: +84 123 456 789</p>
+            <p>Địa chỉ: 12 Đường Nguyễn Văn Bảo, Thành phố Hồ Chí Minh</p>
+        </div>
 
-                                        <div class="col-12 col-md-6 col-lg footer-section">
-                                                <h4 class="footer-section-title">Follow Us</h4>
-                                                <div class="social-icons">
-                                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                                </div>
-                                        </div>
+        <div class="col-12 col-md-6 col-lg footer-section">
+            <h4 class="footer-section-title">Theo dõi chúng tôi</h4>
+            <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
 
-                                        <div class="col-12 col-md-6 col-lg footer-section">
-                                                <h4 class="footer-section-title">Quick Links</h4>
-                                                <ul>
-                                                        <li><i class="fa-solid fa-arrow-right"></i><a href="index.html">Home</a></li>
-                                                        <li><i class="fa-solid fa-arrow-right"></i><a href="/pages/categories/categories.html">Categories</a></li>
-                                                        <li><i class="fa-solid fa-arrow-right"></i><a href="/pages/aboutPage/aboutPage.html">About Us</a></li>
-                                                        <li><i class="fa-solid fa-arrow-right"></i><a href="/pages/contactPage/contactPage.html">Contact Us</a></li>
-                                                </ul>
-                                        </div>
-                                </div>
+        <div class="col-12 col-md-6 col-lg footer-section">
+            <h4 class="footer-section-title">Liên kết nhanh</h4>
+            <ul>
+            <li>
+                <i class="fa-solid fa-arrow-right"></i
+                ><a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-arrow-right"></i
+                ><a href="/pages/categories/categories.html">Danh mục</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-arrow-right"></i
+                ><a href="/pages/aboutPage/aboutPage.html">Về chúng tôi</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-arrow-right"></i
+                ><a href="/pages/contactPage/contactPage.html">Liên hệ</a>
+            </li>
+            </ul>
+        </div>
+        </div>
 
-                                <div class="footer-bottom">
-                                        <p>&copy; 2024 FiveH Book Store. All rights reserved.</p>
-                                </div>
-                        </div>
-                </div>
+        <div class="footer-bottom">
+        <p>&copy; 2024 FiveH Book Store. All rights reserved.</p>
+        </div>
+    </div>
+    </div>
         `;
 
     if (footerElement) {
@@ -195,6 +210,6 @@ const main = () => {
 
     // render footer
     footer();
-}
+};
 
 main();

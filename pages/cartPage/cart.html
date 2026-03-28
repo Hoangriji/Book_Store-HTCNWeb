@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart page</title>
+    <title>Trang giỏ hàng</title>
 
     <!--bootstrap-->
     <link rel="stylesheet" href="../../shared/css/bootstrap.min.css">
@@ -28,14 +28,14 @@
 
             <div class="cart-container">
                 <div class="cart-detail text-center fw-bold text-primary fs-2 mb-4">
-                    Your Cart Details</div>
+                    Chi tiết giỏ hàng của bạn</div>
                 <!-- header row -->
               <div class="cart-header row fw-bold border-bottom pb-3 d-none d-md-flex">
                  <div class="col-md-2"></div>
-                    <div class="col-md-3 text-start">Book</div>
-                    <div class="col-md-3 text-center">Quantity</div>
-                    <div class="col-md-1 text-center">Price</div>
-                    <div class="col-md-1 text-center">Total</div>
+                    <div class="col-md-3 text-start">Sách</div>
+                    <div class="col-md-3 text-center">Số lượng</div>
+                    <div class="col-md-1 text-center">Giá</div>
+                    <div class="col-md-1 text-center">Tổng cộng</div>
                     <div class="col-md-1"></div>
                 </div>
                 <div class="cart-book">
@@ -51,15 +51,15 @@
                         </div>
 
                         <div class="cart-quantity col-6 col-md-3">
-                            <input type="number" class="form-control" min="0" placeholder="Quantity" value="1"> 
+                            <input type="number" class="form-control" min="0" placeholder="Số lượng" value="1"> 
                         </div>
 
                         <div class="cart-price col-3 col-md-1 mt-3 mt-md-0">
-                            <h5>$15.99</h5>
+                            <h5>50.000 ₫</h5>
                         </div>
 
                         <div class="cart-total col-3 col-md-1 mt-3 mt-md-0">
-                            <h5>$15.99</h5>
+                            <h5>50.000 ₫</h5>
                         </div>
 
                         <div class="cart-remove col-12 col-md-1 mt-3 mt-md-0">
@@ -82,15 +82,15 @@
                         </div>
 
                         <div class="cart-quantity col-6 col-md-3">
-                            <input type="number" class="form-control" min="0" placeholder="Quantity" value="1"> 
+                            <input type="number" class="form-control" min="0" placeholder="Số lượng" value="1"> 
                         </div>
 
                         <div class="cart-price col-3 col-md-1 mt-3 mt-md-0">
-                            <h5>$18.99</h5>
+                            <h5>20.000 ₫</h5>
                         </div>
 
                         <div class="cart-total col-3 col-md-1 mt-3 mt-md-0">
-                            <h5>$18.99</h5>
+                            <h5>20.000 ₫</h5>
                         </div>
 
                         <div class="cart-remove col-12 col-md-1 mt-3 mt-md-0">
@@ -109,17 +109,17 @@
 
                     <div class="col-md-6">
                         <h4 class="mb-0 fw-bold">
-                            Total Price:
-                            <span id="total" class="text-success">$100</span>
+                            Tổng tiền:
+                            <span id="total" class="text-success">70.000 ₫</span>
                         </h4>
                     </div>
 
                     <div class="col-md-6 text-md-end mt-3 mt-md-0">
                         <button onclick="openPopup()" class="btn btn-primary text-white me-2 px-4">
-                            Proceed to Checkout
+                            Tiến hành thanh toán
                         </button>
                         <button id="clearCart" class="btn btn-outline-danger px-4 btn-clear">
-                            Clear Cart
+                            Xóa giỏ hàng
                         </button>
                     </div>
 
@@ -135,10 +135,10 @@
         <!-- popup checkout -->
         <div class="checkout-popup" id="checkoutPopup">
             <div class="popup-box">
-                <h2>Order Successful
+                <h2>Đặt hàng thành công
                     <i class="fa-solid fa-circle-check"></i>
                 </h2>
-                <p>Thank you for your purchase!</p>
+                <p>Cảm ơn bạn đã mua hàng!</p>
                 <button onclick="closePopup()" class="btn btn-primary">OK</button>
             </div>
         </div>
