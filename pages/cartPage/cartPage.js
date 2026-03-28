@@ -10,7 +10,7 @@ function closePopup(){
     popup.style.display = "none";
 }
 
-/*         clear cart         */
+// clear cart 
 const clearBtn = document.getElementById("clearCart");
 const cartBook = document.querySelector(".cart-book");
 const total = document.getElementById("total");
@@ -20,7 +20,7 @@ clearBtn.addEventListener("click", function(){
     // xóa toàn bộ sản phẩm
     cartBook.innerHTML = `
         <div class="cart-empty">
-            Your cart is empty 
+            Giỏ hàng của bạn đang trống
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
     `;

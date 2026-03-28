@@ -4,8 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-
   background: url("/imgs/contactPage/photo1.png") center center no-repeat;
   background-size: cover;
 }
@@ -24,15 +22,15 @@
 
 .contact_hero-title {
   font-family: var(--font-main);
-  font-weight: 1000;
-  font-size: 65px;
+  font-weight: 700;
+  font-size: 56px;
   margin-bottom: 15px;
   color: var(--color-text-light);
-  text-shadow: 4px 4px 8px var(--color-primary);
+  text-shadow: 4px 4px 6px var(--color-primary);
 }
 
 .contact_hero-desc {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--color-text-light);
 }

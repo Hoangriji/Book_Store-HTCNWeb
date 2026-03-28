@@ -5,11 +5,12 @@
     --color-secondary: #00A3E0;
     --color-button: #00BFFF;
     --color-button-hover: #0099CC;
-    --color-background: #fbfdf8;
+    --color-background: #fbfcf7;
     --color-background-dark: #010409;
     --color-menu: rgb(1, 4, 9);
     --color-text-dark: #010409;
     --color-text-light: #FAFBF5;
+    --color-text-theme: #dcdcdc;
     --color-accent: #40E0D0;
     --font-main: "Roboto", sans-serif;
 }

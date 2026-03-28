@@ -688,7 +688,7 @@ progress {
 .container-sm,
 .container-xl,
 .container-xxl {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 1rem;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -3001,6 +3001,7 @@ fieldset:disabled .btn {
   --bs-btn-disabled-color: #FAFBF5;
   --bs-btn-disabled-bg: #00BFFF;
   /* --bs-btn-disabled-border-color: #00BFFF; */
+  transition: all 0.5s ease;
 }
 .btn-primary:hover {
   box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.5), 

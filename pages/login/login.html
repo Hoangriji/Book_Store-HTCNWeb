@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Đăng Nhập</title>
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="/shared/css/bootstrap.min.css" />
 
@@ -13,16 +13,16 @@
     ></script>
   </head>
 
-  <body style="background-image: url(/imgs/login/bg-login.webp); background-size: contain; background-position: center; background-repeat: repeat;">
+  <body style="background-image: url(/imgs/login/bg-login.webp); background-size: contain; background-position: center; background-repeat: repeat; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
     <div class="form">
       <div class="wrapper">
         <div class="wrapper-left">
-          <button class="return" type="button"><i class="fa-solid fa-arrow-left"></i> Return</button>
-          <img src="/imgs/login/img-login.png" alt="Login Image" />
+          <button class="return" type="button"><i class="fa-solid fa-arrow-left"></i> Quay về trang chủ</button>
+          <img src="/imgs/login/img-login.png" alt="Hình ảnh Đăng Nhập" />
         </div>
         <div class="wrapper-right">
-          <h2>Welcome Back to FiveH Book Store</h2>
-          <p>Please enter your credentials to access your account.</p>
+          <h2>Chào Mừng Quay Lại FiveH Book Store</h2>
+          <p>Vui lòng nhập thông tin đăng nhập để truy cập tài khoản của bạn.</p>
           <form action="/login" method="POST">
             <div class="mb-3 floating-field">
               <input
@@ -32,7 +32,7 @@
                 name="username"
                 required
               />
-              <label for="username" class="form-label">Username</label>
+              <label for="username" class="form-label">Tên Đăng Nhập</label>
             </div>
 
             <div class="mb-3 floating-field">
@@ -43,20 +43,20 @@
                 name="password"
                 required
               />
-              <label for="password" class="form-label">Password</label>
+              <label for="password" class="form-label">Mật Khẩu</label>
             </div>
 
             <div class="mb-3">
-              <a href="#">Forgot Password?</a>
+              <a href="#">Quên Mật Khẩu?</a>
             </div>
 
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary">Đăng Nhập</button>
           </form>
           <div class="register-links">
             <p>
-              Don't have an account?
+              Chưa có tài khoản?
             </p>
-            <a href="../register/register.html">Register here</a>
+            <a href="../register/register.html">Đăng Ký Tại Đây</a>
           </div>
 
           <div class="login-gg">
@@ -86,7 +86,7 @@
                   d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
                 ></path>
               </svg>
-              Login with Google</a
+              Đăng Nhập Với Google</a
             >
           </div>
         </div>
