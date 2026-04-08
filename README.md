@@ -24,18 +24,12 @@ Book_Store/
 └── shared/                         # Tài nguyên dùng chung
     ├── css/                        # Stylesheets chung
     │   ├── bootstrap.min.css      # Bootstrap framework
-    │   ├── style.css              # Global styles + layout 
-    │   ├── variables.css          # Biến CSS
-    │   └── components/            # Components CSS
-    │       ├── header.css         # Styles header
-    │       └── footer.css         # Styles footer
+    │   ├── style.css              # Global styles + layout + components
+    │   └── variables.css          # Biến CSS
     │
     └── js/                         # JavaScript chung
         ├── bootstrap.bundle.min.js # Bootstrap JS
-        ├── main.js                # Entry point chính
-        └── components/            # Components tái sử dụng
-            ├── header.js          # Component header
-            └── footer.js          # Component footer
+        └── main.js                # Entry point chính + components
 ```
 
 ## Nguyên Tắc Tổ Chức Code
@@ -48,7 +42,6 @@ Book_Store/
 ### 2. **Shared Resources**
 - **CSS Variables** (`variables.css`): Định nghĩa màu sắc, font, spacing và những chỉ số liên quan khác 
 - **Global Styles** (`style.css`): Reset CSS, utility classes
-- **Components** (`components/`): Các thành phần tái sử dụng (header, footer, modal...)
 
 ### 3. **Quy Tắc Đặt Tên**
 

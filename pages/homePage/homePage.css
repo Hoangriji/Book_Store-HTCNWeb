@@ -3,6 +3,7 @@
 .main {
   padding: 0;
   margin: 0 auto;
+  background-color: var(--color-background);
 }
 
 /* hero-section */
@@ -29,22 +30,23 @@
 }
 
 .hero_section-title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   color: var(--color-text-light);
   margin-bottom: 20px;
   line-height: 1.2;
-  text-shadow: 3px 3px 4px var(--color-primary);
+  text-shadow: 3px 3px 6px var(--color-primary);
   font-style: italic;
   text-align: center;
 }
 
 .hero_section-description {
-  font-size: 1.2rem;
-  color: var(--color-text-light);
+  font-size: 1.25rem;
+  color: var(--color-primary);
   margin-bottom: 30px;
   line-height: 1.6;
   text-align: center;
+  text-shadow: 0 0 20px var(--color-text-light);
 }
 
 /* product-section */
