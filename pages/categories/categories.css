@@ -347,604 +347,88 @@
   border-radius: 1rem;
 }
 
-/* Card */
-.book-card {
-  background: var(--color-background);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.3s ease;
-  width: 260px;
-  box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.book-card:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.book-card__image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-}
-
-.book-card__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.3s ease;
-}
-
-.book-card:hover .book-card__image {
-  transform: scale(1.05);
-}
-
-.book-card__badge {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  padding: 0.3rem 0.8rem;
-  border-radius: 1rem;
-  font-size: 0.7rem;
-  font-weight: 700;
-  background: var(--color-primary);
-  color: var(--color-text-light);
-}
-
-.book-card__body {
-  padding: 1.2rem;
-}
-
-.book-card__title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: var(--color-text-dark);
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.book-card__description {
-  font-size: 1rem;
-  color: var(--color-text-dark);
-  margin-bottom: 0.5rem;
-}
-
-.book-card__price {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  margin-bottom: 1rem;
-}
-
-.book-card__actions {
-  width: 100%;
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-  margin-top: 0.5rem;
-}
-
-.book-card__detail-btn {
-  flex: 1;
-  height: 40px;
-  border-radius: 10px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 !important;
-  line-height: normal;
-}
-
-.book-card__cart-btn {
-  width: 48px;
-  height: 40px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  background: var(--color-background);
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
-
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.book-card__cart-btn:hover {
-  background: var(--color-primary);
-  color: white;
-}
-
-.book-card__cart-btn i {
-  font-size: 1rem;
-}
-
-/* responsize */
+/* responsive */
 @media (max-width: 1199.98px) {
-  .carousel-item:nth-child(1) .page-header-container {
-    padding: 0 0 0 3rem;
-  }
-
-  .carousel-item:nth-child(3) .page-header-container {
-    padding: 0 3rem 0 0;
-  }
-
-  .products-wrapper {
-    padding: 1.8rem 1.5rem 0 1.5rem;
-  }
-
-  .page-header__title {
-    font-size: 2.5rem;
-  }
-
-  .book-card {
-    width: 260px;
-  }
+  .carousel-item:nth-child(1) .page-header-container { padding: 0 0 0 3rem; }
+  .carousel-item:nth-child(3) .page-header-container { padding: 0 3rem 0 0; }
+  .products-wrapper { padding: 1.8rem 1.5rem 0 1.5rem; }
+  .page-header__title { font-size: 2.5rem; }
 }
 
 @media (max-width: 991.98px) {
-  .carousel-item:nth-child(1) .page-header-container {
-    padding: 0 0 0 2rem;
-  }
-
-  .carousel-item:nth-child(3) .page-header-container {
-    padding: 0 2rem 0 0;
-  }
-
-  .page-header__title {
-    font-size: 2rem;
-  }
-
-  .page-header__subtitle {
-    font-size: 1rem;
-  }
-
-  .page-header__actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-    white-space: normal;
-  }
-
-  .products-header__sort-select {
-    width: 70%;
-    min-width: auto;
-    font-size: 1rem;
-    padding: 0.5rem 1.8rem 0.5rem 0.7rem;
-  }
-
-  .products-header__sort-label {
-    font-size: 1.1rem;
-  }
-
-  .filter {
-    margin-bottom: 1.5rem;
-    padding: 1.5rem 1.5rem;
-  }
-
-  .products-wrapper {
-    padding: 1.5rem 1.5rem 0 1.5rem;
-  }
-
-  #booksGrid {
-    gap: 1.5rem;
-  }
-
-  .book-card {
-    width: 240px;
-  }
-
-  .book-card__image-wrapper {
-    height: 200px;
-  }
-
-  .book-card__title {
-    font-size: 1.2rem;
-  }
+  .carousel-item:nth-child(1) .page-header-container { padding: 0 0 0 2rem; }
+  .carousel-item:nth-child(3) .page-header-container { padding: 0 2rem 0 0; }
+  .page-header__title { font-size: 2rem; }
+  .page-header__subtitle { font-size: 1rem; }
+  .page-header__actions { flex-direction: column; align-items: flex-start; gap: 0.8rem; white-space: normal; }
+  .products-header__sort-select { width: 70%; min-width: auto; font-size: 1rem; padding: 0.5rem 1.8rem 0.5rem 0.7rem; }
+  .products-header__sort-label { font-size: 1.1rem; }
+  .filter { margin-bottom: 1.5rem; padding: 1.5rem 1.5rem; }
+  .products-wrapper { padding: 1.5rem 1.5rem 0 1.5rem; }
+  #booksGrid { gap: 1.5rem; }
 }
 
 @media (max-width: 767.98px) {
-  .carousel-item:nth-child(1) .page-header-container {
-    padding: 0 0 0 1.5rem;
-  }
-
-  .carousel-item:nth-child(2) .page-header-container {
-    padding: 0 1rem;
-  }
-
-  .carousel-item:nth-child(3) .page-header-container {
-    padding: 0 1.5rem 0 0;
-  }
-
-  .page-header-container {
-    min-height: 150px;
-  }
-
-  .page-header__title {
-    font-size: 1.5rem;
-  }
-
-  .page-header__subtitle {
-    font-size: 0.9rem;
-  }
-
-  .page-header__actions {
-    flex-direction: row;
-    gap: 0.8rem;
-    padding: 1rem;
-  }
-
-  .products-header__sort-label {
-    font-size: 1rem;
-  }
-
-  .products-header__sort-select {
-    font-size: 0.95rem;
-    padding: 0.5rem 1.8rem 0.5rem 0.7rem;
-    min-width: auto;
-  }
-
-  .filter {
-    position: static;
-    margin-bottom: 1.5rem;
-    padding: 1.25rem 1rem;
-  }
-
-  .filter__header {
-    margin-bottom: 1.25rem;
-    padding-bottom: 1rem;
-  }
-
-  .filter__section {
-    margin-bottom: 1.5rem;
-  }
-
-  .products-wrapper {
-    padding: 1rem 1rem 0 1rem;
-  }
-
-  .products-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    margin: 0;
-    padding: 1rem 0;
-  }
-
-  .products-header__result {
-    font-size: 0.95rem;
-  }
-
-  #booksGrid {
-    gap: 1.2rem;
-  }
-
-  .book-card {
-    width: 280px;
-    min-width: 280px;
-  }
-
-  .book-card__image-wrapper {
-    height: 180px;
-  }
-
-  .book-card__title {
-    font-size: 1.1rem;
-  }
-
-  .book-card__body {
-    padding: 1rem;
-  }
-
-  .book-card__description {
-    font-size: 0.9rem;
-  }
-
-  .book-card__detail-btn {
-    height: 36px;
-    font-size: 0.9rem;
-  }
-
-  .book-card__cart-btn {
-    width: 44px;
-    height: 36px;
-  }
+  .carousel-item:nth-child(1) .page-header-container { padding: 0 0 0 1.5rem; }
+  .carousel-item:nth-child(2) .page-header-container { padding: 0 1rem; }
+  .carousel-item:nth-child(3) .page-header-container { padding: 0 1.5rem 0 0; }
+  .page-header-container { min-height: 150px; }
+  .page-header__title { font-size: 1.5rem; }
+  .page-header__subtitle { font-size: 0.9rem; }
+  .page-header__actions { flex-direction: row; gap: 0.8rem; padding: 1rem; }
+  .products-header__sort-label { font-size: 1rem; }
+  .products-header__sort-select { font-size: 0.95rem; padding: 0.5rem 1.8rem 0.5rem 0.7rem; min-width: auto; }
+  .filter { position: static; margin-bottom: 1.5rem; padding: 1.25rem 1rem; }
+  .filter__header { margin-bottom: 1.25rem; padding-bottom: 1rem; }
+  .filter__section { margin-bottom: 1.5rem; }
+  .products-wrapper { padding: 1rem 1rem 0 1rem; }
+  .products-header { flex-direction: column; align-items: flex-start; gap: 1rem; margin: 0; padding: 1rem 0; }
+  .products-header__result { font-size: 0.95rem; }
+  #booksGrid { gap: 1.2rem; }
 }
 
 @media (max-width: 575.98px) {
-  .carousel-item:nth-child(1) .page-header-container {
-    padding: 0 0 0 1.5rem;
-  }
-
-  .carousel-item:nth-child(3) .page-header-container {
-    padding: 0 1.5rem 0 0;
-  }
-
-  .page-header-container {
-    min-height: 130px;
-  }
-
-  .page-header__title {
-    font-size: 1.25rem;
-  }
-
-  .page-header__subtitle {
-    font-size: 0.8rem;
-  }
-
-  .page-header__actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-    padding: 0;
-  }
-
-  .products-header__sort-label {
-    font-size: 0.8rem;
-    margin-right: 0.3rem;
-  }
-
-  .products-header__sort-select {
-    font-size: 0.8rem;
-    padding: 0.5rem 1.5rem 0.5rem 0.6rem;
-    min-width: auto;
-    width: auto;
-  }
-
-  .filter {
-    margin-bottom: 1rem;
-    padding: 1rem 0.8rem;
-  }
-
-  .filter__header {
-    margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .filter__section {
-    margin-bottom: 1.25rem;
-  }
-
-  .products-wrapper {
-    padding: 0.8rem 0.8rem 0 0.8rem;
-  }
-
-  .products-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-  }
-
-  .products-header__result {
-    font-size: 0.75rem;
-  }
-
-  #booksGrid {
-    gap: 1rem;
-  }
-
-  .book-card {
-    width: 260px;
-    min-width: 260px;
-  }
-
-  .book-card__image-wrapper {
-    height: 160px;
-  }
-
-  .book-card__body {
-    padding: 0.9rem;
-  }
-
-  .book-card__title {
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-  }
-
-  .book-card__description {
-    font-size: 0.8rem;
-  }
-
-  .book-card__price {
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .book-card__detail-btn {
-    height: 34px;
-    font-size: 0.7rem;
-  }
-
-  .book-card__cart-btn {
-    width: 40px;
-    height: 34px;
-  }
-
-  .book-card__cart-btn i {
-    font-size: 0.8rem;
-  }
+  .carousel-item:nth-child(1) .page-header-container { padding: 0 0 0 1.5rem; }
+  .carousel-item:nth-child(3) .page-header-container { padding: 0 1.5rem 0 0; }
+  .page-header-container { min-height: 130px; }
+  .page-header__title { font-size: 1.25rem; }
+  .page-header__subtitle { font-size: 0.8rem; }
+  .page-header__actions { flex-direction: column; align-items: flex-start; gap: 0.6rem; padding: 0; }
+  .products-header__sort-label { font-size: 0.8rem; margin-right: 0.3rem; }
+  .products-header__sort-select { font-size: 0.8rem; padding: 0.5rem 1.5rem 0.5rem 0.6rem; min-width: auto; width: auto; }
+  .filter { margin-bottom: 1rem; padding: 1rem 0.8rem; }
+  .filter__header { margin-bottom: 1rem; padding-bottom: 0.75rem; }
+  .filter__section { margin-bottom: 1.25rem; }
+  .products-wrapper { padding: 0.8rem 0.8rem 0 0.8rem; }
+  .products-header { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+  .products-header__result { font-size: 0.75rem; }
+  #booksGrid { gap: 1rem; }
 }
 
 @media (max-width: 319.98px) {
-  .carousel-item:nth-child(1) .page-header-container {
-    padding: 0 0 0 0.8rem;
-  }
-
-  .carousel-item:nth-child(2) .page-header-container {
-    padding: 0 0.5rem;
-  }
-
-  .carousel-item:nth-child(3) .page-header-container {
-    padding: 0 0.8rem 0 0;
-  }
-
-  .page-header-container {
-    min-height: 120px;
-  }
-
-  .page-header__title {
-    font-size: 1rem;
-  }
-
-  .page-header__subtitle {
-    font-size: 0.65rem;
-    line-height: 1.3;
-  }
-
-  .page-header__actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    padding: 0;
-  }
-
-  .products-header__sort-label {
-    font-size: 0.8rem;
-    margin-right: 0.2rem;
-  }
-
-  .products-header__sort-select {
-    font-size: 0.75rem;
-    padding: 0.4rem 1rem 0.4rem 0.4rem;
-    min-width: 90px;
-  }
-
-  .products-header__sort-select option {
-    font-size: 0.75rem;
-  }
-
-  .filter {
-    margin-bottom: 0.6rem;
-    padding: 0.8rem 0.5rem;
-  }
-
-  .filter__header {
-    margin-bottom: 0.7rem;
-    padding-bottom: 0.5rem;
-    gap: 0.3rem;
-  }
-
-  .filter__header-icon {
-    font-size: 0.9rem;
-  }
-
-  .filter__header-title {
-    font-size: 0.9rem;
-  }
-
-  .filter__section {
-    margin-bottom: 0.8rem;
-  }
-
-  .filter__section-title {
-    font-size: 0.6rem;
-    letter-spacing: 0.5px;
-  }
-
-  .filter__option {
-    padding: 0.2rem 0.3rem;
-    margin-bottom: 0.2rem;
-  }
-
-  .filter__option-input {
-    width: 0.85rem;
-    height: 0.85rem;
-    margin-right: 0.3rem;
-  }
-
-  .filter__option-label {
-    font-size: 0.7rem;
-  }
-
-  .filter__range-text {
-    font-size: 0.7rem;
-  }
-
-  .products-wrapper {
-    padding: 0.5rem 0.5rem 0 0.5rem;
-  }
-
-  .products-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-  }
-
-  .products-header__result {
-    font-size: 0.6rem;
-    padding-left: 0.5rem;
-  }
-
-  .products-header__result::before {
-    width: 2px;
-    height: 60%;
-  }
-
-  #booksGrid {
-    gap: 0.6rem;
-    padding: 0;
-  }
-
-  .book-card {
-    width: 220px;
-    min-width: 200px;
-  }
-
-  .book-card__image-wrapper {
-    height: 130px;
-  }
-
-  .book-card__badge {
-    padding: 0.2rem 0.5rem;
-    font-size: 0.6rem;
-    border-radius: 0.5rem;
-  }
-
-  .book-card__body {
-    padding: 0.6rem;
-  }
-
-  .book-card__title {
-    font-size: 0.8rem;
-    margin-bottom: 0.2rem;
-    font-weight: 600;
-  }
-
-  .book-card__description {
-    font-size: 0.65rem;
-    margin-bottom: 0.15rem;
-    line-height: 1.2;
-  }
-
-  .book-card__price {
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .book-card__actions {
-    gap: 0.3rem;
-    margin-top: 0.2rem;
-  }
-
-  .book-card__detail-btn {
-    height: 30px;
-    font-size: 0.65rem;
-    padding: 0.3rem;
-  }
-
-  .book-card__cart-btn {
-    width: 35px;
-    height: 30px;
-    border-radius: 0.5rem;
-  }
-
-  .book-card__cart-btn i {
-    font-size: 0.65rem;
-  }
+  .carousel-item:nth-child(1) .page-header-container { padding: 0 0 0 0.8rem; }
+  .carousel-item:nth-child(2) .page-header-container { padding: 0 0.5rem; }
+  .carousel-item:nth-child(3) .page-header-container { padding: 0 0.8rem 0 0; }
+  .page-header-container { min-height: 120px; }
+  .page-header__title { font-size: 1rem; }
+  .page-header__subtitle { font-size: 0.65rem; line-height: 1.3; }
+  .page-header__actions { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 0; }
+  .products-header__sort-label { font-size: 0.8rem; margin-right: 0.2rem; }
+  .products-header__sort-select { font-size: 0.75rem; padding: 0.4rem 1rem 0.4rem 0.4rem; min-width: 90px; }
+  .products-header__sort-select option { font-size: 0.75rem; }
+  .filter { margin-bottom: 0.6rem; padding: 0.8rem 0.5rem; }
+  .filter__header { margin-bottom: 0.7rem; padding-bottom: 0.5rem; gap: 0.3rem; }
+  .filter__header-icon { font-size: 0.9rem; }
+  .filter__header-title { font-size: 0.9rem; }
+  .filter__section { margin-bottom: 0.8rem; }
+  .filter__section-title { font-size: 0.6rem; letter-spacing: 0.5px; }
+  .filter__option { padding: 0.2rem 0.3rem; margin-bottom: 0.2rem; }
+  .filter__option-input { width: 0.85rem; height: 0.85rem; margin-right: 0.3rem; }
+  .filter__option-label { font-size: 0.7rem; }
+  .filter__range-text { font-size: 0.7rem; }
+  .products-wrapper { padding: 0.5rem 0.5rem 0 0.5rem; }
+  .products-header { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
+  .products-header__result { font-size: 0.6rem; padding-left: 0.5rem; }
+  .products-header__result::before { width: 2px; height: 60%; }
+  #booksGrid { gap: 0.6rem; padding: 0; }
 }

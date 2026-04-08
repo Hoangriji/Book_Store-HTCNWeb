@@ -62,63 +62,6 @@
   margin-bottom: 30px;
 }
 
-/* card */
-.card-product {
-  width: 300px;
-  height: 500px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  background: white;
-  flex-shrink: 0;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-product:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.card-img-top {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.card-product-body {
-  height: 200px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--color-text-dark);
-  margin-bottom: 10px;
-}
-
-.card-text {
-  height: 48px;
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.5;
-}
-
-.card-price {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-primary);
-}
-
-.card-btn {
-  border: none;
-  width: 100%;
-  padding: 10px;
-  font-size: 18px;
-}
-
 /* testimonials-section */
 .testimonials_section {
   margin: 80px 0;
@@ -188,25 +131,6 @@
 }
 
 /* responsive */
-
-@media (max-width: 1199.98px) {
-  .card-product {
-    width: 280px;
-    height: 500px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .card-product {
-    width: 260px;
-    height: 480px;
-  }
-
-  .card-img-top {
-    height: 280px;
-  }
-}
-
 @media (max-width: 767.98px) {
   .hero_section {
     padding: 50px 30px;
@@ -224,15 +148,6 @@
   .testimonials_section-title {
     font-size: 2rem;
   }
-
-  .card-product {
-    width: 240px;
-    height: 460px;
-  }
-
-  .card-img-top {
-    height: 260px;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -242,14 +157,5 @@
 
   .hero_section-title {
     font-size: 1.5rem;
-  }
-
-  .card-product {
-    width: 280px;
-    height: 450px;
-  }
-
-  .card-img-top {
-    height: 250px;
   }
 }

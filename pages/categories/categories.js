@@ -1,155 +1,63 @@
 const books = [
-    {
-        id: 1,
-        image: "/imgs/categories/productBook1.png",
-        badge: "Mới",
-        title: "Thunmanhandiya",
-        description: "Mahagamasekara",
-        price: 129
-    },
-    {
-        id: 2,
-        image: "/imgs/categories/productBook2.png",
-        badge: "Mới",
-        title: "Modern Science",
-        description: "John Carter",
-        price: 159
-    },
-    {
-        id: 3,
-        image: "/imgs/categories/productBook3.png",
-        badge: "",
-        title: "Economic World",
-        description: "Adam Smith",
-        price: 75
-    },
-    {
-        id: 4,
-        image: "/imgs/categories/productBook4.png",
-        badge: "Mới",
-        title: "Technology Today",
-        description: "Tech Expert",
-        price: 95
-    },
-    {
-        id: 5,
-        image: "/imgs/categories/productBook3.png",
-        badge: "Mới",
-        title: "Literature Classics",
-        description: "Classic Author",
-        price: 110
-    },
-    {
-        id: 6,
-        image: "/imgs/categories/productBook2.png",
-        badge: "Mới",
-        title: "Business Management",
-        description: "Management Guru",
-        price: 135
-    }
+    { id: 1, img: '/imgs/categories/productBook1.png', alt: 'Thunmanhandiya',     title: 'Thunmanhandiya',     desc: 'Mahagamasekara',   price: '129.00', badge: 'Mới', showCart: true },
+    { id: 2, img: '/imgs/categories/productBook2.png', alt: 'Modern Science',      title: 'Modern Science',      desc: 'John Carter',       price: '159.00', badge: 'Mới', showCart: true },
+    { id: 3, img: '/imgs/categories/productBook3.png', alt: 'Economic World',      title: 'Economic World',      desc: 'Adam Smith',        price: '75.00',  badge: '',    showCart: true },
+    { id: 4, img: '/imgs/categories/productBook4.png', alt: 'Technology Today',    title: 'Technology Today',    desc: 'Tech Expert',       price: '95.00',  badge: 'Mới', showCart: true },
+    { id: 5, img: '/imgs/categories/productBook3.png', alt: 'Literature Classics', title: 'Literature Classics', desc: 'Classic Author',    price: '110.00', badge: 'Mới', showCart: true },
+    { id: 6, img: '/imgs/categories/productBook2.png', alt: 'Business Management', title: 'Business Management', desc: 'Management Guru',   price: '135.00', badge: 'Mới', showCart: true },
 ];
 
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.getElementById("pageCarousel");
-    if (carousel && typeof bootstrap !== "undefined") {
-        const bsCarousel = new bootstrap.Carousel(carousel, {
-            interval: 3000,
-            pause: false,
-            ride: "carousel"
-        });
-        bsCarousel.cycle();
+document.addEventListener('DOMContentLoaded', function () {
+    // carousel
+    const carousel = document.getElementById('pageCarousel');
+    if (carousel && typeof bootstrap !== 'undefined') {
+        new bootstrap.Carousel(carousel, { interval: 3000, pause: false, ride: 'carousel' }).cycle();
     }
 
-    const minInput = document.getElementById("minPrice");
-    const maxInput = document.getElementById("maxPrice");
-    const rangeText = document.getElementById("priceRangeText");
-    const rangeSlider = document.querySelector(".range-slider");
+    // price range
+    const minInput = document.getElementById('minPrice');
+    const maxInput = document.getElementById('maxPrice');
+    const rangeText = document.getElementById('priceRangeText');
+    const rangeSlider = document.querySelector('.range-slider');
 
     let progress;
-
     if (rangeSlider) {
-        progress = document.createElement("div");
-        progress.classList.add("range-progress");
+        progress = document.createElement('div');
+        progress.classList.add('range-progress');
         rangeSlider.appendChild(progress);
     }
 
     function updateRange() {
         if (!minInput || !maxInput || !progress || !rangeText) return;
-
         let min = parseInt(minInput.value);
         let max = parseInt(maxInput.value);
-
-        if (min > max) {
-            [min, max] = [max, min];
-            minInput.value = min;
-            maxInput.value = max;
-        }
-
-        const percentMin = (min / minInput.max) * 100;
-        const percentMax = (max / maxInput.max) * 100;
-
-        progress.style.left = percentMin + "%";
-        progress.style.width = (percentMax - percentMin) + "%";
-
+        if (min > max) { [min, max] = [max, min]; minInput.value = min; maxInput.value = max; }
+        progress.style.left = (min / minInput.max * 100) + '%';
+        progress.style.width = ((max - min) / maxInput.max * 100) + '%';
         rangeText.textContent = `$${min} - $${max}`;
     }
 
     if (minInput && maxInput) {
-        minInput.addEventListener("input", updateRange);
-        maxInput.addEventListener("input", updateRange);
+        minInput.addEventListener('input', updateRange);
+        maxInput.addEventListener('input', updateRange);
         updateRange();
     }
 
-    renderBooks(books);
+    // render cards
+    renderCards('booksGrid', books);
+
+    // update result text
+    const resultsText = document.querySelector('.products-header__result');
+    if (resultsText) resultsText.textContent = `Showing ${books.length} of ${books.length} results`;
 });
-
-function renderBooks(bookList) {
-    const booksGrid = document.getElementById("booksGrid");
-    if (!booksGrid) return;
-
-    booksGrid.innerHTML = "";
-
-    bookList.forEach(book => {
-        booksGrid.innerHTML += `
-            <div class="col-auto">
-                <div class="book-card" data-book-id="${book.id}">
-                    <div class="book-card__image-wrapper">
-                        <img src="${book.image}" class="book-card__image" alt="${book.title}">
-                        ${book.badge ? `<span class="book-card__badge">${book.badge}</span>` : ""}
-                    </div>
-
-                    <div class="book-card__body">
-                        <div class="book-card__content">
-                            <h4 class="book-card__title">${book.title}</h4>
-                            <p class="book-card__description">${book.description}</p>
-                            <div class="book-card__price-wrapper">
-                                <span class="book-card__price">$${book.price}.00</span>
-                            </div>
-                        </div>
-
-                        <div class="book-card__actions">
-                            <button class="btn btn-primary book-card__detail-btn" onclick="goToDetail(${book.id})">
-                                View Details
-                            </button>
-
-                            <button class="book-card__cart-btn" onclick="addToCart(event, ${book.id})">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `;
-    });
-
-    const resultsText = document.querySelector(".products-header__result");
-    if (resultsText) {
-        resultsText.textContent = `Showing ${bookList.length} of ${books.length} results`;
-    }
-}
 
 function goToDetail(bookId) {
     window.location.href = `../detailProduct/detailProduct.html?id=${bookId}`;
+}
+
+function addToCart(event, bookId) {
+    event.stopPropagation();
+    console.log('Add to cart:', bookId);
 }
 
 window.goToDetail = goToDetail;
