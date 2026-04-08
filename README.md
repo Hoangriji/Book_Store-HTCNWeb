@@ -12,24 +12,52 @@ Book_Store/
 ├── README.md                       # Tài liệu dự án
 │
 ├── imgs/                           # Thư mục hình ảnh (theo từng module)
-│   └── homePage/                  # Hình ảnh trang chủ
+│   ├── aboutPage/
+│   ├── categories/
+│   ├── contactPage/
+│   ├── detailProduct/
+│   ├── homePage/
+│   └── login/
 │
 ├── pages/                          # Các trang con
-│   ├── homePage/                  # Module trang chủ
-│   │   ├── homePage.css           # CSS riêng
-│   │   └── homePage.js            # Logic riêng
+│   ├── aboutPage/                  # Module trang Về chúng tôi
+│   │   ├── aboutPage.html
+│   │   ├── aboutPage.css
+│   │   └── aboutPage.js
 │   │
-│   └── products/                  # Module sản phẩm
+│   ├── cartPage/...                # Module giỏ hàng
+│   │
+│   ├── categories/...              # Module danh mục sản phẩm
+│   │
+│   ├── contactPage/...             # Module liên hệ
+│   │
+│   ├── detailProduct/...           # Module chi tiết sản phẩm
+│   │
+│   ├── homePage/                   # Module trang chủ
+│   │   ├── homePage.css
+│   │   └── homePage.js
+│   │
+│   ├── login/...                   # Module đăng nhập
+│   │
+│   └── register/...                # Module đăng ký
 │
 └── shared/                         # Tài nguyên dùng chung
     ├── css/                        # Stylesheets chung
-    │   ├── bootstrap.min.css      # Bootstrap framework
-    │   ├── style.css              # Global styles + layout + components
-    │   └── variables.css          # Biến CSS
+    │   ├── bootstrap.min.css       # Bootstrap framework
+    │   ├── style.css               # Global styles + layout
+    │   ├── variables.css           # Biến CSS (màu sắc, spacing, font)
+    │   └── components/
+    │       ├── card.css            # Styles cho card component
+    │       ├── header.css          # Styles cho header
+    │       └── footer.css          # Styles cho footer
     │
     └── js/                         # JavaScript chung
         ├── bootstrap.bundle.min.js # Bootstrap JS
-        └── main.js                # Entry point chính + components
+        ├── main.js                 # Entry point chính
+        └── components/
+            ├── header.js           # Component header
+            ├── footer.js           # Component footer
+            └── card.js             # Component card
 ```
 
 ## Nguyên Tắc Tổ Chức Code
