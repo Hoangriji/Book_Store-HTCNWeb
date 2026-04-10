@@ -36,15 +36,20 @@
 }
 
 /* Book Image*/
+.book-detail__image {
+    width: 100%;          
+    max-width: 400px;     
+    height: auto;         
+    object-fit: contain;   
+    border-radius: 10px;
+}
+
 .book-detail__image-wrapper {
-    background: #e8eff5;
+    overflow: hidden;    
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 0 40px rgba(5, 19, 40, 0.15);
+    background: #f8f9fa;   
 }
 
 
@@ -334,7 +339,7 @@
 .customer-reviews {
     background: linear-gradient(135deg, #071a26, #0e2f3d);
     padding: 30px;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 1rem 0;
     border-radius: 24px;
 }
 

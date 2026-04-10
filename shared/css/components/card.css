@@ -111,7 +111,7 @@
     right: 0;
     bottom: 0;
     background: #fff;
-    opacity: 0.7; /* Tạo hiệu ứng màu nhạt hơn từ chính biến primary */
+    opacity: 0.7; 
     z-index: 0;
 }
 
@@ -134,11 +134,15 @@
 }
 
 .card-product--sale {
-    width: 180px;
+    width: 240px;
     border-radius: 8px;
     box-shadow: none;
     border: none;
-    background: transparent;
+    background: #ffffff;
+}
+
+.card-product--sale:hover {
+    transform: translateY(-4px);
 }
 
 .card-product--sale .card-img-top {

@@ -1,61 +1,79 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const books = [
-        {
-            id: 1,
-            image: "/imgs/categories/productBook1.png",
-            title: "Thunmanhandiya",
-            description: "Mahagamasekara",
-            price: 129
-        },
-        {
-            id: 2,
-            image: "/imgs/categories/productBook2.png",
-            title: "Modern Science",
-            description: "John Carter",
-            price: 159
-        },
-        {
-            id: 3,
-            image: "/imgs/categories/productBook3.png",
-            badge: "",
-            title: "Economic World",
-            description: "Adam Smith",
-            price: 75
-        },
-        {
-            id: 4,
-            image: "/imgs/categories/productBook4.png",
-            badge: "Mới",
-            title: "Technology Today",
-            description: "Tech Expert",
-            price: 95
-        },
-        {
-            id: 5,
-            image: "/imgs/categories/productBook3.png",
-            badge: "Mới",
-            title: "Literature Classics",
-            description: "Classic Author",
-            price: 110
-        },
-        {
-            id: 6,
-            image: "/imgs/categories/productBook2.png",
-            badge: "Mới",
-            title: "Business Management",
-            description: "Management Guru",
-            price: 135
-        }
-    ];
+// Hàm xử lý link ảnh Drive
+function getDirectDriveLink(url) {
+    if (url && url.includes('drive.google.com')) {
+        const fileId = url.split('id=')[1];
+        return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
+    }
+    return url;
+}
 
+document.addEventListener("DOMContentLoaded", async function () {
     const params = new URLSearchParams(window.location.search);
     const bookId = parseInt(params.get("id"));
 
-    const book = books.find(b => b.id === bookId);
-    if (!book) return;
+    if (!bookId) return;
 
-    document.getElementById("detailImage").src = book.image;
-    document.getElementById("detailTitle").textContent = book.title;
-    document.getElementById("detailAuthor").textContent = "by " + book.description;
-    document.getElementById("detailPrice").textContent = `$${book.price}.00`;
+    try {
+        // Fetch dữ liệu từ file JSON chung
+        const response = await fetch('../../shared/sach.json');
+        const data = await response.json();
+        const allBooks = data.books;
+
+        // Tìm sách theo ID
+        const book = allBooks.find(b => b.id === bookId);
+        if (!book) return;
+
+        // Đổ dữ liệu vào HTML
+        document.getElementById("detailImage").src = getDirectDriveLink(book.image);
+        document.getElementById("detailTitle").textContent = book.title;
+        document.getElementById("detailAuthor").textContent = book.author;
+        document.getElementById("detailPrice").textContent = book.price.toLocaleString('vi-VN') + "đ";
+        
+        document.getElementById("breadcrumbTitle").textContent = book.title;
+        document.getElementById("detailEdition").textContent = book.categories ? book.categories.join(" / ") : "Sách chọn lọc";
+
+        if (book.originalPrice) {
+            document.getElementById("originalPriceWrapper").style.display = "block";
+            document.getElementById("detailOriginalPrice").textContent = book.originalPrice;
+            document.getElementById("detailSaveBadge").textContent = "TIẾT KIỆM";
+        }
+
+        document.getElementById("detailDescription").innerHTML = `
+            <p>${book.description}</p>
+            <p>${book.summaryDoc || ''}</p>
+        `;
+
+        if (book.specs) {
+            const specsHtml = `
+                <div class="product-specs__card">
+                    <span class="product-specs__label">ISBN-13</span>
+                    <span class="product-specs__value">${book.specs.isbn || 'N/A'}</span>
+                </div>
+                <div class="product-specs__card">
+                    <span class="product-specs__label">Ngôn Ngữ</span>
+                    <span class="product-specs__value">${book.specs.language || 'Tiếng Việt'}</span>
+                </div>
+                <div class="product-specs__card">
+                    <span class="product-specs__label">Nhà Xuất Bản</span>
+                    <span class="product-specs__value">${book.specs.publisher || 'N/A'}</span>
+                </div>
+                <div class="product-specs__card">
+                    <span class="product-specs__label">Số Trang</span>
+                    <span class="product-specs__value">${book.specs.pages || 'N/A'}</span>
+                </div>
+                <div class="product-specs__card">
+                    <span class="product-specs__label">Ngày Xuất Bản</span>
+                    <span class="product-specs__value">${book.specs.publishDate || 'N/A'}</span>
+                </div>
+                <div class="product-specs__card">
+                    <span class="product-specs__label">Kích Thước</span>
+                    <span class="product-specs__value">${book.specs.dimensions || 'N/A'}</span>
+                </div>
+            `;
+            document.getElementById("detailSpecs").innerHTML = specsHtml;
+        }
+
+    } catch (error) {
+        console.error("Lỗi khi tải dữ liệu chi tiết:", error);
+    }
 });
