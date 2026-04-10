@@ -1,16 +1,20 @@
 function getDirectDriveLink(url) {
     if (url && url.includes('drive.google.com')) {
         const fileId = url.split('id=')[1];
-        return `https://lh3.googleusercontent.com/d/${fileId}`;
+        return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
     }
     return url;
 }
 
+function getBooksFromStorage() {
+    const data = localStorage.getItem('allBooks');
+    return data ? JSON.parse(data) : [];
+}
+
 async function initHomePage() {
     try {
-        const response = await fetch('/shared/sach.json');
-        const data = await response.json();
-        const allBooks = data.books;
+        const allBooks = getBooksFromStorage();
+        if (allBooks.length === 0) return;
 
         const trendingBooks = allBooks.slice(0, 10).map(book => ({
             ...book,
@@ -40,13 +44,11 @@ async function initHomePage() {
         ];
         renderFeaturedCategories(featuredCategories);
 
-        // xem them
         const viewMoreBtn = document.querySelector('.section-viewmore-btn');
         if (viewMoreBtn) {
             viewMoreBtn.href = `/pages/categories/categories.html?from=trending`;
         }
 
-        // xem tat ca
         const viewAllBtn = document.querySelector('.sale_section-viewall');
         if (viewAllBtn) {
             viewAllBtn.href = `/pages/categories/categories.html?from=sale`;

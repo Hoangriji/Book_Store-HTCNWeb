@@ -6,28 +6,29 @@ function getDirectDriveLink(url) {
     return url;
 }
 
-document.addEventListener("DOMContentLoaded", async function () {
+function getBooksFromStorage() {
+    const data = localStorage.getItem('allBooks');
+    return data ? JSON.parse(data) : [];
+}
+
+document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     const bookId = parseInt(params.get("id"));
 
     if (!bookId) return;
 
     try {
-        const response = await fetch('../../shared/sach.json');
-        const data = await response.json();
-        const allBooks = data.books;
-
-        // Tìm sách theo ID
+        const allBooks = getBooksFromStorage();
         const book = allBooks.find(b => b.id === bookId);
+        
         if (!book) return;
 
-        // Đổ dữ liệu vào HTML
         document.getElementById("detailImage").src = getDirectDriveLink(book.image);
         document.getElementById("detailTitle").textContent = book.title;
         document.getElementById("detailAuthor").textContent = book.author;
         document.getElementById("detailPrice").textContent = book.price.toLocaleString('vi-VN') + "đ";
-
         document.getElementById("breadcrumbTitle").textContent = book.title;
+        
         document.getElementById("detailEdition").textContent = book.categories
             ? book.categories.join(" / ")
             : "Sách chọn lọc";
@@ -72,7 +73,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             `;
         }
 
-        // Render sản phẩm liên quan: 4 card ngẫu nhiên, loại trừ sách hiện tại
         const related = allBooks
             .filter(b => b.id !== bookId)
             .sort(() => Math.random() - 0.5)
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         renderCards('relatedGrid', related);
 
     } catch (error) {
-        console.error("Lỗi khi tải dữ liệu chi tiết:", error);
+        console.error(error);
     }
 });
 
@@ -97,4 +97,3 @@ function updateQty(change) {
     if (val < 1) val = 1;
     input.value = val;
 }
-

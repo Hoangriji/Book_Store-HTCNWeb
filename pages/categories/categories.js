@@ -8,6 +8,11 @@ function getDirectDriveLink(url) {
     return url;
 }
 
+function getBooksFromStorage() {
+    const data = localStorage.getItem('allBooks');
+    return data ? JSON.parse(data) : [];
+}
+
 function filterAndRender(minPrice, maxPrice) {
     if (!globalAllBooks.length) return;
 
@@ -19,16 +24,12 @@ function filterAndRender(minPrice, maxPrice) {
     const sortType = sortSelect ? sortSelect.value : 'Giá: Thấp đến Cao';
 
     let filtered = globalAllBooks.filter(book => {
-        // Lọc theo giá
         const matchPrice = book.price >= minPrice && book.price <= maxPrice;
-        
-        // Logic lọc theo tình trạng:
         let matchCondition = true;
         if (!isAllSelected) {
             const hasNewBadge = book.id % 3 === 0; 
             matchCondition = isNewSelected ? hasNewBadge : !hasNewBadge;
         }
-        
         return matchPrice && matchCondition;
     });
 
@@ -53,42 +54,32 @@ function filterAndRender(minPrice, maxPrice) {
     }
 }
 
-async function initCategoriesPage() {
-    try {
-        const allCondRadio = document.getElementById('allCondition');
-        if (allCondRadio) allCondRadio.checked = true;
+function initCategoriesPage() {
+    const allCondRadio = document.getElementById('allCondition');
+    if (allCondRadio) allCondRadio.checked = true;
 
-        const response = await fetch('../../shared/sach.json');
-        const data = await response.json();
-        const allBooks = data.books;
+    const allBooks = getBooksFromStorage();
+    if (allBooks.length === 0) return;
 
-        const params = new URLSearchParams(window.location.search);
-        const from = params.get('from');
-        const cat = params.get('cat') ? decodeURIComponent(params.get('cat')) : null;
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get('from');
+    const cat = params.get('cat') ? decodeURIComponent(params.get('cat')) : null;
 
-        let sortedBooks = [...allBooks];
+    let sortedBooks = [...allBooks];
 
-        if (from === 'trending') {
-            const trending = allBooks.slice(0, 10);
-            const others = allBooks.slice(10);
-            sortedBooks = [...trending, ...others];
-        } else if (from === 'sale') {
-            const sale = allBooks.slice(10, 18);
-            const others = [...allBooks.slice(0, 10), ...allBooks.slice(18)];
-            sortedBooks = [...sale, ...others];
-        } else if (from === 'category' && cat) {
-            const matched = allBooks.filter(b => b.categories.includes(cat));
-            const unmatched = allBooks.filter(b => !b.categories.includes(cat));
-            sortedBooks = [...matched, ...unmatched];
-            tickCategoryCheckbox(cat);
-        }
-
-        globalAllBooks = sortedBooks;
-        filterAndRender(0, 600000);
-
-    } catch (error) {
-        console.error("Lỗi khi tải dữ liệu sản phẩm:", error);
+    if (from === 'trending') {
+        sortedBooks = [...allBooks.slice(0, 10), ...allBooks.slice(10)];
+    } else if (from === 'sale') {
+        sortedBooks = [...allBooks.slice(10, 18), ...allBooks.slice(0, 10), ...allBooks.slice(18)];
+    } else if (from === 'category' && cat) {
+        const matched = allBooks.filter(b => b.categories.includes(cat));
+        const unmatched = allBooks.filter(b => !b.categories.includes(cat));
+        sortedBooks = [...matched, ...unmatched];
+        tickCategoryCheckbox(cat);
     }
+
+    globalAllBooks = sortedBooks;
+    filterAndRender(0, 600000);
 }
 
 function tickCategoryCheckbox(catName) {
@@ -118,16 +109,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const progress = document.getElementById('rangeProgress');
     const priceBtns = document.querySelectorAll('.price-btn');
     const conditionRadios = document.querySelectorAll('input[name="condition"]');
-    
     const sortSelect = document.querySelector('.products-header__sort-select');
 
     function updateRangeLogic() {
         if (!minInput || !maxInput) return;
         let minVal = parseInt(minInput.value) * 6000;
         let maxVal = parseInt(maxInput.value) * 6000;
-
         if (minVal > maxVal) [minVal, maxVal] = [maxVal, minVal];
-
         if (progress) {
             progress.style.left = (minVal / 600000 * 100) + '%';
             progress.style.width = ((maxVal - minVal) / 600000 * 100) + '%';
@@ -138,34 +126,20 @@ document.addEventListener('DOMContentLoaded', function () {
         filterAndRender(minVal, maxVal);
     }
 
-    if (sortSelect) {
-        sortSelect.addEventListener('change', updateRangeLogic);
-    }
-
-    conditionRadios.forEach(radio => {
-        radio.addEventListener('change', updateRangeLogic);
-    });
+    if (sortSelect) sortSelect.addEventListener('change', updateRangeLogic);
+    conditionRadios.forEach(radio => radio.addEventListener('change', updateRangeLogic));
 
     if (minInput && maxInput) {
-        minInput.addEventListener('input', () => {
-            priceBtns.forEach(b => b.classList.remove('active'));
-            updateRangeLogic();
-        });
-        maxInput.addEventListener('input', () => {
-            priceBtns.forEach(b => b.classList.remove('active'));
-            updateRangeLogic();
-        });
+        minInput.addEventListener('input', updateRangeLogic);
+        maxInput.addEventListener('input', updateRangeLogic);
     }
 
     priceBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             priceBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            
-            let min = 0, max = 1000000;
+            let min = 0, max = 600000;
             if (this.textContent.includes('Trên 100k')) min = 100000;
-            else if (this.textContent.includes('Tất cả')) min = 0;
-            
             minInput.value = min / 6000;
             maxInput.value = max / 6000;
             updateRangeLogic();
@@ -177,9 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (firstFilterGroup) {
         const filterOptions = firstFilterGroup.querySelectorAll('.filter__option');
         if (filterOptions.length > SHOW_COUNT) {
-            filterOptions.forEach((opt, index) => {
-                if (index >= SHOW_COUNT) opt.style.display = 'none';
-            });
+            filterOptions.forEach((opt, index) => { if (index >= SHOW_COUNT) opt.style.display = 'none'; });
             const toggleBtn = document.createElement('span');
             toggleBtn.className = 'filter-toggle-btn';
             toggleBtn.textContent = 'Xem thêm ▾';
@@ -187,20 +159,14 @@ document.addEventListener('DOMContentLoaded', function () {
             let expanded = false;
             toggleBtn.addEventListener('click', () => {
                 expanded = !expanded;
-                filterOptions.forEach((opt, index) => {
-                    if (index >= SHOW_COUNT) opt.style.display = expanded ? 'flex' : 'none';
-                });
+                filterOptions.forEach((opt, index) => { if (index >= SHOW_COUNT) opt.style.display = expanded ? 'flex' : 'none'; });
                 toggleBtn.textContent = expanded ? 'Thu gọn ▴' : 'Xem thêm ▾';
             });
         }
     }
 
     const resetBtn = document.querySelector('.filter-reset');
-    if (resetBtn) {
-        resetBtn.addEventListener('click', () => {
-            location.reload();
-        });
-    }
+    if (resetBtn) resetBtn.addEventListener('click', () => { location.reload(); });
 
     initCategoriesPage();
 });

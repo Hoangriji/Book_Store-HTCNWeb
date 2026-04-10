@@ -1,15 +1,24 @@
 import { header } from './components/header.js';
 import { footer } from './components/footer.js';
 
-const main = () => {
-    // render header
-    header();
-
-    // render footer
-    footer();
+const initData = async () => {
+    if (!localStorage.getItem('allBooks')) {
+        try {
+            const response = await fetch('/shared/sach.json');
+            const data = await response.json();
+            localStorage.setItem('allBooks', JSON.stringify(data.books));
+        } catch (error) {
+            console.error(error);
+        }
+    }
 };
 
-// kiểm tra DOM load xong chưa
+const main = async () => {
+    header();
+    footer();
+    await initData();
+};
+
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', main);
 } else {
