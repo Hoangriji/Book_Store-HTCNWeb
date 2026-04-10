@@ -474,7 +474,7 @@ aside {
 #booksGrid {
     display: flex !important;
     flex-wrap: wrap !important;
-    justify-content: center !important; /* Căn giữa các card trong hàng */
+    justify-content: center !important; 
     gap: 1.5rem;
     width: 100%;
     margin: 0 auto;
@@ -485,11 +485,11 @@ aside {
   #booksGrid > div {
       display: flex;
       justify-content: center;
-      width: 100%; /* Đảm bảo mỗi card chiếm 1 hàng và nằm giữa */
+      width: 100%; 
   }
 
   .products-header {
-      align-items: center !important; /* Căn giữa text tiêu đề mobile */
+      align-items: center !important; 
       text-align: center;
   }
   .aside-wrapper { 
