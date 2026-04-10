@@ -566,7 +566,7 @@ aside {
         flex-wrap: wrap !important;
         flex-direction: row !important; 
         justify-content: center !important;
-        gap: 10px !important;
+        gap: 20px !important;
         padding: 10px !important;
         width: 100% !important;
         margin: 0 auto !important;
