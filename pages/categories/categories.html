@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/shared/css/components/card.css">
     <link rel="stylesheet" href="/shared/css/components/header.css">
     <link rel="stylesheet" href="/shared/css/components/footer.css">
-    <!-- icon awesome free -->
     <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -56,127 +55,116 @@
         </div>
 
         <div class="container">
-            <!-- Main Content -->
             <div class="categories-main">
                 <div class="row g-4">
 
-                    <!-- Sidebar filter -->
-                    <aside class="col-lg-3">
-
-                        <!-- Filter: Danh mục -->
-                        <div class="filter-group">
-                            <div class="filter-group__header-bg">
-                                <h3 class="filter-group__title-white">DANH MỤC</h3>
-                            </div>
-                            <div class="filter-group__content">
-                                <div class="filter__option">
-                                    <label class="filter__option-wrapper">
-                                        <input type="checkbox" id="cat1" class="filter__option-input">
-                                        <span class="filter__option-label">Triết Học</span>
-                                    </label>
+                    <!-- Sidebar filter: wrapper dùng col-lg-3 cho Bootstrap -->
+                    <div class="aside-wrapper col-lg-3">
+                        <aside>
+                            <!-- Filter: Danh mục -->
+                            <div class="filter-group">
+                                <div class="filter-group__header-bg">
+                                    <h3 class="filter-group__title-white">DANH MỤC</h3>
                                 </div>
-
-                                <div class="filter__option">
-                                    <label class="filter__option-wrapper">
-                                        <input type="checkbox" id="cat2" class="filter__option-input">
-                                        <span class="filter__option-label">Giáo Trình</span>
-                                    </label>
-                                </div>
-
-                                <div class="filter__option">
-                                    <label class="filter__option-wrapper">
-                                        <input type="checkbox" id="cat3" class="filter__option-input">
-                                        <span class="filter__option-label">Công Nghệ</span>
-                                    </label>
-                                </div>
-
-                                <div class="filter__option">
-                                    <label class="filter__option-wrapper">
-                                        <input type="checkbox" id="cat4" class="filter__option-input">
-                                        <span class="filter__option-label">Kinh Tế</span>
-                                    </label>
-                                </div>
-
-                                <div class="filter__option">
-                                    <label class="filter__option-wrapper">
-                                        <input type="checkbox" id="cat5" class="filter__option-input">
-                                        <span class="filter__option-label">Tâm Lý Học</span>
-                                    </label>
-                                </div>
-
-                                <div class="filter__option">
-                                    <label class="filter__option-wrapper">
-                                        <input type="checkbox" id="cat6" class="filter__option-input">
-                                        <span class="filter__option-label">Văn Học</span>
-                                    </label>
-                                </div>
-
-                                <div class="filter__option">
-                                    <label class="filter__option-wrapper">
-                                        <input type="checkbox" id="cat7" class="filter__option-input">
-                                        <span class="filter__option-label">Ngoại Ngữ</span>
-                                    </label>
-                                </div>
-
-                                <div class="filter__option">
-                                    <label class="filter__option-wrapper">
-                                        <input type="checkbox" id="cat8" class="filter__option-input">
-                                        <span class="filter__option-label">Kỹ Năng</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Filter: Giá -->
-                        <div class="filter-group">
-                            <div class="filter-group__header-bg">
-                                <h3 class="filter-group__title-white">LỌC THEO GIÁ</h3>
-                            </div>
-                            <div class="filter-group__content">
-                                <div class="price-options">
-                                    <button class="price-btn active">Tất cả</button>
-                                    <button class="price-btn">Trên 100k</button>
-                                </div>
-                                <div class="filter__section-header">
-                                    <span class="filter__range-text" id="priceRangeText">0đ - 600.000đ</span>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-track"></div>
-                                    <div class="range-progress" id="rangeProgress"></div>
-                                    <input type="range" min="0" max="100" value="0" id="minPrice" class="range-input">
-                                    <input type="range" min="0" max="100" value="100" id="maxPrice" class="range-input">
-                                </div>
-                                <div class="filter__condition-section">
-                                    <h4 class="filter__sub-title">TÌNH TRẠNG SÁCH</h4>
-                                    
+                                <div class="filter-group__content">
                                     <div class="filter__option">
                                         <label class="filter__option-wrapper">
-                                            <input type="radio" name="condition" id="allCondition" class="filter__option-input" checked>
-                                            <span class="filter__option-label">Tất cả sách</span>
+                                            <input type="checkbox" id="cat1" class="filter__option-input">
+                                            <span class="filter__option-label">Triết Học</span>
                                         </label>
                                     </div>
-
                                     <div class="filter__option">
                                         <label class="filter__option-wrapper">
-                                            <input type="radio" name="condition" id="newBook" class="filter__option-input">
-                                            <span class="filter__option-label">Sách mới</span>
+                                            <input type="checkbox" id="cat2" class="filter__option-input">
+                                            <span class="filter__option-label">Giáo Trình</span>
                                         </label>
                                     </div>
-
                                     <div class="filter__option">
                                         <label class="filter__option-wrapper">
-                                            <input type="radio" name="condition" id="oldBook" class="filter__option-input">
-                                            <span class="filter__option-label">Sách cũ</span>
+                                            <input type="checkbox" id="cat3" class="filter__option-input">
+                                            <span class="filter__option-label">Công Nghệ</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__option">
+                                        <label class="filter__option-wrapper">
+                                            <input type="checkbox" id="cat4" class="filter__option-input">
+                                            <span class="filter__option-label">Kinh Tế</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__option">
+                                        <label class="filter__option-wrapper">
+                                            <input type="checkbox" id="cat5" class="filter__option-input">
+                                            <span class="filter__option-label">Tâm Lý Học</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__option">
+                                        <label class="filter__option-wrapper">
+                                            <input type="checkbox" id="cat6" class="filter__option-input">
+                                            <span class="filter__option-label">Văn Học</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__option">
+                                        <label class="filter__option-wrapper">
+                                            <input type="checkbox" id="cat7" class="filter__option-input">
+                                            <span class="filter__option-label">Ngoại Ngữ</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__option">
+                                        <label class="filter__option-wrapper">
+                                            <input type="checkbox" id="cat8" class="filter__option-input">
+                                            <span class="filter__option-label">Kỹ Năng</span>
                                         </label>
                                     </div>
                                 </div>
-                                <div class="filter-reset-wrapper">
-                                    <span class="filter-reset">Đặt lại</span>
+                            </div>
+
+                            <!-- Filter: Giá -->
+                            <div class="filter-group">
+                                <div class="filter-group__header-bg">
+                                    <h3 class="filter-group__title-white">LỌC THEO GIÁ</h3>
+                                </div>
+                                <div class="filter-group__content">
+                                    <div class="price-options">
+                                        <button class="price-btn active">Tất cả</button>
+                                        <button class="price-btn">Trên 100k</button>
+                                    </div>
+                                    <div class="filter__section-header">
+                                        <span class="filter__range-text" id="priceRangeText">0đ - 600.000đ</span>
+                                    </div>
+                                    <div class="range-slider-container">
+                                        <div class="range-track"></div>
+                                        <div class="range-progress" id="rangeProgress"></div>
+                                        <input type="range" min="0" max="100" value="0" id="minPrice" class="range-input">
+                                        <input type="range" min="0" max="100" value="100" id="maxPrice" class="range-input">
+                                    </div>
+                                    <div class="filter__condition-section">
+                                        <h4 class="filter__sub-title">TÌNH TRẠNG SÁCH</h4>
+                                        <div class="filter__option">
+                                            <label class="filter__option-wrapper">
+                                                <input type="radio" name="condition" id="allCondition" class="filter__option-input" checked>
+                                                <span class="filter__option-label">Tất cả sách</span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__option">
+                                            <label class="filter__option-wrapper">
+                                                <input type="radio" name="condition" id="newBook" class="filter__option-input">
+                                                <span class="filter__option-label">Sách mới</span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__option">
+                                            <label class="filter__option-wrapper">
+                                                <input type="radio" name="condition" id="oldBook" class="filter__option-input">
+                                                <span class="filter__option-label">Sách cũ</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="filter-reset-wrapper">
+                                        <span class="filter-reset">Đặt lại</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </aside>
+                        </aside>
+                    </div>
 
                     <!-- Products Grid -->
                     <main class="col-lg-9">

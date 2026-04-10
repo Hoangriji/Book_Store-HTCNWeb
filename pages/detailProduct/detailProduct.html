@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/shared/css/bootstrap.min.css">
     <link rel="stylesheet" href="/shared/css/components/header.css">
     <link rel="stylesheet" href="/shared/css/components/footer.css">
+    <link rel="stylesheet" href="/shared/css/components/card.css">
     <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -131,11 +132,17 @@
                 </div>
             </div>
         </section>
+
+        <section class="related-books">
+            <h3 class="related-books__title">Sản Phẩm Liên Quan</h3>
+            <div class="row g-4 justify-content-between" id="relatedGrid"></div>
+        </section>
     </div>
 </div>
 
 <footer class="inner-footer"></footer>
 <script type="module" src="/shared/js/main.js"></script>
+<script src="/shared/js/components/card.js"></script>
 <script src="detailProduct.js"></script>
 <script>
     function updateQty(change) {

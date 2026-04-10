@@ -1,4 +1,3 @@
-// Hàm xử lý link ảnh Drive
 function getDirectDriveLink(url) {
     if (url && url.includes('drive.google.com')) {
         const fileId = url.split('id=')[1];
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     if (!bookId) return;
 
     try {
-        // Fetch dữ liệu từ file JSON chung
         const response = await fetch('../../shared/sach.json');
         const data = await response.json();
         const allBooks = data.books;
@@ -28,9 +26,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         document.getElementById("detailTitle").textContent = book.title;
         document.getElementById("detailAuthor").textContent = book.author;
         document.getElementById("detailPrice").textContent = book.price.toLocaleString('vi-VN') + "đ";
-        
+
         document.getElementById("breadcrumbTitle").textContent = book.title;
-        document.getElementById("detailEdition").textContent = book.categories ? book.categories.join(" / ") : "Sách chọn lọc";
+        document.getElementById("detailEdition").textContent = book.categories
+            ? book.categories.join(" / ")
+            : "Sách chọn lọc";
 
         if (book.originalPrice) {
             document.getElementById("originalPriceWrapper").style.display = "block";
@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
 
         document.getElementById("detailDescription").innerHTML = `
-            <p>${book.description}</p>
+            <p>${book.description || ''}</p>
             <p>${book.summaryDoc || ''}</p>
         `;
 
         if (book.specs) {
-            const specsHtml = `
+            document.getElementById("detailSpecs").innerHTML = `
                 <div class="product-specs__card">
                     <span class="product-specs__label">ISBN-13</span>
                     <span class="product-specs__value">${book.specs.isbn || 'N/A'}</span>
@@ -70,10 +70,30 @@ document.addEventListener("DOMContentLoaded", async function () {
                     <span class="product-specs__value">${book.specs.dimensions || 'N/A'}</span>
                 </div>
             `;
-            document.getElementById("detailSpecs").innerHTML = specsHtml;
         }
+
+        // Render sản phẩm liên quan: 4 card ngẫu nhiên, loại trừ sách hiện tại
+        const related = allBooks
+            .filter(b => b.id !== bookId)
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 5)
+            .map(b => ({
+                ...b,
+                img: getDirectDriveLink(b.image),
+                price: b.price.toLocaleString('vi-VN') + "đ",
+                badge: b.id % 3 === 0 ? 'Mới' : ''
+            }));
+
+        renderCards('relatedGrid', related);
 
     } catch (error) {
         console.error("Lỗi khi tải dữ liệu chi tiết:", error);
     }
 });
+
+function updateQty(change) {
+    const input = document.getElementById('qtyInput');
+    let val = parseInt(input.value) + change;
+    if (val < 1) val = 1;
+    input.value = val;
+}

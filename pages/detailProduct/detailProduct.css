@@ -1,4 +1,8 @@
 @import url('/shared/css/style.css');
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .detail-main {
     color: var(--color-background);
@@ -31,7 +35,7 @@
 
 .book-detail {
     background: var(--color-background);
-    padding: 80px 0;
+    padding: 80px 0 0 0;
     color: #fff;
 }
 
@@ -267,7 +271,6 @@
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--color-primary);
-    margin-bottom: 25px;
 }
 
 .product-overview__content {
@@ -277,7 +280,7 @@
 }
 
 .product-overview__content p {
-    margin-bottom: 20px;
+    margin: 0 !important;
 }
 
 .product-overview__list {
@@ -443,7 +446,7 @@
 /* Card */
 .related-books {
     background: var(--color-background);
-    padding: 50px 0;
+    padding: 20px 0;
     margin: 0.5rem 0;
     border-radius: 24px;
 }
@@ -451,7 +454,7 @@
 .related-books__title {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--color-text-dark);
+    color: var(--color-primary);
     margin-bottom: 30px;
 }
 
@@ -531,6 +534,7 @@
 }
 
 @media (max-width: 1199.98px) {
+
     .breadcrumb-section h2 {
         font-size: 2rem;
     }
@@ -545,6 +549,11 @@
 
     .book-detail__title {
         font-size: 2.4rem;
+        padding-left: 4px;
+    }
+
+    .book-detail__author {
+        padding-left: 4px;
     }
 
     .book-detail__price-card {
@@ -582,10 +591,13 @@
 
     .book-detail__title {
         font-size: 2rem;
+        padding-left: 4px;
     }
 
     .book-detail__author {
         font-size: 1.1rem;
+        padding-left: 4px;
+
     }
 
     .book-detail__current-price {
@@ -628,6 +640,16 @@
 }
 
 @media (max-width: 767.98px) {
+    #relatedGrid.justify-content-between {
+        justify-content: center !important;
+    }
+
+    #relatedGrid > .col-auto {
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+    }
+
     .breadcrumb-section {
         padding: 25px 15px;
     }
@@ -647,22 +669,24 @@
     }
 
     .book-detail__image-wrapper {
-        padding: 15px;
-        margin-bottom: 30px;
+        padding: 0;
     }
 
     .book-detail__title {
         font-size: 1.8rem;
+        padding: 12px;
     }
 
     .book-detail__author {
         font-size: 1rem;
+        padding: 12px;
     }
 
     .book-detail__rating {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+        padding: 12px;
     }
 
     .book-detail__current-price {
@@ -688,7 +712,7 @@
     }
 
     .product-overview {
-        padding: 0 0 12px 0;
+        padding: 12px;
     }
 
     .product-overview__title {
@@ -798,10 +822,12 @@
     .book-detail__title {
         font-size: 1.5rem;
         margin-bottom: 12px;
+        padding: 12px;
     }
 
     .book-detail__author {
         font-size: 0.95rem;
+        padding: 12px;
     }
 
     .book-detail__stars {
@@ -909,7 +935,6 @@
     }
 }
 
-/* Tiny devices (very small phones, less than 320px) */
 @media (max-width: 319.98px) {
     .breadcrumb-section {
         padding: 15px 8px;
@@ -937,10 +962,12 @@
     .book-detail__title {
         font-size: 1.2rem;
         margin-bottom: 10px;
+        padding-left: 4px;
     }
 
     .book-detail__author {
         font-size: 0.85rem;
+        padding-left: 4px;
     }
 
     .book-detail__stars {
