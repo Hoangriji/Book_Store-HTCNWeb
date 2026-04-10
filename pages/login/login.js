@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const returnBtn = document.querySelector(".return");
 	const loginForm = document.querySelector("form");
+	const messageBox = document.getElementById("messageBox");
 
 	if (returnBtn) {
 		returnBtn.addEventListener("click", (event) => {
@@ -12,6 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (!loginForm) {
 		return;
 	}
+
+	const showMessage = (message, type = "error") => {
+		messageBox.className = `message-box ${type}`;
+		messageBox.textContent = message;
+		messageBox.style.display = "block";
+		
+		if (type === "success") {
+			setTimeout(() => {
+				messageBox.style.display = "none";
+			}, 2000);
+		}
+	};
 
 	const syncFilledState = (input) => {
 		if (!input) {
@@ -45,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const password = document.querySelector("#password")?.value || "";
 
 		if (!usernameOrEmail || !password) {
-			alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.");
+			showMessage("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.", "error");
 			return;
 		}
 
@@ -59,12 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 
 		if (!account) {
-			alert("Tài khoản không tồn tại.");
+			showMessage("Tài khoản không tồn tại.", "error");
 			return;
 		}
 
 		if (account.password !== password) {
-			alert("Mật khẩu không chính xác.");
+			showMessage("Mật khẩu không chính xác.", "error");
 			return;
 		}
 
@@ -76,7 +89,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		};
 
 		localStorage.setItem("currentUser", JSON.stringify(loggedUser));
-		alert("Đăng nhập thành công!");
-		window.location.href = "/index.html";
+		showMessage("Đăng nhập thành công!", "success");
+		setTimeout(() => {
+			window.location.href = "/index.html";
+		}, 1500);
 	});
 });
