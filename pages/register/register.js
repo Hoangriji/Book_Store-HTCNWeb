@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const registerForm = document.querySelector("form");
 	const messageBox = document.getElementById("messageBox");
 
+	// returnbtn
 	if (returnBtn) {
 		returnBtn.addEventListener("click", (event) => {
 			event.preventDefault();
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		return;
 	}
 
+	// show message
 	const showMessage = (message, type = "error") => {
 		messageBox.className = `message-box ${type}`;
 		messageBox.textContent = message;
@@ -41,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		input.addEventListener("blur", () => syncFilledState(input));
 	});
 
+	// get data
 	const getUsers = () => {
 		try {
 			const raw = localStorage.getItem("users");
@@ -51,17 +54,20 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	};
 
+	// save data
 	const saveUsers = (users) => {
 		localStorage.setItem("users", JSON.stringify(users));
 	};
 
 	const validateRegisterData = (data, users) => {
+		// validation 
 		const errors = [];
 		const usernameRegex = /^[a-zA-Z0-9_]{4,20}$/;
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		const hasLetter = /[A-Za-z]/.test(data.password);
 		const hasNumber = /\d/.test(data.password);
 
+		// check validation and return errors 
 		if (data.fullname.length < 2) {
 			errors.push("Họ và tên phải có ít nhất 2 ký tự.");
 		}
@@ -99,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		return errors;
 	};
 
+	// handle register
 	registerForm.addEventListener("submit", (event) => {
 		event.preventDefault();
 
@@ -110,14 +117,17 @@ document.addEventListener("DOMContentLoaded", () => {
 			confirmPassword: document.querySelector("#confirmPassword")?.value || "",
 		};
 
+		// get users and validate data
 		const users = getUsers();
 		const errors = validateRegisterData(formData, users);
 
+		// if have error => show message and return
 		if (errors.length > 0) {
 			showMessage(errors.join("\n"), "error");
 			return;
 		}
 
+		// create new user and save to local
 		const newUser = {
 			id: Date.now(),
 			fullname: formData.fullname,
