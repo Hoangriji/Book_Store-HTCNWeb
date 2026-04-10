@@ -568,42 +568,41 @@ aside {
 
 @media (max-width: 767.98px) {
   #booksGrid {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        flex-direction: row !important; 
-        justify-content: center !important;
-        gap: 20px !important;
-        padding: 10px !important;
-        width: 100% !important;
-        margin: 0 auto !important;
-    }
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    padding: 10px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
 
-    #booksGrid > div {
-        flex: 0 0 calc(50% - 15px) !important;
-        max-width: calc(50% - 15px) !important;
-        min-width: 140px !important; 
-        padding: 0 !important;
-        margin: 0 !important;
-        display: flex;
-        justify-content: center;
-    }
+  #booksGrid > div {
+    flex: 0 0 calc(50% - 8px) !important;
+    max-width: calc(50% - 8px) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
 
-    .card-product {
-        width: 100% !important; 
-        max-width: 165px !important; 
-        margin: 0 auto !important;
-    }
+  .card-product {
+    width: 100% !important;
+    max-width: 100% !important; 
+    margin: 0 !important;
+  }
 
-    .card-img-top {
-        height: 110px !important;
-    }
-    .card-title {
-        font-size: 0.85rem !important;
-        height: 1.2rem !important;
-    }
-    .card-price {
-        font-size: 1rem !important;
-    }
+  .card-img-top {
+    height: 110px !important;
+  }
+  .card-title {
+    font-size: 0.85rem !important;
+    height: 1.2rem !important;
+  }
+  .card-price {
+    font-size: 1rem !important;
+  }
   .carousel-item:nth-child(1) .page-header-container { padding: 0 0 0 1.5rem; }
   .carousel-item:nth-child(2) .page-header-container { padding: 0 1rem; }
   .carousel-item:nth-child(3) .page-header-container { padding: 0 1.5rem 0 0; }
