@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FiveH Book Store</title>
+    <title>FiveH Book Store - Chi Tiết Sản Phẩm</title>
     <link rel="stylesheet" href="detailProduct.css">
     <link rel="stylesheet" href="/shared/css/bootstrap.min.css">
     <link rel="stylesheet" href="/shared/css/components/header.css">
     <link rel="stylesheet" href="/shared/css/components/footer.css">
-    <!-- icon awesome free -->
     <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,354 +17,133 @@
 <div class="detail-main">
     <div class="breadcrumb-section">
         <div class="container">
-        <h2>Nắm Vững Kiến Thức: Hành Trình Vượt Ra Ngoài Trang Sách</h2>
-        <p>Một cuốn sách mạnh mẽ giúp bạn mở rộng kiến thức và truyền cảm hứng suy nghĩ sâu sắc.</p>
+            <h2 id="breadcrumbTitle">Hành Trình Vượt Ra Ngoài Trang Sách</h2>
+            <p id="breadcrumbSub">Mở rộng kiến thức và truyền cảm hứng suy nghĩ sâu sắc.</p>
         </div>
     </div>
 
     <div class="book-detail">
-    <div class="container">
-       <div class="row align-items-start g-5">
-        <!-- Book Image -->
-        <div class="col-lg-4">
-            <div class="book-detail__image-wrapper">
-            <img id="detailImage"
-                src=""
-                alt="Bìa Sách"
-                class="book-detail__image">
-            </div>
-        </div>
-
-        <!-- Book Info -->
-           <div class="col-lg-6">
-            <span class="book-detail__edition">Ấn Bản Toàn Cầu Lần Thứ 10</span>
-
-            <h1 class="book-detail__title">
-            Nguyên Tắc Cơ Bản Của Kỹ Thuật <br> Phần Mềm
-            </h1>
-
-            <p class="book-detail__author">
-            bởi <span class="book-detail__author-name">Ian Sommerville</span>
-            </p>
-
-            <div class="book-detail__rating">
-            <div class="book-detail__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span class="book-detail__reviews">(142 Đánh Giá Của Học Viên)</span>
-            </div>
-
-            <hr class="book-detail__divider">
-
-            <div class="book-detail__info-grid">
-            <div class="book-detail__info-box">
-                <span class="book-detail__info-label">TÌNH TRẠNG</span>
-                <span class="book-detail__info-value">Hoàn Toàn Mới</span>
-            </div>
-
-            <div class="book-detail__info-box">
-                <span class="book-detail__info-label">GIAO HÀNG TIÊU CHUẨN</span>
-                <span class="book-detail__info-value">2-3 Ngày Làm Việc</span>
-            </div>
-            </div>
-
-            <div class="book-detail__price-card">
-            <div class="book-detail__price-top">
-                <div>
-                <span class="book-detail__list-price">
-                    Giá Niêm Yết: <del>$129.99</del>
-                </span>
-                <div class="book-detail__current-price">
-                    $89.99 <span class="book-detail__save">TIẾT KIỆM 30%</span>
-                </div>
+        <div class="container">
+            <div class="row align-items-start g-5">
+                <div class="col-lg-4">
+                    <div class="book-detail__image-wrapper">
+                        <img id="detailImage" src="" alt="Bìa Sách" class="book-detail__image">
+                    </div>
                 </div>
 
-                <div class="book-detail__availability">
-                <span>Tình Trạng Kho</span>
-                <span class="book-detail__stock">
-                    <i class="fas fa-check-circle"></i> Còn Hàng
-                </span>
+                <div class="col-lg-6">
+                    <span class="book-detail__edition" id="detailEdition">Ấn Bản Toàn Cầu</span>
+
+                    <h1 class="book-detail__title" id="detailTitle">Đang tải...</h1>
+
+                    <p class="book-detail__author">
+                        bởi <span class="book-detail__author-name" id="detailAuthor">...</span>
+                    </p>
+
+                    <div class="book-detail__rating">
+                        <div class="book-detail__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="book-detail__reviews">(142 Đánh Giá Của Học Viên)</span>
+                    </div>
+
+                    <hr class="book-detail__divider">
+
+                    <div class="book-detail__info-grid">
+                        <div class="book-detail__info-box">
+                            <span class="book-detail__info-label">TÌNH TRẠNG</span>
+                            <span class="book-detail__info-value">Hoàn Toàn Mới</span>
+                        </div>
+                        <div class="book-detail__info-box">
+                            <span class="book-detail__info-label">GIAO HÀNG</span>
+                            <span class="book-detail__info-value">2-3 Ngày Làm Việc</span>
+                        </div>
+                    </div>
+
+                    <div class="book-detail__price-card">
+                        <div class="book-detail__price-top">
+                            <div>
+                                <span class="book-detail__list-price" id="originalPriceWrapper" style="display:none">
+                                    Giá Niêm Yết: <del id="detailOriginalPrice"></del>
+                                </span>
+                                <div class="book-detail__current-price">
+                                    <span id="detailPrice">0đ</span>
+                                    <span class="book-detail__save" id="detailSaveBadge"></span>
+                                </div>
+                            </div>
+                            <div class="book-detail__availability">
+                                <span>Tình Trạng Kho</span>
+                                <span class="book-detail__stock"><i class="fas fa-check-circle"></i> Còn Hàng</span>
+                            </div>
+                        </div>
+
+                        <div class="book-detail__cart-section">
+                            <div class="book-detail__qty">
+                                <button class="book-detail__qty-btn" onclick="updateQty(-1)">-</button>
+                                <input type="text" value="1" id="qtyInput" class="book-detail__qty-input">
+                                <button class="book-detail__qty-btn" onclick="updateQty(1)">+</button>
+                            </div>
+                            <button class="book-detail__add-btn"><i class="fas fa-cart-plus"></i> Thêm Vào Giỏ</button>
+                            <button class="book-detail__buy-btn">Mua Ngay</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="book-detail__cart-section">
-                <div class="book-detail__qty">
-                <button class="book-detail__qty-btn">-</button>
-                <input type="text" value="1" class="book-detail__qty-input">
-                <button class="book-detail__qty-btn">+</button>
-                </div>
-
-                <button class="book-detail__add-btn">
-                <i class="fas fa-cart-plus"></i>
-                Thêm Vào Giỏ Hàng
-                </button>
-
-                <button class="book-detail__buy-btn">
-                Mua Ngay
-                </button>
-            </div>
-            </div>
-        </div>
         </div>
     </div>
 
     <div class="container">
         <section class="product-overview">
-        <div class="container">
-            <h3 class="product-overview__title">
-            Tổng Quan Sản Phẩm
-            </h3>
-
-            <div class="product-overview__content">
-            <p>
-                Ấn Bản Lần Thứ Mười của <strong>Nguyên Tắc Cơ Bản Của Kỹ Thuật Phần Mềm</strong> 
-                cung cấp một hướng dẫn toàn diện về các phương pháp, công cụ và quy trình 
-                cần thiết để xây dựng các hệ thống phần mềm chất lượng cao. Trong thời đại mà phần mềm 
-                điều chỉnh mọi thứ từ tài chính toàn cầu đến chăm sóc sức khỏe, hiểu biết 
-                áp dụng một kỷ luật kỹ thuật nghiêm ngặt đối với phần mềm là cực kỳ quan trọng.
-            </p>
-
-            <p>
-                Ian Sommerville tích hợp các nguyên tắc kỹ thuật truyền thống với các phương pháp agile hiện đại, 
-                cung cấp cho học sinh một view cân bằng của vòng đời phần mềm. Các tính năng chính bao gồm các chương được cập nhật 
-                về điện toán cloud, thiết kế ưu tiên bảo mật, 
-                và những hàm ý đạo đức của các hệ thống ra quyết định tự động.
-            </p>
-
-            <ul class="product-overview__list">
-                <li>Các nghiên cứu điển hình chi tiết về các hệ thống phân tán quy mô lớn.</li>
-                <li>Tích hợp các pipeline DevOps và CI/CD trong quy trình phát triển.</li>
-                <li>Tập trung mới vào độ tin cậy phần mềm và các hệ thống quan trọng về an toàn.</li>
-            </ul>
-            </div>
-        </div>
+            <h3 class="product-overview__title">Tổng Quan Sản Phẩm</h3>
+            <div class="product-overview__content" id="detailDescription">
+                </div>
         </section>
 
         <section class="product-specs">
-        <div class="container">
-            <h3 class="product-specs__title">
-            <i class="fas fa-file-alt"></i>
-            Thông Số Kỹ Thuật Sản Phẩm
-            </h3>
-
-            <div class="product-specs__grid">
-            <div class="product-specs__card">
-                <span class="product-specs__label">ISBN-13</span>
-                <span class="product-specs__value">978-0593599474</span>
-            </div>
-
-            <div class="product-specs__card">
-                <span class="product-specs__label">Ngôn Ngữ</span>
-                <span class="product-specs__value">Tiếng Anh</span>
-            </div>
-
-            <div class="product-specs__card">
-                <span class="product-specs__label">Nhà Xuất Bản</span>
-                <span class="product-specs__value">Viking / Penguin Books</span>
-            </div>
-
-            <div class="product-specs__card">
-                <span class="product-specs__label">Bìa Cứng</span>
-                <span class="product-specs__value">304 Trang</span>
-            </div>
-
-            <div class="product-specs__card">
-                <span class="product-specs__label">Ngày Xuất Bản</span>
-                <span class="product-specs__value">29 Tháng 9, 2020</span>
-            </div>
-
-            <div class="product-specs__card">
-                <span class="product-specs__label">Kích Thước</span>
-                <span class="product-specs__value">5.7 x 1.1 x 8.5 inch</span>
-            </div>
-            </div>
-        </div>
+            <h3 class="product-specs__title"><i class="fas fa-file-alt"></i> Thông Số Kỹ Thuật</h3>
+            <div class="product-specs__grid" id="detailSpecs">
+                </div>
         </section>
 
         <section class="customer-reviews">
-        <div class="container">
             <div class="customer-reviews__header">
-            <div>
-                <h3 class="customer-reviews__title">
-                <i class="fas fa-comment-dots"></i>
-                Đánh Giá Của Khách Hàng
-                </h3>
-                <p class="customer-reviews__subtitle">
-                Những người mua đã xác minh chia sẻ suy nghĩ của họ về thư viện của những cuộc sống.
-                </p>
+                <div>
+                    <h3 class="customer-reviews__title"><i class="fas fa-comment-dots"></i> Đánh Giá</h3>
+                    <p class="customer-reviews__subtitle">Những người mua đã xác minh chia sẻ suy nghĩ.</p>
+                </div>
+                <button class="customer-reviews__write-btn">Viết Đánh Giá</button>
             </div>
-
-            <button class="customer-reviews__write-btn">
-                Viết Đánh Giá
-            </button>
-            </div>
-
             <div class="customer-reviews__list">
-
-            <!-- Đánh Giá 1 -->
-            <div class="review-card">
-                <div class="review-card__avatar">SC</div>
-
-                <div class="review-card__content">
-                <div class="review-card__top">
-                    <div>
-                    <span class="review-card__name">Sarah Chen</span>
-                    <div class="review-card__stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="review-card">
+                    <div class="review-card__avatar">SC</div>
+                    <div class="review-card__content">
+                        <div class="review-card__top">
+                            <div>
+                                <span class="review-card__name">Nguyễn Trung Hậu</span>
+                                <div class="review-card__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                            <span class="review-card__date">14 Tháng 10, 2025</span>
+                        </div>
+                        <p class="review-card__text">Sách đóng gói rất kỹ, nội dung cực kỳ hay và bổ ích cho chuyên ngành.</p>
                     </div>
-                    </div>
-
-                    <span class="review-card__date">
-                    14 Tháng 10, 2023
-                    </span>
-                </div>
-
-                <p class="review-card__text">
-                    Cuốn sách này đã thay đổi quan điểm của tôi về sự hối tiếc. Matt Haig có được cách làm cho những cuộc khủng hoảng tồn tại phức tạp cảm thấy dễ quản lý và đẹp.
-                </p>
                 </div>
             </div>
-
-            <!-- Đánh Giá 2 -->
-            <div class="review-card">
-                <div class="review-card__avatar review-card__avatar--secondary">MK</div>
-
-                <div class="review-card__content">
-                <div class="review-card__top">
-                    <div>
-                    <span class="review-card__name">Marcus King</span>
-                    <div class="review-card__stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    </div>
-
-                    <span class="review-card__date">
-                    28 Tháng 9, 2023
-                    </span>
-                </div>
-
-                <p class="review-card__text">
-                    Một cuốn sách ngắn nhưng có tác động lớn. Khái niệm về thư viện rất hấp dẫn.
-                </p>
-                </div>
-            </div>
-            </div>
-        </div>
         </section>
-
-        <section class="related-books">
-        <div class="container">
-            <h3 class="related-books__title">
-            Học Viên Cũng Mua
-            </h3>
-
-            <div class="related-books__grid">
-            <div class="related-books__card">
-                <div class="related-books__image-wrapper">
-                <img src="/imgs/detailProduct/productBook1.png" alt="">
-                </div>
-
-                <div class="related-books__body">
-                <h4 class="related-books__name">
-                    Gatsby Vĩ Đại
-                </h4>
-                <p class="related-books__desc">
-                    Một tiểu thuyết cổ điển Mỹ của F. Scott Fitzgerald
-                </p>
-                <div class="related-books__price">
-                    $15.99
-                </div>
-                <button class="related-books__btn">
-                    Xem Chi Tiết
-                </button>
-                </div>
-            </div>
-
-            <div class="related-books__card">
-                <div class="related-books__image-wrapper">
-                <img src="/imgs/detailProduct/productBook2.png" alt="">
-                </div>
-
-                <div class="related-books__body">
-                <h4 class="related-books__name">
-                    Gatsby Vĩ Đại
-                </h4>
-                <p class="related-books__desc">
-                    Một tiểu thuyết cổ điển Mỹ của F. Scott Fitzgerald
-                </p>
-                <div class="related-books__price">
-                    $15.99
-                </div>
-                <button class="related-books__btn">
-                    Xem Chi Tiết
-                </button>
-                </div>
-            </div>
-
-            <div class="related-books__card">
-                <div class="related-books__image-wrapper">
-                <img src="/imgs/detailProduct/productBook3.png" alt="">
-                </div>
-
-                <div class="related-books__body">
-                <h4 class="related-books__name">
-                    Gatsby Vĩ Đại
-                </h4>
-                <p class="related-books__desc">
-                    Một tiểu thuyết cổ điển Mỹ của F. Scott Fitzgerald
-                </p>
-                <div class="related-books__price">
-                    $15.99
-                </div>
-                <button class="related-books__btn">
-                    Xem Chi Tiết
-                </button>
-                </div>
-            </div>
-
-            <div class="related-books__card">
-                <div class="related-books__image-wrapper">
-                <img src="/imgs/detailProduct/productBook4.png" alt="">
-                </div>
-
-                <div class="related-books__body">
-                <h4 class="related-books__name">
-                    Gatsby Vĩ Đại
-                </h4>
-                <p class="related-books__desc">
-                    Một tiểu thuyết cổ điển Mỹ của F. Scott Fitzgerald
-                </p>
-                <div class="related-books__price">
-                    $15.99
-                </div>
-                <button class="related-books__btn">
-                    Xem Chi Tiết
-                </button>
-                </div>
-            </div>
-            </div>
-        </div>
-        </section>
-    </div>
     </div>
 </div>
 
 <footer class="inner-footer"></footer>
-
 <script type="module" src="/shared/js/main.js"></script>
 <script src="detailProduct.js"></script>
-
+<script>
+    function updateQty(change) {
+        const input = document.getElementById('qtyInput');
+        let val = parseInt(input.value) + change;
+        if (val < 1) val = 1;
+        input.value = val;
+    }
+</script>
 </body>
 </html>
