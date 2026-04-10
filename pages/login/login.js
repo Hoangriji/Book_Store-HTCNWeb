@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const loginForm = document.querySelector("form");
 	const messageBox = document.getElementById("messageBox");
 
+	// returnbtn
 	if (returnBtn) {
 		returnBtn.addEventListener("click", (event) => {
 			event.preventDefault();
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		return;
 	}
 
+	// show message
 	const showMessage = (message, type = "error") => {
 		messageBox.className = `message-box ${type}`;
 		messageBox.textContent = message;
@@ -41,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		input.addEventListener("blur", () => syncFilledState(input));
 	});
 
+	// get data
 	const getUsers = () => {
 		try {
 			const raw = localStorage.getItem("users");
@@ -51,17 +54,20 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	};
 
+	// handle login
 	loginForm.addEventListener("submit", (event) => {
 		event.preventDefault();
 
 		const usernameOrEmail = (document.querySelector("#username")?.value || "").trim();
 		const password = document.querySelector("#password")?.value || "";
 
+		// check empty
 		if (!usernameOrEmail || !password) {
 			showMessage("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.", "error");
 			return;
 		}
 
+		// find data and check 
 		const users = getUsers();
 		const account = users.find((user) => {
 			const input = usernameOrEmail.toLowerCase();
@@ -81,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			return;
 		}
 
+		// save data of obj currentUser
 		const loggedUser = {
 			id: account.id,
 			fullname: account.fullname,
@@ -88,6 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			email: account.email,
 		};
 
+		// load to local 
 		localStorage.setItem("currentUser", JSON.stringify(loggedUser));
 		showMessage("Đăng nhập thành công!", "success");
 		setTimeout(() => {
