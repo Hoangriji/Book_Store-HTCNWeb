@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Không tìm thấy trang | FiveH Book Store</title>
+    <link rel="stylesheet" href="/shared/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/shared/css/components/header.css">
+    <link rel="stylesheet" href="/shared/css/components/footer.css">
+    <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --color-primary: #00bfff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            background: #0a1628;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .error-page {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-page::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0,191,255,0.08) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .error-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .error-code {
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--color-primary), #0077aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: float 3s ease-in-out infinite;
+            letter-spacing: -4px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50%       { transform: translateY(-12px); }
+        }
+
+        .error-icon {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin: 1rem 0;
+            opacity: 0.7;
+            animation: sway 6s ease-in-out infinite;
+        }
+
+        @keyframes sway {
+            0%, 100% { transform: rotate(-5deg); }
+            50%       { transform: rotate(5deg); }
+        }
+
+        .error-divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+            margin: 1.5rem auto;
+            border-radius: 2px;
+        }
+
+        .error-title {
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.75rem;
+        }
+
+        .error-subtitle {
+            color: #8a9bba;
+            font-size: 1rem;
+            max-width: 420px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.6;
+        }
+
+        .btn-home {
+            background: var(--color-primary);
+            color: #0a1628;
+            border: none;
+            padding: 0.75rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-home:hover {
+            background: #00d4ff;
+            color: #0a1628;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,191,255,0.35);
+        }
+
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--color-primary);
+            opacity: 0.15;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .dot-1 { width: 80px; height: 80px; top: 15%; left: 10%; animation-delay: 0s; }
+        .dot-2 { width: 40px; height: 40px; top: 70%; left: 8%;  animation-delay: 1s; }
+        .dot-3 { width: 60px; height: 60px; top: 20%; right: 8%; animation-delay: 0.5s; }
+        .dot-4 { width: 25px; height: 25px; top: 65%; right: 12%; animation-delay: 1.5s; }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1);   opacity: 0.15; }
+            50%       { transform: scale(1.2); opacity: 0.25; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-page">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+        <div class="dot dot-4"></div>
+
+        <div class="error-content">
+            <div class="error-code">404</div>
+
+            <div class="error-icon">
+                <i class="fas fa-book-open"></i>
+            </div>
+
+            <div class="error-divider"></div>
+
+            <h1 class="error-title">Trang không tìm thấy</h1>
+            <p class="error-subtitle">
+                Có vẻ như trang bạn đang tìm kiếm đã bị xóa, đổi tên,
+                hoặc chưa từng tồn tại. Hãy quay lại trang chủ nhé!
+            </p>
+
+            <a href="/index.html" class="btn-home">
+                Về trang chủ
+            </a>
+        </div>
+    </div>
+
+    <script type="module" src="/shared/js/main.js"></script>
+</body>
+</html>

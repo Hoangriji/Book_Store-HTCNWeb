@@ -1,0 +1,1301 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Thế Giới Của Sophie",
+      "author": "Jostein Gaarder",
+      "price": 180000,
+      "categories": [
+        "Triết học"
+      ],
+      "description": "Cuốn sách nhập môn triết học nổi tiếng thế giới.",
+      "image": "https://drive.google.com/uc?export=view&id=10sHfIiA-IMzlpf6tv-F6voRedGcgpf2f",
+      "specs": {
+        "isbn": "978-1029384756",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tri Thức",
+        "format": "Bìa mềm",
+        "pages": 500,
+        "publishDate": "2019",
+        "dimensions": "14 x 20 cm"
+      },
+      "summaryDoc": "Một hành trình khám phá lịch sử triết học thông qua câu chuyện hấp dẫn."
+    },
+    {
+      "id": 2,
+      "title": "Triết học Khái lược những tư tưởng lớn",
+      "author": "DK Publishing",
+      "price": 200000,
+      "categories": [
+        "Triết học"
+      ],
+      "description": "Tổng quan dễ hiểu về các trường phái triết học.",
+      "image": "https://drive.google.com/uc?export=view&id=1FWiqD0Q6pp5X6ADiIV1rH24slIeeLUxt",
+      "specs": {
+        "isbn": "978-3847291045",
+        "language": "Tiếng Việt",
+        "publisher": "Dân Trí",
+        "format": "Bìa cứng",
+        "pages": 350,
+        "publishDate": "2020",
+        "dimensions": "15 x 23 cm"
+      },
+      "summaryDoc": "Giới thiệu các triết gia và tư tưởng lớn trong lịch sử."
+    },
+    {
+      "id": 3,
+      "title": "Suy Tưởng",
+      "author": "Marcus Aurelius",
+      "price": 170000,
+      "categories": [
+        "Triết học"
+      ],
+      "description": "Tác phẩm triết học Stoic kinh điển.",
+      "image": "https://drive.google.com/uc?export=view&id=1YgcBeo18v9zrt2UOC5BGcqO6T62CL0D8",
+      "specs": {
+        "isbn": "978-5928371029",
+        "language": "Tiếng Việt",
+        "publisher": "Nhà xuất bản Thế giới",
+        "format": "Bìa mềm",
+        "pages": 280,
+        "publishDate": "2018",
+        "dimensions": "14 x 21 cm"
+      },
+      "summaryDoc": "Những suy ngẫm sâu sắc về cuộc sống và đạo đức."
+    },
+    {
+      "id": 4,
+      "title": "Cộng Hòa",
+      "author": "Plato",
+      "price": 190000,
+      "categories": [
+        "Triết học"
+      ],
+      "description": "Tác phẩm kinh điển về công lý và xã hội.",
+      "image": "https://drive.google.com/uc?export=view&id=1iNGdlzZOJAOy0rqfVM_PLM8YhW5ENhB_",
+      "specs": {
+        "isbn": "978-1122334455",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tri Thức",
+        "format": "Bìa cứng",
+        "pages": 400,
+        "publishDate": "2017",
+        "dimensions": "15 x 22 cm"
+      },
+      "summaryDoc": "Bàn luận về nhà nước lý tưởng và công lý."
+    },
+    {
+      "id": 5,
+      "title": "Giáo Trình Triết Học Mác - Lênin",
+      "author": "Nhiều tác giả",
+      "price": 150000,
+      "categories": [
+        "Triết học"
+      ],
+      "description": "Giáo trình triết học dành cho sinh viên đại học - hệ không chuyên.",
+      "image": "https://drive.google.com/uc?export=view&id=1JK1n4vywMrcskM6jcuMlsLXXXNG0rOG5",
+      "specs": {
+        "isbn": "978-0099887766",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Chính Trị Quốc Gia",
+        "format": "Bìa mềm",
+        "pages": 320,
+        "publishDate": "2021",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Cung cấp kiến thức nền tảng về triết học Mác - Lênin."
+    },
+    {
+      "id": 6,
+      "title": "Giáo Trình Trí Tuệ Nhân Tạo, Học Máy Và Học Sâu",
+      "author": "Nhiều tác giả",
+      "price": 250000,
+      "categories": [
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Giới thiệu tổng quan về trí tuệ nhân tạo, học máy và học sâu, cung cấp kiến thức nền tảng và ứng dụng thực tế.",
+      "image": "https://drive.google.com/uc?export=view&id=1FVKDesw4tUs5yU49HIdzr-O6evW1SHMj",
+      "specs": {
+        "isbn": "978-8877665544",
+        "language": "Tiếng Việt",
+        "publisher": "Nhà xuất bản Thanh Niên",
+        "format": "Bìa mềm",
+        "pages": 400,
+        "publishDate": "2023",
+        "dimensions": "17 x 24 cm"
+      },
+      "summaryDoc": "Kiến thức về Trí tuệ nhân tạo, học máy, học sâu"
+    },
+    {
+      "id": 7,
+      "title": "Giáo trình Tư tưởng Hồ Chí Minh",
+      "author": "Bộ Giáo dục và Đào tạo",
+      "price": 120000,
+      "categories": [
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Giáo trình dành cho sinh viên đại học, cung cấp kiến thức cơ bản về tư tưởng Hồ Chí Minh.",
+      "image": "https://drive.google.com/uc?export=view&id=1VpBrir-osCFh-GEGoK5ir-7NT8ip3iuS",
+      "specs": {
+        "isbn": "978-2233445566",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Chính Trị Quốc Gia",
+        "format": "Bìa mềm",
+        "pages": 300,
+        "publishDate": "2021",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Tài liệu học tập chính thức cho sinh viên khối không chuyên lý luận chính trị."
+    },
+    {
+      "id": 8,
+      "title": "Phương pháp luận nghiên cứu khoa học",
+      "author": "Vũ Cao Đàm",
+      "price": 140000,
+      "categories": [
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Trình bày các phương pháp nghiên cứu khoa học và cách thực hiện đề tài nghiên cứu.",
+      "image": "https://drive.google.com/uc?export=view&id=1Fvw_qeOVi4JtJzKgfCt3GkQKdJQUMc7v",
+      "specs": {
+        "isbn": "978-9988776655",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Giáo dục Việt Nam",
+        "format": "Bìa mềm",
+        "pages": 280,
+        "publishDate": "2020",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Cung cấp kiến thức về cách xây dựng và triển khai nghiên cứu khoa học."
+    },
+    {
+      "id": 9,
+      "title": "Kỹ thuật lập trình C",
+      "author": "Phạm Văn Ất",
+      "price": 130000,
+      "categories": [
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Hướng dẫn lập trình ngôn ngữ C từ cơ bản đến nâng cao.",
+      "image": "https://drive.google.com/uc?export=view&id=1bLRdStq8NrAgVyY2cpupAgAvhAd6BaOk",
+      "specs": {
+        "isbn": "978-7766554433",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Bách Khoa Hà Nội",
+        "format": "Bìa mềm",
+        "pages": 350,
+        "publishDate": "2019",
+        "dimensions": "17 x 24 cm"
+      },
+      "summaryDoc": "Giúp người học nắm vững kỹ thuật lập trình và tư duy thuật toán."
+    },
+    {
+      "id": 10,
+      "title": "Giáo trình Giáo dục học",
+      "author": "Nhiều tác giả",
+      "price": 150000,
+      "categories": [
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Cung cấp kiến thức cơ bản về giáo dục học và phương pháp giảng dạy.",
+      "image": "https://drive.google.com/uc?export=view&id=155OqmX6SjKLO3YjUHCvUOfg2YUz9qX1w",
+      "specs": {
+        "isbn": "978-5544332211",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Đại học Sư phạm",
+        "format": "Bìa mềm",
+        "pages": 320,
+        "publishDate": "2022",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Kiến thức giáo dục cho tham khảo."
+    },
+    {
+      "id": 11,
+      "title": "Giáo trình Nhập môn lập trình",
+      "author": "Nguyễn Thị Bích Ngân",
+      "price": 120000,
+      "categories": [
+        "Công nghệ thông tin"
+      ],
+      "description": "Cung cấp kiến thức cơ bản về lập trình và tư duy giải quyết vấn đề cho người mới bắt đầu.",
+      "image": "https://drive.google.com/uc?export=view&id=1zfr5FbRxUpezrLN5sp0OlnKkWO-Tyk63",
+      "specs": {
+        "isbn": "978-3322110099",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Đại học Quốc gia TP.HCM",
+        "format": "Bìa mềm",
+        "pages": 250,
+        "publishDate": "2020",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Giới thiệu các khái niệm cơ bản về lập trình, cấu trúc điều khiển và cách xây dựng chương trình đơn giản."
+    },
+    {
+      "id": 12,
+      "title": "Giáo trình Cơ sở dữ liệu",
+      "author": "Trần Minh Quang",
+      "price": 140000,
+      "categories": [
+        "Công nghệ thông tin"
+      ],
+      "description": "Trình bày các khái niệm về cơ sở dữ liệu, mô hình dữ liệu và thiết kế hệ quản trị dữ liệu.",
+      "image": "https://drive.google.com/uc?export=view&id=1_7LKS6kxj58-2fyVwUQpZpJfmbWDNWsL",
+      "specs": {
+        "isbn": "978-1100998877",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Giáo Dục",
+        "format": "Bìa mềm",
+        "pages": 300,
+        "publishDate": "2021",
+        "dimensions": "17 x 24 cm"
+      },
+      "summaryDoc": "Giúp sinh viên hiểu cách tổ chức, lưu trữ và truy xuất dữ liệu hiệu quả."
+    },
+    {
+      "id": 13,
+      "title": "Giáo trình An toàn mạng thông tin",
+      "author": "Nguyễn Tiến Ban",
+      "price": 150000,
+      "categories": [
+        "Công nghệ thông tin"
+      ],
+      "description": "Giới thiệu các nguyên tắc bảo mật và an toàn thông tin trong hệ thống mạng.",
+      "image": "https://drive.google.com/uc?export=view&id=1KtsebRKiMJqW3JCyB3hZtIyemfdwZxDh",
+      "specs": {
+        "isbn": "978-9988770011",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Khoa học công nghệ & Truyền Thông",
+        "format": "Bìa mềm",
+        "pages": 320,
+        "publishDate": "2025",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Trình bày các phương pháp bảo vệ hệ thống trước các mối đe dọa an ninh mạng."
+    },
+    {
+      "id": 14,
+      "title": "Giáo trình Lập trình Python",
+      "author": "Phạm Đăng Hưng",
+      "price": 160000,
+      "categories": [
+        "Công nghệ thông tin"
+      ],
+      "description": "Hướng dẫn học lập trình Python từ cơ bản đến nâng cao.",
+      "image": "https://drive.google.com/uc?export=view&id=1GVhKHQc2EuzmMBbD7NhXDLcutURX_yVT",
+      "specs": {
+        "isbn": "978-2211003344",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Đại học Sư phạm",
+        "format": "Bìa mềm",
+        "pages": 350,
+        "publishDate": "2022",
+        "dimensions": "17 x 24 cm"
+      },
+      "summaryDoc": "Cung cấp kiến thức từ cú pháp cơ bản đến ứng dụng Python trong thực tế."
+    },
+    {
+      "id": 15,
+      "title": "Tin học cơ sở",
+      "author": "Bùi Việt Hà",
+      "price": 110000,
+      "categories": [
+        "Công nghệ thông tin"
+      ],
+      "description": "Trang bị kiến thức nền tảng về máy tính, phần mềm và hệ điều hành.",
+      "image": "https://drive.google.com/uc?export=view&id=1ImB98zsseITHHVs9-enOag_Psq--Rug5",
+      "specs": {
+        "isbn": "978-4455667788",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Đại học Quốc gia Hà Nội",
+        "format": "Bìa mềm",
+        "pages": 200,
+        "publishDate": "2018",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Giúp người học hiểu rõ về cấu trúc máy tính và cách sử dụng công nghệ thông tin cơ bản."
+    },
+    {
+      "id": 16,
+      "title": "Quản trị học",
+      "author": "Nguyễn Hải Sản",
+      "price": 150000,
+      "categories": [
+        "Kinh tế & Quản trị"
+      ],
+      "description": "Giới thiệu các nguyên lý cơ bản về quản trị trong tổ chức và doanh nghiệp.",
+      "image": "https://drive.google.com/uc?export=view&id=1W-iLnXVoXbNvo4ty613IK3TUHyo0y0EL",
+      "specs": {
+        "isbn": "978-6677889900",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Hồng Đức",
+        "format": "Bìa mềm",
+        "pages": 320,
+        "publishDate": "2021",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Cuốn sách trình bày các chức năng quản trị như lập kế hoạch, tổ chức, lãnh đạo và kiểm soát trong doanh nghiệp."
+    },
+    {
+      "id": 17,
+      "title": "Quản trị tài chính",
+      "author": "Nguyễn Thị Cảnh",
+      "price": 300000,
+      "categories": [
+        "Kinh tế & Quản trị"
+      ],
+      "description": "Cung cấp kiến thức về quản lý tài chính doanh nghiệp và phân tích tài chính.",
+      "image": "https://drive.google.com/uc?export=view&id=1EzGo1ld8DhY9dXftl3NmR3drqvStVx5E",
+      "specs": {
+        "isbn": "978-8899001122",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Hồng Đức",
+        "format": "Bìa mềm",
+        "pages": 350,
+        "publishDate": "2020",
+        "dimensions": "17 x 24 cm"
+      },
+      "summaryDoc": "Hướng dẫn đọc báo cáo tài chính, phân tích dòng tiền và đưa ra quyết định đầu tư hiệu quả."
+    },
+    {
+      "id": 18,
+      "title": "Marketing căn bản",
+      "author": "Philip Kotler",
+      "price": 200000,
+      "categories": [
+        "Kinh tế & Quản trị"
+      ],
+      "description": "Giới thiệu nền tảng marketing hiện đại và hành vi khách hàng.",
+      "image": "https://drive.google.com/uc?export=view&id=1xb-ONnFn6FOjJvIWdw69yk1tJ3dD4wK1",
+      "specs": {
+        "isbn": "978-1122330044",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Lao Động",
+        "format": "Bìa mềm",
+        "pages": 400,
+        "publishDate": "2019",
+        "dimensions": "17 x 24 cm"
+      },
+      "summaryDoc": "Trình bày các chiến lược marketing, phân khúc thị trường và xây dựng thương hiệu."
+    },
+    {
+      "id": 19,
+      "title": "Quản trị học giải quyết tranh chấp",
+      "author": "Daniel Dana, PhD",
+      "price": 175000,
+      "categories": [
+        "Kinh tế & Quản trị"
+      ],
+      "description": "Cuốn sách hướng dẫn các phương pháp quản trị và giải quyết xung đột hiệu quả trong tổ chức và doanh nghiệp.",
+      "image": "https://drive.google.com/uc?export=view&id=1yNbTNwXIvo2Jrcw1yYyaEgU7tJgItNQC",
+      "specs": {
+        "isbn": "978-3300445566",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Thống kê",
+        "format": "Bìa mềm",
+        "pages": 320,
+        "publishDate": "2020",
+        "dimensions": "14 x 20.5 cm"
+      },
+      "summaryDoc": "Cuốn sách cung cấp các chiến lược và kỹ năng thực tiễn để nhận diện, quản lý và giải quyết tranh chấp trong môi trường làm việc."
+    },
+    {
+      "id": 20,
+      "title": "Nhà quản trị hiệu quả",
+      "author": "Peter Drucker",
+      "price": 170000,
+      "categories": [
+        "Kinh tế & Quản trị"
+      ],
+      "description": "Cuốn sách kinh điển về kỹ năng quản lý và lãnh đạo.",
+      "image": "https://drive.google.com/uc?export=view&id=1ezG6x5CY8NnAWdrj5zyi6CQcePM6DP1l",
+      "specs": {
+        "isbn": "978-5566778899",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tổng hợp TPHCM",
+        "format": "Bìa mềm",
+        "pages": 280,
+        "publishDate": "2022",
+        "dimensions": "14 x 20 cm"
+      },
+      "summaryDoc": "Giúp phát triển kỹ năng lãnh đạo, quản lý thời gian và nâng cao hiệu suất làm việc."
+    },
+    {
+      "id": 21,
+      "title": "Tư Duy Nhanh Và Chậm",
+      "author": "Daniel Kahneman",
+      "price": 235000,
+      "categories": [
+        "Tâm lý học",
+        "Kinh tế & Quản trị"
+      ],
+      "description": "Cuốn sách khám phá hai hệ thống tư duy chi phối quyết định của chúng ta: Hệ thống 1 nhanh, cảm tính; Hệ thống 2 chậm rãi, logic.",
+      "image": "https://drive.google.com/uc?export=view&id=17VSsub6_w4CWUUtUFtAuDS-OfvYs6j26",
+      "specs": {
+        "isbn": "978-5928371029",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Thế Giới",
+        "format": "Bìa Mềm",
+        "pages": 612,
+        "publishDate": "10 Tháng 5, 2021",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Đạt giải Nobel Kinh tế, tác giả phân tích chi tiết về những sai lệch nhận thức của con người."
+    },
+    {
+      "id": 22,
+      "title": "Đi Tìm Lẽ Sống",
+      "author": "Viktor E. Frankl",
+      "price": 110000,
+      "categories": [
+        "Tâm lý học",
+        "Triết học"
+      ],
+      "description": "Hồi ký của một bác sĩ tâm lý sống sót sau trại tập trung Holocaust, và liệu pháp ý nghĩa của ông.",
+      "image": "https://drive.google.com/uc?export=view&id=18F2n3VjhUKmjsD1rx9mM5gFxcO3vfSJH",
+      "specs": {
+        "isbn": "978-3847291045",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tổng hợp TP.HCM",
+        "format": "Bìa Mềm",
+        "pages": 184,
+        "publishDate": "05 Tháng 3, 2018",
+        "dimensions": "13 x 20.5 cm"
+      },
+      "summaryDoc": "Con người không thể tránh khỏi đau khổ, nhưng có thể chọn cách đối phó và tìm ra ý nghĩa từ nó."
+    },
+    {
+      "id": 23,
+      "title": "Sức Mạnh Của Người Hướng Nội",
+      "author": "Susan Cain",
+      "price": 165000,
+      "categories": [
+        "Tâm lý học",
+        "Phát triển bản thân"
+      ],
+      "description": "Bảo vệ và ngợi ca giá trị của những người hướng nội trong một thế giới dường như chỉ tôn vinh sự hoạt bát, ồn ào.",
+      "image": "https://drive.google.com/uc?export=view&id=1XyZg4JuHVMRjZ1EML0psYsXzzvvH0gFk",
+      "specs": {
+        "isbn": "978-1029384756",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Lao Động",
+        "format": "Bìa Mềm",
+        "pages": 400,
+        "publishDate": "12 Tháng 8, 2019",
+        "dimensions": "14.5 x 20.5 cm"
+      },
+      "summaryDoc": "Không phải cứ nói nhiều mới là lãnh đạo tốt. Sự tĩnh lặng mang sức mạnh riêng của nó."
+    },
+    {
+      "id": 24,
+      "title": "Tâm Lý Học Đám Đông",
+      "author": "Gustave Le Bon",
+      "price": 135000,
+      "categories": [
+        "Tâm lý học",
+        "Chính trị & Pháp luật"
+      ],
+      "description": "Nghiên cứu kinh điển về cách mà các cá nhân đánh mất chính mình khi hòa vào một đám đông.",
+      "image": "https://drive.google.com/uc?export=view&id=1UwRSpQnwJOMZrnw9MFJFNZ_fAYkJX214",
+      "specs": {
+        "isbn": "978-1122334455",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tri Thức",
+        "format": "Bìa Mềm",
+        "pages": 320,
+        "publishDate": "20 Tháng 11, 2020",
+        "dimensions": "13 x 20 cm"
+      },
+      "summaryDoc": "Đám đông không hành động theo lý trí mà bị dẫn dắt bởi cảm xúc và sự ám thị."
+    },
+    {
+      "id": 25,
+      "title": "Thiên Tài Bên Trái, Kẻ Điên Bên Phải",
+      "author": "Cao Minh",
+      "price": 189000,
+      "categories": [
+        "Tâm lý học"
+      ],
+      "description": "Ghi chép lại những cuộc trò chuyện thực tế với các bệnh nhân tâm thần, mở ra góc nhìn mới về thế giới quan.",
+      "image": "https://drive.google.com/uc?export=view&id=1BXDYldH8Raji5t9LQN1VNjtM0-wNM2vK",
+      "specs": {
+        "isbn": "978-0099887766",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Thanh Niên",
+        "format": "Bìa Mềm",
+        "pages": 432,
+        "publishDate": "15 Tháng 4, 2022",
+        "dimensions": "14 x 20.5 cm"
+      },
+      "summaryDoc": "Ranh giới giữa thiên tài và kẻ điên vô cùng mong manh."
+    },
+    {
+      "id": 26,
+      "title": "Pháp Luật Đại Cương",
+      "author": "Nhiều Tác Giả",
+      "price": 95000,
+      "categories": [
+        "Chính trị & Pháp luật",
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Giáo trình cơ sở cung cấp kiến thức nền tảng về Nhà nước và Pháp luật Việt Nam.",
+      "image": "https://drive.google.com/uc?export=view&id=17UYRgN6LZv8-wOjFcCTE091Fnf7HagyX",
+      "specs": {
+        "isbn": "978-8877665544",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Đại học Quốc gia",
+        "format": "Bìa Mềm",
+        "pages": 250,
+        "publishDate": "01 Tháng 9, 2023",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Tài liệu bắt buộc cho sinh viên các trường đại học, cao đẳng."
+    },
+    {
+      "id": 27,
+      "title": "Quân Vương",
+      "author": "Niccolò Machiavelli",
+      "price": 110000,
+      "categories": [
+        "Chính trị & Pháp luật",
+        "Lịch sử & Văn hóa"
+      ],
+      "description": "Tác phẩm kinh điển về khoa học chính trị và nghệ thuật cai trị quốc gia.",
+      "image": "https://drive.google.com/uc?export=view&id=115E1T2hmticIvVDNA8J1xWHRW99P31zO",
+      "specs": {
+        "isbn": "978-2233445566",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Thế Giới",
+        "format": "Bìa Cứng",
+        "pages": 180,
+        "publishDate": "14 Tháng 2, 2019",
+        "dimensions": "13 x 21 cm"
+      },
+      "summaryDoc": "Mục đích biện minh cho phương tiện. Một cái nhìn thực dụng về quyền lực."
+    },
+    {
+      "id": 28,
+      "title": "Trật Tự Thế Giới",
+      "author": "Henry Kissinger",
+      "price": 250000,
+      "categories": [
+        "Chính trị & Pháp luật"
+      ],
+      "description": "Phân tích sâu sắc về lịch sử ngoại giao và các cấu trúc quyền lực định hình thế giới hiện đại.",
+      "image": "https://drive.google.com/uc?export=view&id=1GilBb30bZf9baPtNo681AQ5f_iqJHWcb",
+      "specs": {
+        "isbn": "978-9988776655",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Trẻ",
+        "format": "Bìa Mềm",
+        "pages": 520,
+        "publishDate": "25 Tháng 10, 2021",
+        "dimensions": "15.5 x 23 cm"
+      },
+      "summaryDoc": "Cuốn sách đúc kết kinh nghiệm của một trong những nhà ngoại giao lão luyện nhất thế kỷ 20."
+    },
+    {
+      "id": 29,
+      "title": "Hiến Pháp Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam",
+      "author": "Quốc Hội",
+      "price": 45000,
+      "categories": [
+        "Chính trị & Pháp luật"
+      ],
+      "description": "Văn bản pháp lý có giá trị cao nhất của nước CHXHCN Việt Nam (Bản năm 2013).",
+      "image": "https://drive.google.com/uc?export=view&id=1i3Q4eudzwApSTwzgEjtzFkkXKtyUzUCi",
+      "specs": {
+        "isbn": "978-7766554433",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Chính Trị Quốc Gia Sự Thật",
+        "format": "Bìa Mềm",
+        "pages": 120,
+        "publishDate": "01 Tháng 1, 2014",
+        "dimensions": "10 x 15 cm"
+      },
+      "summaryDoc": "Đạo luật cơ bản của nhà nước, quy định chế độ chính trị, kinh tế, quyền con người."
+    },
+    {
+      "id": 30,
+      "title": "Bàn Về Tự Do",
+      "author": "John Stuart Mill",
+      "price": 125000,
+      "categories": [
+        "Chính trị & Pháp luật",
+        "Triết học"
+      ],
+      "description": "Một trong những tiểu luận quan trọng nhất về triết học chính trị và quyền tự do cá nhân.",
+      "image": "https://drive.google.com/uc?export=view&id=1lvagUYpKPowalZYts8px43-zoIe2Tqis",
+      "specs": {
+        "isbn": "978-5544332211",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tri Thức",
+        "format": "Bìa Mềm",
+        "pages": 280,
+        "publishDate": "10 Tháng 7, 2020",
+        "dimensions": "14 x 20.5 cm"
+      },
+      "summaryDoc": "Quyền lực duy nhất được phép áp đặt lên tự do của cá nhân là để ngăn ngừa tổn hại cho người khác."
+    },
+    {
+      "id": 31,
+      "title": "Clean Code: Mã Sạch",
+      "author": "Robert C. Martin",
+      "price": 320000,
+      "categories": [
+        "Khoa học & Kỹ thuật",
+        "Công nghệ thông tin"
+      ],
+      "description": "Sách hướng dẫn về nghệ thuật viết mã phần mềm dễ đọc, dễ bảo trì, tối ưu hiệu suất.",
+      "image": "https://drive.google.com/uc?export=view&id=171On6SqgGdf0xup9kcI3Gx3Y313I340J",
+      "specs": {
+        "isbn": "978-3322110099",
+        "language": "Tiếng Anh",
+        "publisher": "Prentice Hall",
+        "format": "Bìa Mềm",
+        "pages": 464,
+        "publishDate": "01 Tháng 8, 2008",
+        "dimensions": "18 x 23 cm"
+      },
+      "summaryDoc": "Viết code cho máy tính hiểu thì ai cũng làm được. Lập trình viên giỏi viết code cho con người hiểu."
+    },
+    {
+      "id": 32,
+      "title": "Cấu Trúc Dữ Liệu Và Giải Thuật",
+      "author": "Nhiều Tác Giả",
+      "price": 150000,
+      "categories": [
+        "Khoa học & Kỹ thuật",
+        "Công nghệ thông tin",
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Giáo trình cốt lõi trang bị nền tảng về thuật toán, cây, đồ thị, và tối ưu hóa hệ thống.",
+      "image": "https://drive.google.com/uc?export=view&id=1Ql09LAfCds8difmhBGk1Etc0j51j3-wf",
+      "specs": {
+        "isbn": "978-1100998877",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Bách Khoa",
+        "format": "Bìa Mềm",
+        "pages": 350,
+        "publishDate": "15 Tháng 9, 2022",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Kiến thức nền tảng quan trọng nhất để vượt qua các vòng phỏng vấn kỹ thuật."
+    },
+    {
+      "id": 33,
+      "title": "Lược Sử Thời Gian",
+      "author": "Stephen Hawking",
+      "price": 145000,
+      "categories": [
+        "Khoa học & Kỹ thuật"
+      ],
+      "description": "Hành trình khám phá các bí ẩn của vũ trụ, từ vụ nổ Big Bang đến các lỗ đen.",
+      "image": "https://drive.google.com/uc?export=view&id=1BFHwXYnQIi09vBJOv_R4RUP8PKKSniEk",
+      "specs": {
+        "isbn": "978-9988770011",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Trẻ",
+        "format": "Bìa Mềm",
+        "pages": 292,
+        "publishDate": "10 Tháng 4, 2018",
+        "dimensions": "13 x 20.5 cm"
+      },
+      "summaryDoc": "Một trong những cuốn sách phổ biến khoa học vĩ đại nhất mọi thời đại."
+    },
+    {
+      "id": 34,
+      "title": "Vũ Trụ",
+      "author": "Carl Sagan",
+      "price": 210000,
+      "categories": [
+        "Khoa học & Kỹ thuật"
+      ],
+      "description": "Tác phẩm đưa người đọc du hành qua không gian và thời gian, khám phá 14 tỷ năm tiến hóa vũ trụ.",
+      "image": "https://drive.google.com/uc?export=view&id=1tbXC3LGzJVtWAiOFQPM3Wp06ihYiIjYn",
+      "specs": {
+        "isbn": "978-2211003344",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Nhã Nam",
+        "format": "Bìa Cứng",
+        "pages": 412,
+        "publishDate": "20 Tháng 11, 2019",
+        "dimensions": "15 x 24 cm"
+      },
+      "summaryDoc": "Chúng ta là một cách để vũ trụ nhận biết chính nó."
+    },
+    {
+      "id": 35,
+      "title": "Design Patterns",
+      "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+      "price": 450000,
+      "categories": [
+        "Khoa học & Kỹ thuật",
+        "Công nghệ thông tin"
+      ],
+      "description": "Cuốn sách định nghĩa 23 mẫu thiết kế phần mềm cốt lõi, cẩm nang gối đầu giường của kỹ sư phần mềm.",
+      "image": "https://drive.google.com/uc?export=view&id=11jdAFuXGB3prhntDFGc5TDEYkJ5b6pEN",
+      "specs": {
+        "isbn": "978-4455667788",
+        "language": "Tiếng Anh",
+        "publisher": "Addison-Wesley Professional",
+        "format": "Bìa Cứng",
+        "pages": 395,
+        "publishDate": "10 Tháng 11, 1994",
+        "dimensions": "19 x 24 cm"
+      },
+      "summaryDoc": "Giải pháp tiêu chuẩn cho các vấn đề thiết kế phần mềm thường gặp."
+    },
+    {
+      "id": 36,
+      "title": "English Grammar In Use",
+      "author": "Raymond Murphy",
+      "price": 280000,
+      "categories": [
+        "Ngoại ngữ",
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Tài liệu học ngữ pháp tiếng Anh tự học và luyện thi bán chạy nhất thế giới.",
+      "image": "https://drive.google.com/uc?export=view&id=1pL3sQNSsb5VZtBSpzvmaYIThyIh5nj8J",
+      "specs": {
+        "isbn": "978-6677889900",
+        "language": "Tiếng Anh",
+        "publisher": "Cambridge University Press",
+        "format": "Bìa Mềm",
+        "pages": 394,
+        "publishDate": "24 Tháng 1, 2019",
+        "dimensions": "19.5 x 26.5 cm"
+      },
+      "summaryDoc": "Sách cung cấp lý thuyết rõ ràng kèm bài tập thực hành sát thực tế."
+    },
+    {
+      "id": 37,
+      "title": "Hack Não 1500 Từ Tiếng Anh",
+      "author": "Nguyễn Văn Hiệp",
+      "price": 395000,
+      "categories": [
+        "Ngoại ngữ",
+        "Phát triển bản thân"
+      ],
+      "description": "Phương pháp học từ vựng bằng âm thanh tương tự và truyện chêm giúp ghi nhớ nhanh.",
+      "image": "https://drive.google.com/uc?export=view&id=1zN0ga0Rvbyi4wnqL3P_DbvIdyxlaevMy",
+      "specs": {
+        "isbn": "978-8899001122",
+        "language": "Tiếng Việt, Tiếng Anh",
+        "publisher": "NXB Hà Nội",
+        "format": "Bìa Cứng",
+        "pages": 530,
+        "publishDate": "05 Tháng 6, 2021",
+        "dimensions": "21 x 29.7 cm"
+      },
+      "summaryDoc": "Đột phá việc học từ vựng tiếng Anh cho người mất gốc."
+    },
+    {
+      "id": 38,
+      "title": "Minna no Nihongo Sơ Cấp 1",
+      "author": "3A Network",
+      "price": 155000,
+      "categories": [
+        "Ngoại ngữ",
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Giáo trình chuẩn quốc tế dành cho người mới bắt đầu học tiếng Nhật.",
+      "image": "https://drive.google.com/uc?export=view&id=19-VsFVLAdyqf5KsQshacu8NQVxNVGpv6",
+      "specs": {
+        "isbn": "978-1122330044",
+        "language": "Tiếng Việt, Tiếng Nhật",
+        "publisher": "NXB Trẻ",
+        "format": "Bìa Mềm",
+        "pages": 210,
+        "publishDate": "12 Tháng 3, 2020",
+        "dimensions": "18 x 26 cm"
+      },
+      "summaryDoc": "Bao gồm giải thích ngữ pháp chi tiết và bảng từ vựng song ngữ."
+    },
+    {
+      "id": 39,
+      "title": "IELTS Cambridge 18 Academic",
+      "author": "Cambridge Assessment English",
+      "price": 220000,
+      "categories": [
+        "Ngoại ngữ",
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Tuyển tập 4 đề thi IELTS mô phỏng độ khó thực tế của năm mới nhất.",
+      "image": "https://drive.google.com/uc?export=view&id=15jxcHcJZBnMW7fd_crj0uAj0Yp0bX4Nc",
+      "specs": {
+        "isbn": "978-3300445566",
+        "language": "Tiếng Anh",
+        "publisher": "Cambridge University Press",
+        "format": "Bìa Mềm",
+        "pages": 142,
+        "publishDate": "08 Tháng 6, 2023",
+        "dimensions": "20 x 27.5 cm"
+      },
+      "summaryDoc": "Công cụ không thể thiếu để luyện đề trước khi bước vào kỳ thi thật."
+    },
+    {
+      "id": 40,
+      "title": "Giáo Trình Hán Ngữ Quyển 1",
+      "author": "Đại học Ngôn ngữ Bắc Kinh",
+      "price": 120000,
+      "categories": [
+        "Ngoại ngữ",
+        "Giáo trình & Sách học thuật"
+      ],
+      "description": "Bộ sách học tiếng Trung phổ biến nhất dành cho sinh viên Việt Nam.",
+      "image": "https://drive.google.com/uc?export=view&id=1Vun0m_PJ7AhCLNkI0i-T2yDAXP14CiQT",
+      "specs": {
+        "isbn": "978-5566778899",
+        "language": "Tiếng Việt, Tiếng Trung",
+        "publisher": "NXB Đại học Quốc gia Hà Nội",
+        "format": "Bìa Mềm",
+        "pages": 180,
+        "publishDate": "20 Tháng 8, 2022",
+        "dimensions": "17 x 24 cm"
+      },
+      "summaryDoc": "Tập trung vào phát âm chuẩn (Pinyin) và nhận diện các bộ thủ cơ bản."
+    },
+    {
+      "id": 41,
+      "title": "Chí Phèo",
+      "author": "Nam Cao",
+      "price": 82000,
+      "categories": [
+        "Văn học",
+        "Văn học Việt Nam"
+      ],
+      "description": "Chí Phèo - Với những tình tiết hấp hẫn Nam Cao đã đưa người đọc tái hiện bức tranh chân thực nông thôn Việt Nam trước 1945,...",
+      "image": "https://drive.google.com/uc?export=view&id=1lYjwLiC5An87xLOdav9fPf4tRcs9bDyY",
+      "specs": {
+        "isbn": "978-4829301234",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Văn Học",
+        "format": "Bìa Cứng",
+        "pages": 328,
+        "publishDate": "5 Tháng 11, 2015",
+        "dimensions": "20.5 x 14.5 x 2 cm"
+      },
+      "summaryDoc": "Chí Phèo - Một tác phẩm kinh điển của văn học Việt Nam, kể về cuộc đời bi thảm của Chí Phèo, một người nông dân bị xã hội đẩy vào con đường tội lỗi."
+    },
+    {
+      "id": 42,
+      "title": "Dế Mèn Phiêu Lưu Ký",
+      "author": "Tô Hoài",
+      "price": 54000,
+      "categories": [
+        "Văn học",
+        "Văn học Việt Nam"
+      ],
+      "description": "Trong hơn nửa thế kỉ, kể từ ngày đầu tiên ra mắt bạn đọc, năm 1941, Dế Mèn phiêu lưu ký là một trong những sáng tác tâm đắc nhất của nhà văn Tô Hoài....",
+      "image": "https://drive.google.com/uc?export=view&id=1eLhAgEZRXeQ5ZxhneEMWYiLhVpulbEal",
+      "specs": {
+        "isbn": "978-5928371029",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Kim Đồng",
+        "format": "Bìa Mềm",
+        "pages": 48,
+        "publishDate": "15 Tháng 7, 2020",
+        "dimensions": "21.5 x 28 cm"
+      },
+      "summaryDoc": "Dế Mèn phiêu lưu ký là một tác phẩm kinh điển của văn học Việt Nam, kể về cuộc đời của Dế Mèn."
+    },
+    {
+      "id": 43,
+      "title": "Số Đỏ",
+      "author": "Vũ Trọng Phụng",
+      "price": 75000,
+      "categories": [
+        "Văn học",
+        "Văn học Việt Nam"
+      ],
+      "description": "Tiểu thuyết Số đỏ là câu chuyện kể về Xuân, thường gọi là “Xuân tóc đỏ”...",
+      "image": "https://drive.google.com/uc?export=view&id=1iXW-02pqSgV_7hz6J4vdTCfes943VzCm",
+      "specs": {
+        "isbn": "978-1029384756",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Văn Học",
+        "format": "Bìa Mềm",
+        "pages": 215,
+        "publishDate": "20 Tháng 3, 2020",
+        "dimensions": "13 x 19 cm"
+      },
+      "summaryDoc": "Số đỏ là một tác phẩm kinh điển của văn học Việt Nam."
+    },
+    {
+      "id": 44,
+      "title": "Tắt Đèn",
+      "author": "Ngô Tất Tố",
+      "price": 68000,
+      "categories": [
+        "Truyện dài",
+        "Tiểu thuyết Việt Nam"
+      ],
+      "description": "Tắt đèn của nhà văn Ngô Tất Tố phản ánh rất chân thực cuộc sống khốn khổ của tầng lớp nông dân...",
+      "image": "https://drive.google.com/uc?export=view&id=1160vl1p9ygt_bROhNvu0rJD8-Ua2iM6B",
+      "specs": {
+        "isbn": "978-1122334455",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Văn Học",
+        "format": "Bìa Mềm",
+        "pages": 216,
+        "publishDate": "3 Tháng 6 , 2018",
+        "dimensions": "13x20.5 cm"
+      },
+      "summaryDoc": "Tắt Đèn là một tác phẩm kinh điển phản ánh xã hội nông thôn trước Cách mạng."
+    },
+    {
+      "id": 45,
+      "title": "Tiểu Thuyết Việt Nam",
+      "author": "Phạm Ngọc Hiền",
+      "price": 92000,
+      "categories": [
+        "Tiểu thuyết",
+        "Tiểu thuyết Việt Nam"
+      ],
+      "description": "Công trình nghiên cứu chuyên sâu về toàn bộ tiểu thuyết cách mạng Việt Nam 1945-1975.",
+      "image": "https://drive.google.com/uc?export=view&id=1GRy6winYFT8pPGuMoNgl6_tdCEq-YMp0",
+      "specs": {
+        "isbn": "978-0099887766",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tổng Hợp",
+        "format": "Bìa Mềm",
+        "pages": 415,
+        "publishDate": "24 Tháng 9 , 2018",
+        "dimensions": "14.5x20.5 cm"
+      },
+      "summaryDoc": "Tác phẩm nghiên cứu hệ thống các thể loại văn học hiện đại Việt Nam."
+    },
+    {
+      "id": 46,
+      "title": "15 Nguyên Tắc Vàng Về Phát Triển Bản Thân",
+      "author": "John C. Maxwell",
+      "price": 92000,
+      "categories": [
+        "Kỹ năng sống",
+        "Phát triển bản thân"
+      ],
+      "description": "Cuốn sách giúp bạn trở thành một người học hỏi không mệt mỏi...",
+      "image": "https://drive.google.com/uc?export=view&id=1-3tp2F60_gZhmkT-HZb_PUxUtjbuXAC1",
+      "specs": {
+        "isbn": "978-8877665544",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Thế Giới",
+        "format": "Bìa Mềm",
+        "pages": 442,
+        "publishDate": "1 Tháng 1 , 2018",
+        "dimensions": "13 x 20.5 cm"
+      },
+      "summaryDoc": "Hướng dẫn quan trọng để đạt được tiềm năng tối đa trong cuộc sống."
+    },
+    {
+      "id": 47,
+      "title": "Đánh Thức Con Người Phi Thường Trong Bạn",
+      "author": "Anthony Robbins",
+      "price": 135000,
+      "categories": [
+        "Kỹ năng sống",
+        "Phát triển bản thân"
+      ],
+      "description": "Khám phá giá trị tiềm ẩn của bản thân để tạo nên những kết quả chính mình không ngờ đến.",
+      "image": "https://drive.google.com/uc?export=view&id=1usO3LgVo6nCM2hyHQm4Cq-E__ghazcM5",
+      "specs": {
+        "isbn": "978-2233445566",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tổng Hợp Tp.HCM",
+        "format": "Bìa Cứng",
+        "pages": 408,
+        "publishDate": "15 Tháng 4, 2020",
+        "dimensions": "14.5 x 20.5 cm"
+      },
+      "summaryDoc": "Xây dựng sự kiên trì và đánh thức sức mạnh nội tại."
+    },
+    {
+      "id": 48,
+      "title": "Nghĩ Giàu Làm Làm",
+      "author": "Napoleon Hill",
+      "price": 132000,
+      "categories": [
+        "Kỹ năng sống",
+        "Phát triển bản thân"
+      ],
+      "description": "Cuốn sách truyền cảm hứng thành công nhiều hơn bất cứ cuốn sách kinh doanh nào trong lịch sử.",
+      "image": "https://drive.google.com/uc?export=view&id=1WncS53r45F6yphBMfStwEaVFG2-L52JG",
+      "specs": {
+        "isbn": "978-9988776655",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tổng Hợp Tp.HCM",
+        "format": "Bìa Cứng",
+        "pages": 272,
+        "publishDate": "15 Tháng 4, 2020",
+        "dimensions": "14.5 x 20.5 cm"
+      },
+      "summaryDoc": "Tác phẩm kinh điển về tư duy tích cực và thành công."
+    },
+    {
+      "id": 49,
+      "title": "Phát Triển Kỹ Năng Lãnh Đạo",
+      "author": "John C. Maxwell",
+      "price": 143000,
+      "categories": [
+        "Kỹ năng sống",
+        "Lãnh đạo",
+        "Phát triển bản thân"
+      ],
+      "description": "Lãnh đạo là sự ảnh hưởng, không hơn, không kém.",
+      "image": "https://drive.google.com/uc?export=view&id=1T06_9lz7wIlVN7ANi6RdZYFsG5jc5dp4",
+      "specs": {
+        "isbn": "978-7766554433",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tổng Hợp Tp.HCM",
+        "format": "Bìa Cứng",
+        "pages": 430,
+        "publishDate": "7 Tháng 4, 2022",
+        "dimensions": "20.5 x 13 cm"
+      },
+      "summaryDoc": "Hiểu rõ về định nghĩa và phẩm chất của một nhà lãnh đạo."
+    },
+    {
+      "id": 50,
+      "title": "Rèn Luyện Kỹ Năng Phát Triển Bản Thân",
+      "author": "Scott H. Young",
+      "price": 103000,
+      "categories": [
+        "Kỹ năng sống",
+        "Phát triển bản thân"
+      ],
+      "description": "Rèn luyện kỹ năng để đương đầu với mọi sự đổi thay của xã hội.",
+      "image": "https://drive.google.com/uc?export=view&id=17HnbnIdDaZAJD_qcHzGoOD1ux2ahIu1c",
+      "specs": {
+        "isbn": "978-5544332211",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tổng Hợp Tp.HCM",
+        "format": "Bìa Mềm",
+        "pages": 350,
+        "publishDate": "15 Tháng 12, 2020",
+        "dimensions": "20.5 x 13 cm x 1.6"
+      },
+      "summaryDoc": "Xây dựng kỹ năng cần thiết để đối mặt với biến cố cuộc sống."
+    },
+    {
+      "id": 51,
+      "title": "Người Việt trong Dòng Lịch Sử Văn Hóa",
+      "author": "Nguyễn Xuân Kính",
+      "price": 467000,
+      "categories": [
+        "Lịch Sử",
+        "Văn Hóa"
+      ],
+      "description": "Trình bày khái quát chân dung người Việt trong mối quan hệ với môi trường tự nhiên và xã hội.",
+      "image": "https://drive.google.com/uc?export=view&id=1LKo-fBP_DCaH70CZns3di1LP_xXgLJJN",
+      "specs": {
+        "isbn": "978-3322110099",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Khoa Học Xã Hội",
+        "format": "Bìa Cứng",
+        "pages": 1024,
+        "publishDate": "8 Tháng 4, 2019",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Cung cấp cái nhìn sâu sắc về lịch sử và văn hóa người Việt."
+    },
+    {
+      "id": 52,
+      "title": "Lịch Sử và Văn Hóa Việt Nam Trong Góc Nhìn Đổi Mới",
+      "author": "Nguyễn Thừa Hỷ",
+      "price": 199000,
+      "categories": [
+        "Lịch Sử",
+        "Văn Hóa"
+      ],
+      "description": "Chuỗi kế tiếp những hệ hình kích cỡ khác nhau trong lịch sử Việt Nam.",
+      "image": "https://drive.google.com/uc?export=view&id=1jBamBjIY-BLkUJo0qk237G8mXFmHesWQ",
+      "specs": {
+        "isbn": "978-1100998877",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Khoa Học Xã Hội",
+        "format": "Bìa Mềm",
+        "pages": 302,
+        "publishDate": "15 Tháng 5, 2019",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Nghiên cứu quá trình phát triển đất nước từ nguyên thủy đến nay."
+    },
+    {
+      "id": 53,
+      "title": "Núi Xanh Nay Vẫn Đó",
+      "author": "Nguyễn Duy Chính",
+      "price": 132000,
+      "categories": [
+        "Lịch Sử",
+        "Văn Hóa"
+      ],
+      "description": "Nghiên cứu về sự thay đổi mô thức chính trị thời nhà Nguyễn.",
+      "image": "https://drive.google.com/uc?export=view&id=1a3KXmucp_fxOVi4sFNSor8SHq1JS1Y11",
+      "specs": {
+        "isbn": "978-9988770011",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Văn Hóa Và Nghệ Thuật",
+        "format": "Bìa Mềm",
+        "pages": 602,
+        "publishDate": "1 Tháng 1, 2016",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Phân tích những biến chuyển lịch sử gây ảnh hưởng đến khu vực."
+    },
+    {
+      "id": 54,
+      "title": "Sử Việt",
+      "author": "Trần Kinh Hòa",
+      "price": 176000,
+      "categories": [
+        "Lịch Sử",
+        "Văn Hóa"
+      ],
+      "description": "Phương pháp nghiên cứu cổ sử thông qua đối chiếu đa quốc gia.",
+      "image": "https://drive.google.com/uc?export=view&id=1vAB6zvs42AkHcaPMgvWjBcrSc4npTjLc",
+      "specs": {
+        "isbn": "978-2211003344",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Đà Nẵng",
+        "format": "Bìa Mềm",
+        "pages": 400,
+        "publishDate": "12 Tháng 12, 2023",
+        "dimensions": "15 x 23 cm"
+      },
+      "summaryDoc": "Khảo chứng sử liệu Việt Nam dựa trên các nguồn tài liệu quốc tế."
+    },
+    {
+      "id": 55,
+      "title": "Phật Giáo Việt Nam góc nhìn lịch Sử và Văn Hóa",
+      "author": "Trần Thuận",
+      "price": 120000,
+      "categories": [
+        "Lịch Sử",
+        "Văn Hóa"
+      ],
+      "description": "Quá trình truyền bá và phát triển của đạo Phật tại nước Việt.",
+      "image": "https://drive.google.com/uc?export=view&id=1S27-jLFhsQ1N7AyReyfaDhc0c-GJidtH",
+      "specs": {
+        "isbn": "978-4455667788",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Tổng Hợp Tp.HCM",
+        "format": "Bìa Mềm",
+        "pages": 343,
+        "publishDate": "6 Tháng 7, 2015",
+        "dimensions": "16 x 24 cm"
+      },
+      "summaryDoc": "Nghiên cứu ảnh hưởng của Phật giáo đối với văn hóa và xã hội Việt Nam."
+    },
+    {
+      "id": 56,
+      "title": "Cẩm Nang Thiết Kế",
+      "author": "Robin Williams",
+      "price": 225000,
+      "categories": [
+        "Thiết Kế",
+        "Nghệ Thuật"
+      ],
+      "description": "Làm quen với 4 nguyên tắc cơ bản giúp thiết kế trở nên chuyên nghiệp.",
+      "image": "https://drive.google.com/uc?export=view&id=16Lx0q141iQu35fZNN33mwSGSYMV7ZD_i",
+      "specs": {
+        "isbn": "978-6677889900",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Trẻ",
+        "format": "Bìa Mềm",
+        "pages": 260,
+        "publishDate": "15 Tháng 4, 2023",
+        "dimensions": "19 x 26 cm"
+      },
+      "summaryDoc": "Hướng dẫn chi tiết kỹ thuật thiết kế cho mọi đối tượng."
+    },
+    {
+      "id": 57,
+      "title": "Graphics",
+      "author": "Kee Agency",
+      "price": 77000,
+      "categories": [
+        "Thiết Kế",
+        "Nghệ Thuật"
+      ],
+      "description": "Tìm hiểu và phát triển sự nghiệp trong lĩnh vực thiết kế đồ họa.",
+      "image": "https://drive.google.com/uc?export=view&id=1Mc8WK9RbkbTOyErGUvMUUPM3ujO1qO48",
+      "specs": {
+        "isbn": "978-8899001122",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Thanh Niên",
+        "format": "Bìa Mềm",
+        "pages": 94,
+        "publishDate": "12 Tháng 2, 2021",
+        "dimensions": "19 x 26.5 cm"
+      },
+      "summaryDoc": "Cung cấp kiến thức và kỹ năng đồ họa chuyên sâu."
+    },
+    {
+      "id": 58,
+      "title": "Nội Thất & Thiết Kế Nội Thất 2",
+      "author": "KTS. Phạm Đình Việt",
+      "price": 207000,
+      "categories": [
+        "Thiết Kế",
+        "Nghệ Thuật"
+      ],
+      "description": "Trang trí nội thất chuyên sâu cho nhà ở, công cộng và showroom.",
+      "image": "https://drive.google.com/uc?export=view&id=1BISBGCOrstrnlCt54kCBEGFozLjKLKZT",
+      "specs": {
+        "isbn": "978-1122330044",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Xây Dựng",
+        "format": "Bìa Mềm",
+        "pages": 190,
+        "publishDate": "10 Tháng 9, 2022",
+        "dimensions": "20.5 x 24cm"
+      },
+      "summaryDoc": "Kiến thức trang trí nội thất cho các thể loại công trình hiện đại."
+    },
+    {
+      "id": 59,
+      "title": "Nội Thất & Thiết Kế Nội Thất 1",
+      "author": "KTS. Phạm Đình Việt",
+      "price": 189000,
+      "categories": [
+        "Thiết Kế",
+        "Nghệ Thuật"
+      ],
+      "description": "Những vấn đề cơ bản trong trang trí nội thất công trình.",
+      "image": "https://drive.google.com/uc?export=view&id=1gkHSgaQ1nAWhU-P-bWpiCiFOr6Y2ddM6",
+      "specs": {
+        "isbn": "978-3300445566",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Xây Dựng",
+        "format": "Bìa Mềm",
+        "pages": 223,
+        "publishDate": "10 Tháng 9, 2022",
+        "dimensions": "20.5 x 23 cm"
+      },
+      "summaryDoc": "Nền tảng chuyên sâu cho sự nghiệp thiết kế nội thất."
+    },
+    {
+      "id": 60,
+      "title": "Nhận Diện Nghệ Thuật Đồ Họa",
+      "author": "Uyên Huy",
+      "price": 560000,
+      "categories": [
+        "Thiết Kế",
+        "Nghệ Thuật"
+      ],
+      "description": "Quá trình sáng tạo các tác phẩm nghệ thuật in ấn trên giấy.",
+      "image": "https://drive.google.com/uc?export=view&id=1ZxfCbIcNz6dWyVnvv6HxJiDbhg7IxNtf",
+      "specs": {
+        "isbn": "978-5566778899",
+        "language": "Tiếng Việt",
+        "publisher": "NXB Mỹ Thuật",
+        "format": "Bìa Cứng",
+        "pages": 496,
+        "publishDate": "9 Tháng 2, 2024",
+        "dimensions": "29 x 21 cm"
+      },
+      "summaryDoc": "Phát triển khả năng phân tích nghệ thuật đồ họa từ cơ bản đến nâng cao."
+    }
+  ]
+}
