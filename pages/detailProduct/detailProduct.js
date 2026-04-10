@@ -97,3 +97,4 @@ function updateQty(change) {
     if (val < 1) val = 1;
     input.value = val;
 }
+
