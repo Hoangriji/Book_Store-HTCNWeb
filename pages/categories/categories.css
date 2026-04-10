@@ -93,7 +93,7 @@
 
 .products-header__sort-label {
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-right: 0.5rem;
 }
@@ -148,7 +148,7 @@
 .aside-wrapper {
   position: sticky;
   top: 100px;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 75px);
   overflow-y: auto;
   align-self: flex-start;
   padding-left: 0;
@@ -248,7 +248,7 @@ aside {
 
 .filter__option-label {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #333;
   font-weight: 500;
   cursor: pointer;
@@ -452,7 +452,7 @@ aside {
 
 .products-header__result {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #333;
   letter-spacing: 0.5px;
@@ -503,10 +503,6 @@ aside {
   aside {
     padding: 0;
   }
-
-  .categories-main .row {
-    flex-direction: column;
-  }
   .carousel-item:nth-child(1) .page-header-container { padding: 0 0 0 3rem; }
   .carousel-item:nth-child(3) .page-header-container { padding: 0 3rem 0 0; }
   .products-wrapper { padding: 1.8rem 1.5rem 0 1.5rem; }
@@ -514,6 +510,15 @@ aside {
 }
 
 @media (max-width: 991.98px) {
+  .categories-main .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .categories-main .row > * {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
   #booksGrid {
         display: flex !important;
         flex-wrap: wrap !important;

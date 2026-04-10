@@ -644,11 +644,19 @@ html, body {
         justify-content: center !important;
     }
 
-    #relatedGrid > .col-auto {
-        display: flex;
-        justify-content: center;
-        width: 100%; 
+     #relatedGrid {
+        justify-content: center !important;
     }
+
+    #relatedGrid > .col-auto {
+        flex: 0 0 calc(50% - 0.5rem) !important;
+        max-width: calc(50% - 0.5rem) !important;
+    }
+
+    #relatedGrid > .col-auto .card-product {
+        width: 100% !important;
+        max-width: 100% !important;
+    }   
 
     .breadcrumb-section {
         padding: 25px 15px;
