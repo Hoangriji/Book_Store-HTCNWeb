@@ -1,0 +1,72 @@
+@import url('/shared/css/style.css');
+
+.main {
+    padding: 60px 0;
+    background-color: var(--color-background);
+    min-height: 60vh;
+}
+
+.search-header {
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+}
+
+.search-header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+}
+
+.search-header p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#searchResults {
+    margin-bottom: 40px;
+}
+
+#searchResults .col-auto {
+    display: flex;
+    justify-content: center;
+}
+
+#noResults {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: none;
+}
+
+#noResults h4 {
+    font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+
+    .search-header h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main {
+        padding: 40px 0;
+    }
+
+    .search-header {
+        padding-bottom: 18px;
+        margin-bottom: 24px;
+}
+
+    .search-header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .search-header h1 {
+        font-size: 1.3rem;
+    }
+}
