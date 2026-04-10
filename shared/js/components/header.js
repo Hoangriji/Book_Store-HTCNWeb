@@ -1,5 +1,28 @@
 export const header = () => {
     const headerElement = document.querySelector(".inner-header");
+    
+    // check log acc 
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    
+    // 2 state: btn login and user
+    const userButton = currentUser ? `
+        <div class="user-actions-dropdown">
+            <div class="user-actions-btn">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="dropdown-menu">
+                <a href="/pages/userDetailPage/userDetailPage.html" class="dropdown-item">Trang cá nhân</a>
+                <button id="logoutBtn" class="dropdown-item logout-item">Đăng xuất</button>
+            </div>
+        </div>
+    ` : `
+        <a href="/pages/login/login.html" class="user-actions-link">
+            <div class="user-actions-btn">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </a>
+    `;
+    
     const headerTemplate = /* html */ `
         <div class="container">
             <div class="header-wrapper">
@@ -45,15 +68,9 @@ export const header = () => {
                         <a href="/pages/cartPage/cart.html" class="user-actions-link">
                             <div class="user-actions-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
-                                <span class="cart-badge">0</span>
                             </div>
                         </a>
-                        <a href="/pages/login/login.html" class="user-actions-link">
-                            <div class="user-actions-btn">
-                                <i class="fa-solid fa-user"></i>
-                                <span>Đăng nhập</span>
-                            </div>
-                        </a>
+                        ${userButton}
                     </div>
                 </div>
             </div>
@@ -61,6 +78,35 @@ export const header = () => {
     `;
     if (headerElement) {
         headerElement.innerHTML = headerTemplate;
+
+        // add logout 
+        const logoutBtn = headerElement.querySelector("#logoutBtn");
+        if (logoutBtn) {
+            logoutBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                localStorage.removeItem("currentUser");
+                window.location.href = "/index.html";
+            });
+        }
+
+        // handle dropdown menu
+        const userDropdown = headerElement.querySelector(".user-actions-dropdown");
+        if (userDropdown) {
+            const dropdownMenu = userDropdown.querySelector(".dropdown-menu");
+            const userBtn = userDropdown.querySelector(".user-actions-btn");
+            
+            userBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+            });
+
+            // close dropdown when clicking outside
+            document.addEventListener("click", (e) => {
+                if (!userDropdown.contains(e.target)) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+        }
 
         // hamburger
         const hamburgerBtn = headerElement.querySelector(".hamburger-btn");
