@@ -472,16 +472,40 @@ aside {
 }
 
 #booksGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1.5rem 0.5rem;
-  border-radius: 1rem;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important; /* Căn giữa các card trong hàng */
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Responsive */
 @media (max-width: 1199.98px) {
+  #booksGrid > div {
+      display: flex;
+      justify-content: center;
+      width: 100%; /* Đảm bảo mỗi card chiếm 1 hàng và nằm giữa */
+  }
+
+  .products-header {
+      align-items: center !important; /* Căn giữa text tiêu đề mobile */
+      text-align: center;
+  }
+  .aside-wrapper { 
+    position: static !important; 
+    max-height: none !important; 
+    overflow-y: visible !important;
+    width: 100%;
+  }
+  
+  aside {
+    padding: 0;
+  }
+
+  .categories-main .row {
+    flex-direction: column;
+  }
   .carousel-item:nth-child(1) .page-header-container { padding: 0 0 0 3rem; }
   .carousel-item:nth-child(3) .page-header-container { padding: 0 3rem 0 0; }
   .products-wrapper { padding: 1.8rem 1.5rem 0 1.5rem; }
