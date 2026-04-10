@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const returnBtn = document.querySelector(".return");
 	const registerForm = document.querySelector("form");
+	const messageBox = document.getElementById("messageBox");
 
 	if (returnBtn) {
 		returnBtn.addEventListener("click", (event) => {
@@ -12,6 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (!registerForm) {
 		return;
 	}
+
+	const showMessage = (message, type = "error") => {
+		messageBox.className = `message-box ${type}`;
+		messageBox.textContent = message;
+		messageBox.style.display = "block";
+		
+		if (type === "success") {
+			setTimeout(() => {
+				messageBox.style.display = "none";
+			}, 2000);
+		}
+	};
 
 	const syncFilledState = (input) => {
 		if (!input) {
@@ -101,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const errors = validateRegisterData(formData, users);
 
 		if (errors.length > 0) {
-			alert(errors.join("\n"));
+			showMessage(errors.join("\n"), "error");
 			return;
 		}
 
@@ -117,7 +130,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		users.push(newUser);
 		saveUsers(users);
 
-		alert("Đăng ký thành công! Mời bạn đăng nhập.");
-		window.location.href = "../login/login.html";
+		showMessage("Đăng ký thành công! Đang chuyển hướng đến trang đăng nhập...", "success");
+		setTimeout(() => {
+			window.location.href = "../login/login.html";
+		}, 1500);
 	});
 });
