@@ -4,6 +4,7 @@ import { footer } from './components/footer.js';
 const initData = async () => {
     if (!localStorage.getItem('allBooks')) {
         try {
+            // gửi yêu câu và đợi tải xong file
             const response = await fetch('/shared/sach.json');
             const data = await response.json();
             localStorage.setItem('allBooks', JSON.stringify(data.books));
