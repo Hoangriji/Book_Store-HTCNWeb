@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="/shared/css/components/header.css">
     <link rel="stylesheet" href="/shared/css/components/footer.css">
     <link rel="stylesheet" href="userDetailPage.css">
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
     <!-- icon awesome free -->
     <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- header -->
     <header class="inner-header"></header>
@@ -58,26 +61,32 @@
                                 <h3 class="mb-4 fw-bold">Hồ sơ cá nhân</h3>
                                 <form id="profileForm">
                                     <div class="mb-3">
-                                        <label for="fullname" class="form-label fw-medium">Họ và tên <span class="text-danger">*</span></label>
+                                        <label for="fullname" class="form-label fw-medium">Họ và tên <span
+                                                class="text-danger">*</span></label>
                                         <input type="text" id="fullname" name="fullname" class="form-control" required>
-                                        <div class="invalid-feedback d-block mt-1 text-danger" id="fullname-error"></div>
+                                        <div class="invalid-feedback d-block mt-1 text-danger" id="fullname-error">
+                                        </div>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="username" class="form-label fw-medium">Tên đăng nhập</label>
                                         <input type="text" id="username" name="username" class="form-control" disabled>
-                                        <small class="d-block text-muted mt-1"><i class="fa-solid fa-info-circle me-1"></i>Không thể thay đổi tên đăng nhập</small>
+                                        <small class="d-block text-muted mt-1"><i
+                                                class="fa-solid fa-info-circle me-1"></i>Không thể thay đổi tên đăng
+                                            nhập</small>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="email" class="form-label fw-medium">Email <span class="text-danger">*</span></label>
+                                        <label for="email" class="form-label fw-medium">Email <span
+                                                class="text-danger">*</span></label>
                                         <input type="email" id="email" name="email" class="form-control" required>
                                         <div class="invalid-feedback d-block mt-1 text-danger" id="email-error"></div>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="phone" class="form-label fw-medium">Số điện thoại</label>
-                                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Nhập số điện thoại">
+                                        <input type="tel" id="phone" name="phone" class="form-control"
+                                            placeholder="Nhập số điện thoại">
                                         <div class="invalid-feedback d-block mt-1 text-danger" id="phone-error"></div>
                                     </div>
 
@@ -92,18 +101,22 @@
                             <div class="content-section" id="address-section">
                                 <h3 class="mb-4 fw-bold">Số địa chỉ</h3>
                                 <div id="addressList" class="mb-5"></div>
-                                
+
                                 <form id="addressForm">
                                     <h5 class="mb-3 fw-bold">Thêm địa chỉ mới</h5>
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
-                                            <label for="country" class="form-label fw-medium">Quốc gia <span class="text-danger">*</span></label>
-                                            <input type="text" id="country" name="country" class="form-control" placeholder="Việt Nam" required>
-                                            <div class="invalid-feedback d-block mt-1 text-danger" id="country-error"></div>
+                                            <label for="country" class="form-label fw-medium">Quốc gia <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="country" name="country" class="form-control"
+                                                placeholder="Việt Nam" required>
+                                            <div class="invalid-feedback d-block mt-1 text-danger" id="country-error">
+                                            </div>
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="province" class="form-label fw-medium">Tỉnh/Thành phố <span class="text-danger">*</span></label>
+                                            <label for="province" class="form-label fw-medium">Tỉnh/Thành phố <span
+                                                    class="text-danger">*</span></label>
                                             <select id="province" name="province" class="form-select" required>
                                                 <option value="">-- Chọn tỉnh/thành phố --</option>
                                                 <option value="Hà Nội">Hà Nội</option>
@@ -141,19 +154,26 @@
                                                 <option value="Cần Thơ">Cần Thơ</option>
                                                 <option value="Cà Mau">Cà Mau</option>
                                             </select>
-                                            <div class="invalid-feedback d-block mt-1 text-danger" id="province-error"></div>
+                                            <div class="invalid-feedback d-block mt-1 text-danger" id="province-error">
+                                            </div>
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="ward" class="form-label fw-medium">Xã/Phường <span class="text-danger">*</span></label>
-                                            <input type="text" id="ward" name="ward" class="form-control" placeholder="Phường Bến Nghé" required>
-                                            <div class="invalid-feedback d-block mt-1 text-danger" id="ward-error"></div>
+                                            <label for="ward" class="form-label fw-medium">Xã/Phường <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="ward" name="ward" class="form-control"
+                                                placeholder="Phường Bến Nghé" required>
+                                            <div class="invalid-feedback d-block mt-1 text-danger" id="ward-error">
+                                            </div>
                                         </div>
 
                                         <div class="col-12 mb-3">
-                                            <label for="street" class="form-label fw-medium">Đường/Số nhà <span class="text-danger">*</span></label>
-                                            <input type="text" id="street" name="street" class="form-control" placeholder="123 Nguyễn Huệ" required>
-                                            <div class="invalid-feedback d-block mt-1 text-danger" id="street-error"></div>
+                                            <label for="street" class="form-label fw-medium">Đường/Số nhà <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="street" name="street" class="form-control"
+                                                placeholder="123 Nguyễn Huệ" required>
+                                            <div class="invalid-feedback d-block mt-1 text-danger" id="street-error">
+                                            </div>
                                         </div>
                                     </div>
 
@@ -169,21 +189,30 @@
                                 <h3 class="mb-4 fw-bold">Đổi mật khẩu</h3>
                                 <form id="passwordForm">
                                     <div class="mb-3">
-                                        <label for="currentPassword" class="form-label fw-medium">Mật khẩu hiện tại <span class="text-danger">*</span></label>
-                                        <input type="password" id="currentPassword" name="currentPassword" class="form-control" required>
-                                        <div class="invalid-feedback d-block mt-1 text-danger" id="currentPassword-error"></div>
+                                        <label for="currentPassword" class="form-label fw-medium">Mật khẩu hiện tại
+                                            <span class="text-danger">*</span></label>
+                                        <input type="password" id="currentPassword" name="currentPassword"
+                                            class="form-control" required>
+                                        <div class="invalid-feedback d-block mt-1 text-danger"
+                                            id="currentPassword-error"></div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="newPassword" class="form-label fw-medium">Mật khẩu mới <span class="text-danger">*</span></label>
-                                        <input type="password" id="newPassword" name="newPassword" class="form-control" required>
-                                        <div class="invalid-feedback d-block mt-1 text-danger" id="newPassword-error"></div>
+                                        <label for="newPassword" class="form-label fw-medium">Mật khẩu mới <span
+                                                class="text-danger">*</span></label>
+                                        <input type="password" id="newPassword" name="newPassword" class="form-control"
+                                            required>
+                                        <div class="invalid-feedback d-block mt-1 text-danger" id="newPassword-error">
+                                        </div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="confirmPassword" class="form-label fw-medium">Xác nhận mật khẩu mới <span class="text-danger">*</span></label>
-                                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
-                                        <div class="invalid-feedback d-block mt-1 text-danger" id="confirmPassword-error"></div>
+                                        <label for="confirmPassword" class="form-label fw-medium">Xác nhận mật khẩu mới
+                                            <span class="text-danger">*</span></label>
+                                        <input type="password" id="confirmPassword" name="confirmPassword"
+                                            class="form-control" required>
+                                        <div class="invalid-feedback d-block mt-1 text-danger"
+                                            id="confirmPassword-error"></div>
                                     </div>
 
                                     <div class="d-flex gap-2 align-items-center mt-4">
@@ -205,4 +234,5 @@
     <script type="module" src="/shared/js/main.js"></script>
     <script src="userDetailPage.js"></script>
 </body>
+
 </html>

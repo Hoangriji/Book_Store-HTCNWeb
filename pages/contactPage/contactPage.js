@@ -8,13 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const btn = contactForm.querySelector("button[type='submit']");
       const originalText = btn.innerText;
 
-      // Hiệu ứng loading
+      // 1. Hiệu ứng đang gửi (Loading)
       btn.innerText = "Đang gửi...";
       btn.disabled = true;
 
-      // Giả lập gửi dữ liệu
+      // 2. Giả lập gửi dữ liệu sau 1.5 giây
       setTimeout(() => {
-        alert("Cảm ơn bạn! Chúng tôi đã nhận được tin nhắn.");
+        // Gọi hàm hiển thị Toast Message Box
+        showToast();
+
+        // 3. Reset lại form và nút bấm
         contactForm.reset();
         btn.innerText = originalText;
         btn.disabled = false;
@@ -22,3 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Hàm hiển thị Toast
+function showToast() {
+  const toast = document.getElementById("toastMessage");
+  toast.classList.add("show");
+
+  // Tự động đóng sau 3.5 giây
+  setTimeout(() => {
+    closeToast();
+  }, 3500);
+}
+
+// Hàm đóng Toast thủ công khi nhấn nút X
+function closeToast() {
+  const toast = document.getElementById("toastMessage");
+  toast.classList.remove("show");
+}

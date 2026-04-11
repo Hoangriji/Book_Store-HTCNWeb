@@ -438,6 +438,7 @@ aside {
 
 /* Products */
 .products-wrapper {
+  border-radius: 8px;
   background: #f5f5f5;
   border: 1px solid #e0e0e0;
 }

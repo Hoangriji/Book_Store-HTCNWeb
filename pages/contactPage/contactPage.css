@@ -1,6 +1,7 @@
 .contact_hero {
   position: relative;
-  height: 380px;
+  min-height: 250px;
+  padding: 60px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +24,8 @@
 .contact_hero-title {
   font-family: var(--font-main);
   font-weight: 700;
-  font-size: 56px;
+  font-size: clamp(28px, 6vw, 56px);
+  word-break: break-word;
   margin-bottom: 15px;
   color: var(--color-text-light);
   text-shadow: 4px 4px 6px var(--color-primary);
@@ -66,7 +68,7 @@
   align-items: center;
 }
 
-.contact_item p{
+.contact_item p {
   margin: 0;
   color: var(--color-text);
   font-size: 18px;
@@ -166,4 +168,113 @@
 .faq_item strong {
   display: block;
   margin-bottom: 5px;
+}
+/* --- TOAST MESSAGE BOX --- */
+.toast-message {
+  position: fixed;
+  top: 100px; /* Khoảng cách từ trên xuống */
+  right: -400px; /* Ẩn ra ngoài màn hình bên phải */
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 9999;
+  transition: right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35); /* Hiệu ứng nảy nhẹ */
+  border-left: 6px solid #28a745; /* Vạch xanh báo thành công */
+}
+
+/* Class được JS thêm vào để hiển thị Toast */
+.toast-message.show {
+  right: 30px;
+}
+
+.toast-icon {
+  font-size: 28px;
+  color: #28a745;
+}
+
+.toast-content h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.toast-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.toast-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toast-close:hover {
+  color: #333;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 580px) {
+  .toast-message.show {
+    right: 15px;
+    left: 15px; /* Chiếm chiều rộng trên mobile */
+    top: 80px;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.contact_content {
+  padding: clamp(30px, 5vh, 80px) 0;
+}
+
+.contact_info,
+.contact_form,
+.contact_faq {
+  padding: clamp(15px, 4vw, 35px);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden !important; /* Khóa chết trục ngang */
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix lỗi padding của các box trắng làm "phình" layout trên mobile */
+@media (max-width: 580px) {
+  .contact_info,
+  .contact_form,
+  .contact_faq {
+    padding: 15px !important; /* Giảm từ 40px xuống 15px để nội dung không bị đẩy ra ngoài */
+    width: 100% !important;
+  }
+
+  /* Đảm bảo chữ tiêu đề không bao giờ rộng hơn màn hình */
+  .contact_hero-title {
+    font-size: clamp(20px, 7vw, 32px) !important;
+    word-wrap: break-word;
+  }
 }
