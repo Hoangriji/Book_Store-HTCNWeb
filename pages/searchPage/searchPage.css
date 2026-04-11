@@ -25,12 +25,18 @@
 }
 
 #searchResults {
+    justify-content: center;
     margin-bottom: 40px;
 }
 
 #searchResults .col-auto {
     display: flex;
     justify-content: center;
+}
+
+#searchResults .card-product {
+    width: 240px;
+    max-width: 100%;
 }
 
 #noResults {
@@ -63,10 +69,22 @@
     .search-header h1 {
         font-size: 1.5rem;
     }
+
+    #searchResults {
+        gap: 1rem;
+    }
+
+    #searchResults .card-product {
+        width: 100%;
+    }
 }
 
 @media (max-width: 575.98px) {
     .search-header h1 {
         font-size: 1.3rem;
+    }
+
+    #searchResults .col-auto {
+        width: 100%;
     }
 }

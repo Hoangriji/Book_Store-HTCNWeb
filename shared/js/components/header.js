@@ -9,6 +9,7 @@ export const header = () => {
         <div class="user-actions-dropdown">
             <div class="user-actions-btn">
                 <i class="fa-solid fa-user"></i>
+                <span class="action-label">Tài khoản</span>
             </div>
             <div class="dropdown-menu">
                 <a href="/pages/userDetailPage/userDetailPage.html" class="dropdown-item">Trang cá nhân</a>
@@ -19,6 +20,7 @@ export const header = () => {
         <a href="/pages/login/login.html" class="user-actions-link">
             <div class="user-actions-btn">
                 <i class="fa-solid fa-user"></i>
+                <span class="action-label">Đăng nhập</span>
             </div>
         </a>
     `;
@@ -68,6 +70,7 @@ export const header = () => {
                         <a href="/pages/cartPage/cart.html" class="user-actions-link">
                             <div class="user-actions-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="action-label">Giỏ hàng</span>
                             </div>
                         </a>
                         ${userButton}
