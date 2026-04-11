@@ -2,7 +2,7 @@
 
 .title-about {
   width: 100%;
-  height: 57vh;
+  height: 45vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/imgs/aboutPage/about_us.png");
@@ -14,6 +14,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 0 15px;
 }
 
 .title-about h2 {
@@ -59,26 +61,7 @@
   color: var(--color-secondary);
 }
 
-.branches-section {
-  margin-top: 80px;
-}
 
-.branch-card {
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-}
-
-.branch-card h4 {
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.about-page h3:last-of-type {
-  margin-top: 80px;
-}
 
 .about-grid,
 .branch-grid {
@@ -98,6 +81,13 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+
+
 .about-card {
   background-color: #ffffff;
   padding: 30px 25px;
@@ -106,6 +96,25 @@
   text-align: center;
   transition: 0.3s;
   height: 100%;
+}
+
+.branch-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.team-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .about-card i {
@@ -120,47 +129,6 @@
   color: var(--color-primary);
 }
 
-.stat-box {
-  text-align: center;
-  padding: 20px;
-}
-
-.stat-box h2 {
-  font-size: 42px;
-  color: var(--color-secondary);
-  margin-bottom: 5px;
-}
-
-.stat-box p {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.about-page section {
-  margin-bottom: 80px;
-}
-
-.team-members-section {
-  margin-top: 20px;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.team-card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
 .team-card h5 {
   margin: 0;
   color: var(--color-text-dark);
@@ -168,7 +136,30 @@
   font-size: 20px;
 }
 
+
+.about-page section {
+  margin-bottom: 80px;
+}
+
+
 @media (max-width: 992px) {
+
+  .title-about {
+    height: 40vh;
+  }
+
+  .title-about h2 {
+    font-size: 42px;
+  }
+
+  .title-about p {
+    font-size: 18px;
+  }
+
+  .about-page h3 {
+    font-size: 30px;
+  }
+
   .about-grid-3,
   .about-grid-4,
   .branch-grid {
@@ -180,7 +171,33 @@
   }
 }
 
+
 @media (max-width: 768px) {
+
+  .title-about {
+    height: 35vh;
+  }
+
+  .title-about h2 {
+    font-size: 34px;
+  }
+
+  .title-about p {
+    font-size: 16px;
+  }
+
+  .about-page {
+    padding: 40px 15px;
+  }
+
+  .about-page h3 {
+    font-size: 26px;
+  }
+
+  .about-page p {
+    font-size: 16px;
+  }
+
   .about-grid-3,
   .about-grid-4,
   .branch-grid {
@@ -193,8 +210,31 @@
   }
 }
 
+
 @media (max-width: 480px) {
+
+  .title-about {
+    height: 30vh;
+  }
+
+  .title-about h2 {
+    font-size: 26px;
+  }
+
+  .title-about p {
+    font-size: 14px;
+  }
+
+  .gold-text {
+    font-size: 26px;
+  }
+
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-card,
+  .branch-card {
+    padding: 20px;
   }
 }
