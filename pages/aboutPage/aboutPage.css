@@ -61,6 +61,22 @@
   color: var(--color-secondary);
 }
 
+.about-card h4 {
+  font-size: 22px;
+}
+
+.about-card h5 {
+  font-size: 18px;
+}
+
+.branch-card h4 {
+  font-size: 22px;
+}
+
+.branch-card p {
+  font-size: 18px;
+}
+
 
 
 .about-grid,
@@ -112,9 +128,19 @@
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  gap: 14px;
+  padding: 1.5rem 1rem;
+}
+
+.team-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid var(--color-primary);
 }
 
 .about-card i {
@@ -133,7 +159,7 @@
   margin: 0;
   color: var(--color-text-dark);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -149,7 +175,7 @@
   }
 
   .title-about h2 {
-    font-size: 42px;
+    font-size: 44px;
   }
 
   .title-about p {
@@ -158,6 +184,28 @@
 
   .about-page h3 {
     font-size: 30px;
+  }
+
+  .about-page p {
+    font-size: 17px;
+  }
+
+  .gold-text {
+    font-size: 30px;
+  }
+
+  .about-card h4,
+  .branch-card h4 {
+    font-size: 20px;
+  }
+
+  .about-card h5,
+  .team-card h5 {
+    font-size: 17px;
+  }
+
+  .branch-card p {
+    font-size: 17px;
   }
 
   .about-grid-3,
@@ -179,7 +227,7 @@
   }
 
   .title-about h2 {
-    font-size: 34px;
+    font-size: 36px;
   }
 
   .title-about p {
@@ -195,6 +243,24 @@
   }
 
   .about-page p {
+    font-size: 16px;
+  }
+
+  .gold-text {
+    font-size: 26px;
+  }
+
+  .about-card h4,
+  .branch-card h4 {
+    font-size: 18px;
+  }
+
+  .about-card h5,
+  .team-card h5 {
+    font-size: 16px;
+  }
+
+  .branch-card p {
     font-size: 16px;
   }
 
@@ -218,7 +284,7 @@
   }
 
   .title-about h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .title-about p {
@@ -226,7 +292,29 @@
   }
 
   .gold-text {
-    font-size: 26px;
+    font-size: 22px;
+  }
+
+  .about-page h3 {
+    font-size: 22px;
+  }
+
+  .about-page p {
+    font-size: 15px;
+  }
+
+  .about-card h4,
+  .branch-card h4 {
+    font-size: 16px;
+  }
+
+  .about-card h5,
+  .team-card h5 {
+    font-size: 15px;
+  }
+
+  .branch-card p {
+    font-size: 15px;
   }
 
   .team-grid {
