@@ -76,7 +76,6 @@ function renderFeaturedCategories(categories) {
            href="/pages/categories/categories.html?from=category&cat=${encodeURIComponent(cat.name)}">
             <div class="categories_image-wrapper">
                 <img src="${cat.img}" alt="${cat.name}" onerror="this.src='/imgs/homePage/Book1.png'">
-                 // Nếu ảnh Drive lỗi -> sang ảnh mặc định
             </div>
             <span class="categories_name">${cat.name}</span>
         </a>
