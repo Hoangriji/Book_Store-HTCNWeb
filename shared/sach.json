@@ -5,9 +5,7 @@
       "title": "Thế Giới Của Sophie",
       "author": "Jostein Gaarder",
       "price": 180000,
-      "categories": [
-        "Triết học"
-      ],
+      "categories": ["Triết học"],
       "description": "Cuốn sách nhập môn triết học nổi tiếng thế giới.",
       "image": "https://drive.google.com/uc?export=view&id=10sHfIiA-IMzlpf6tv-F6voRedGcgpf2f",
       "specs": {
@@ -26,9 +24,7 @@
       "title": "Triết học Khái lược những tư tưởng lớn",
       "author": "DK Publishing",
       "price": 200000,
-      "categories": [
-        "Triết học"
-      ],
+      "categories": ["Triết học"],
       "description": "Tổng quan dễ hiểu về các trường phái triết học.",
       "image": "https://drive.google.com/uc?export=view&id=1FWiqD0Q6pp5X6ADiIV1rH24slIeeLUxt",
       "specs": {
@@ -47,9 +43,7 @@
       "title": "Suy Tưởng",
       "author": "Marcus Aurelius",
       "price": 170000,
-      "categories": [
-        "Triết học"
-      ],
+      "categories": ["Triết học"],
       "description": "Tác phẩm triết học Stoic kinh điển.",
       "image": "https://drive.google.com/uc?export=view&id=1YgcBeo18v9zrt2UOC5BGcqO6T62CL0D8",
       "specs": {
@@ -68,9 +62,7 @@
       "title": "Cộng Hòa",
       "author": "Plato",
       "price": 190000,
-      "categories": [
-        "Triết học"
-      ],
+      "categories": ["Triết học"],
       "description": "Tác phẩm kinh điển về công lý và xã hội.",
       "image": "https://drive.google.com/uc?export=view&id=1iNGdlzZOJAOy0rqfVM_PLM8YhW5ENhB_",
       "specs": {
@@ -89,9 +81,7 @@
       "title": "Giáo Trình Triết Học Mác - Lênin",
       "author": "Nhiều tác giả",
       "price": 150000,
-      "categories": [
-        "Triết học"
-      ],
+      "categories": ["Triết học"],
       "description": "Giáo trình triết học dành cho sinh viên đại học - hệ không chuyên.",
       "image": "https://drive.google.com/uc?export=view&id=1JK1n4vywMrcskM6jcuMlsLXXXNG0rOG5",
       "specs": {
@@ -110,9 +100,7 @@
       "title": "Giáo Trình Trí Tuệ Nhân Tạo, Học Máy Và Học Sâu",
       "author": "Nhiều tác giả",
       "price": 250000,
-      "categories": [
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Giáo trình & Sách học thuật"],
       "description": "Giới thiệu tổng quan về trí tuệ nhân tạo, học máy và học sâu, cung cấp kiến thức nền tảng và ứng dụng thực tế.",
       "image": "https://drive.google.com/uc?export=view&id=1FVKDesw4tUs5yU49HIdzr-O6evW1SHMj",
       "specs": {
@@ -131,9 +119,7 @@
       "title": "Giáo trình Tư tưởng Hồ Chí Minh",
       "author": "Bộ Giáo dục và Đào tạo",
       "price": 120000,
-      "categories": [
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Giáo trình & Sách học thuật"],
       "description": "Giáo trình dành cho sinh viên đại học, cung cấp kiến thức cơ bản về tư tưởng Hồ Chí Minh.",
       "image": "https://drive.google.com/uc?export=view&id=1VpBrir-osCFh-GEGoK5ir-7NT8ip3iuS",
       "specs": {
@@ -152,9 +138,7 @@
       "title": "Phương pháp luận nghiên cứu khoa học",
       "author": "Vũ Cao Đàm",
       "price": 140000,
-      "categories": [
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Giáo trình & Sách học thuật"],
       "description": "Trình bày các phương pháp nghiên cứu khoa học và cách thực hiện đề tài nghiên cứu.",
       "image": "https://drive.google.com/uc?export=view&id=1Fvw_qeOVi4JtJzKgfCt3GkQKdJQUMc7v",
       "specs": {
@@ -173,9 +157,7 @@
       "title": "Kỹ thuật lập trình C",
       "author": "Phạm Văn Ất",
       "price": 130000,
-      "categories": [
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Giáo trình & Sách học thuật"],
       "description": "Hướng dẫn lập trình ngôn ngữ C từ cơ bản đến nâng cao.",
       "image": "https://drive.google.com/uc?export=view&id=1bLRdStq8NrAgVyY2cpupAgAvhAd6BaOk",
       "specs": {
@@ -194,9 +176,7 @@
       "title": "Giáo trình Giáo dục học",
       "author": "Nhiều tác giả",
       "price": 150000,
-      "categories": [
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Giáo trình & Sách học thuật"],
       "description": "Cung cấp kiến thức cơ bản về giáo dục học và phương pháp giảng dạy.",
       "image": "https://drive.google.com/uc?export=view&id=155OqmX6SjKLO3YjUHCvUOfg2YUz9qX1w",
       "specs": {
@@ -215,9 +195,7 @@
       "title": "Giáo trình Nhập môn lập trình",
       "author": "Nguyễn Thị Bích Ngân",
       "price": 120000,
-      "categories": [
-        "Công nghệ thông tin"
-      ],
+      "categories": ["Công nghệ thông tin"],
       "description": "Cung cấp kiến thức cơ bản về lập trình và tư duy giải quyết vấn đề cho người mới bắt đầu.",
       "image": "https://drive.google.com/uc?export=view&id=1zfr5FbRxUpezrLN5sp0OlnKkWO-Tyk63",
       "specs": {
@@ -236,9 +214,7 @@
       "title": "Giáo trình Cơ sở dữ liệu",
       "author": "Trần Minh Quang",
       "price": 140000,
-      "categories": [
-        "Công nghệ thông tin"
-      ],
+      "categories": ["Công nghệ thông tin"],
       "description": "Trình bày các khái niệm về cơ sở dữ liệu, mô hình dữ liệu và thiết kế hệ quản trị dữ liệu.",
       "image": "https://drive.google.com/uc?export=view&id=1_7LKS6kxj58-2fyVwUQpZpJfmbWDNWsL",
       "specs": {
@@ -257,9 +233,7 @@
       "title": "Giáo trình An toàn mạng thông tin",
       "author": "Nguyễn Tiến Ban",
       "price": 150000,
-      "categories": [
-        "Công nghệ thông tin"
-      ],
+      "categories": ["Công nghệ thông tin"],
       "description": "Giới thiệu các nguyên tắc bảo mật và an toàn thông tin trong hệ thống mạng.",
       "image": "https://drive.google.com/uc?export=view&id=1KtsebRKiMJqW3JCyB3hZtIyemfdwZxDh",
       "specs": {
@@ -278,9 +252,7 @@
       "title": "Giáo trình Lập trình Python",
       "author": "Phạm Đăng Hưng",
       "price": 160000,
-      "categories": [
-        "Công nghệ thông tin"
-      ],
+      "categories": ["Công nghệ thông tin"],
       "description": "Hướng dẫn học lập trình Python từ cơ bản đến nâng cao.",
       "image": "https://drive.google.com/uc?export=view&id=1GVhKHQc2EuzmMBbD7NhXDLcutURX_yVT",
       "specs": {
@@ -299,9 +271,7 @@
       "title": "Tin học cơ sở",
       "author": "Bùi Việt Hà",
       "price": 110000,
-      "categories": [
-        "Công nghệ thông tin"
-      ],
+      "categories": ["Công nghệ thông tin"],
       "description": "Trang bị kiến thức nền tảng về máy tính, phần mềm và hệ điều hành.",
       "image": "https://drive.google.com/uc?export=view&id=1ImB98zsseITHHVs9-enOag_Psq--Rug5",
       "specs": {
@@ -320,9 +290,7 @@
       "title": "Quản trị học",
       "author": "Nguyễn Hải Sản",
       "price": 150000,
-      "categories": [
-        "Kinh tế & Quản trị"
-      ],
+      "categories": ["Kinh tế & Quản trị"],
       "description": "Giới thiệu các nguyên lý cơ bản về quản trị trong tổ chức và doanh nghiệp.",
       "image": "https://drive.google.com/uc?export=view&id=1W-iLnXVoXbNvo4ty613IK3TUHyo0y0EL",
       "specs": {
@@ -341,9 +309,7 @@
       "title": "Quản trị tài chính",
       "author": "Nguyễn Thị Cảnh",
       "price": 300000,
-      "categories": [
-        "Kinh tế & Quản trị"
-      ],
+      "categories": ["Kinh tế & Quản trị"],
       "description": "Cung cấp kiến thức về quản lý tài chính doanh nghiệp và phân tích tài chính.",
       "image": "https://drive.google.com/uc?export=view&id=1EzGo1ld8DhY9dXftl3NmR3drqvStVx5E",
       "specs": {
@@ -362,9 +328,7 @@
       "title": "Marketing căn bản",
       "author": "Philip Kotler",
       "price": 200000,
-      "categories": [
-        "Kinh tế & Quản trị"
-      ],
+      "categories": ["Kinh tế & Quản trị"],
       "description": "Giới thiệu nền tảng marketing hiện đại và hành vi khách hàng.",
       "image": "https://drive.google.com/uc?export=view&id=1xb-ONnFn6FOjJvIWdw69yk1tJ3dD4wK1",
       "specs": {
@@ -383,9 +347,7 @@
       "title": "Quản trị học giải quyết tranh chấp",
       "author": "Daniel Dana, PhD",
       "price": 175000,
-      "categories": [
-        "Kinh tế & Quản trị"
-      ],
+      "categories": ["Kinh tế & Quản trị"],
       "description": "Cuốn sách hướng dẫn các phương pháp quản trị và giải quyết xung đột hiệu quả trong tổ chức và doanh nghiệp.",
       "image": "https://drive.google.com/uc?export=view&id=1yNbTNwXIvo2Jrcw1yYyaEgU7tJgItNQC",
       "specs": {
@@ -404,9 +366,7 @@
       "title": "Nhà quản trị hiệu quả",
       "author": "Peter Drucker",
       "price": 170000,
-      "categories": [
-        "Kinh tế & Quản trị"
-      ],
+      "categories": ["Kinh tế & Quản trị"],
       "description": "Cuốn sách kinh điển về kỹ năng quản lý và lãnh đạo.",
       "image": "https://drive.google.com/uc?export=view&id=1ezG6x5CY8NnAWdrj5zyi6CQcePM6DP1l",
       "specs": {
@@ -425,10 +385,7 @@
       "title": "Tư Duy Nhanh Và Chậm",
       "author": "Daniel Kahneman",
       "price": 235000,
-      "categories": [
-        "Tâm lý học",
-        "Kinh tế & Quản trị"
-      ],
+      "categories": ["Tâm lý học", "Kinh tế & Quản trị"],
       "description": "Cuốn sách khám phá hai hệ thống tư duy chi phối quyết định của chúng ta: Hệ thống 1 nhanh, cảm tính; Hệ thống 2 chậm rãi, logic.",
       "image": "https://drive.google.com/uc?export=view&id=17VSsub6_w4CWUUtUFtAuDS-OfvYs6j26",
       "specs": {
@@ -447,10 +404,7 @@
       "title": "Đi Tìm Lẽ Sống",
       "author": "Viktor E. Frankl",
       "price": 110000,
-      "categories": [
-        "Tâm lý học",
-        "Triết học"
-      ],
+      "categories": ["Tâm lý học", "Triết học"],
       "description": "Hồi ký của một bác sĩ tâm lý sống sót sau trại tập trung Holocaust, và liệu pháp ý nghĩa của ông.",
       "image": "https://drive.google.com/uc?export=view&id=18F2n3VjhUKmjsD1rx9mM5gFxcO3vfSJH",
       "specs": {
@@ -469,10 +423,7 @@
       "title": "Sức Mạnh Của Người Hướng Nội",
       "author": "Susan Cain",
       "price": 165000,
-      "categories": [
-        "Tâm lý học",
-        "Phát triển bản thân"
-      ],
+      "categories": ["Tâm lý học", "Phát triển bản thân"],
       "description": "Bảo vệ và ngợi ca giá trị của những người hướng nội trong một thế giới dường như chỉ tôn vinh sự hoạt bát, ồn ào.",
       "image": "https://drive.google.com/uc?export=view&id=1XyZg4JuHVMRjZ1EML0psYsXzzvvH0gFk",
       "specs": {
@@ -491,10 +442,7 @@
       "title": "Tâm Lý Học Đám Đông",
       "author": "Gustave Le Bon",
       "price": 135000,
-      "categories": [
-        "Tâm lý học",
-        "Chính trị & Pháp luật"
-      ],
+      "categories": ["Tâm lý học", "Chính trị & Pháp luật"],
       "description": "Nghiên cứu kinh điển về cách mà các cá nhân đánh mất chính mình khi hòa vào một đám đông.",
       "image": "https://drive.google.com/uc?export=view&id=1UwRSpQnwJOMZrnw9MFJFNZ_fAYkJX214",
       "specs": {
@@ -513,9 +461,7 @@
       "title": "Thiên Tài Bên Trái, Kẻ Điên Bên Phải",
       "author": "Cao Minh",
       "price": 189000,
-      "categories": [
-        "Tâm lý học"
-      ],
+      "categories": ["Tâm lý học"],
       "description": "Ghi chép lại những cuộc trò chuyện thực tế với các bệnh nhân tâm thần, mở ra góc nhìn mới về thế giới quan.",
       "image": "https://drive.google.com/uc?export=view&id=1BXDYldH8Raji5t9LQN1VNjtM0-wNM2vK",
       "specs": {
@@ -534,10 +480,7 @@
       "title": "Pháp Luật Đại Cương",
       "author": "Nhiều Tác Giả",
       "price": 95000,
-      "categories": [
-        "Chính trị & Pháp luật",
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Chính trị & Pháp luật", "Giáo trình & Sách học thuật"],
       "description": "Giáo trình cơ sở cung cấp kiến thức nền tảng về Nhà nước và Pháp luật Việt Nam.",
       "image": "https://drive.google.com/uc?export=view&id=17UYRgN6LZv8-wOjFcCTE091Fnf7HagyX",
       "specs": {
@@ -556,10 +499,7 @@
       "title": "Quân Vương",
       "author": "Niccolò Machiavelli",
       "price": 110000,
-      "categories": [
-        "Chính trị & Pháp luật",
-        "Lịch sử & Văn hóa"
-      ],
+      "categories": ["Chính trị & Pháp luật", "Lịch sử & Văn hóa"],
       "description": "Tác phẩm kinh điển về khoa học chính trị và nghệ thuật cai trị quốc gia.",
       "image": "https://drive.google.com/uc?export=view&id=115E1T2hmticIvVDNA8J1xWHRW99P31zO",
       "specs": {
@@ -578,9 +518,7 @@
       "title": "Trật Tự Thế Giới",
       "author": "Henry Kissinger",
       "price": 250000,
-      "categories": [
-        "Chính trị & Pháp luật"
-      ],
+      "categories": ["Chính trị & Pháp luật"],
       "description": "Phân tích sâu sắc về lịch sử ngoại giao và các cấu trúc quyền lực định hình thế giới hiện đại.",
       "image": "https://drive.google.com/uc?export=view&id=1GilBb30bZf9baPtNo681AQ5f_iqJHWcb",
       "specs": {
@@ -599,9 +537,7 @@
       "title": "Hiến Pháp Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam",
       "author": "Quốc Hội",
       "price": 45000,
-      "categories": [
-        "Chính trị & Pháp luật"
-      ],
+      "categories": ["Chính trị & Pháp luật"],
       "description": "Văn bản pháp lý có giá trị cao nhất của nước CHXHCN Việt Nam (Bản năm 2013).",
       "image": "https://drive.google.com/uc?export=view&id=1i3Q4eudzwApSTwzgEjtzFkkXKtyUzUCi",
       "specs": {
@@ -620,10 +556,7 @@
       "title": "Bàn Về Tự Do",
       "author": "John Stuart Mill",
       "price": 125000,
-      "categories": [
-        "Chính trị & Pháp luật",
-        "Triết học"
-      ],
+      "categories": ["Chính trị & Pháp luật", "Triết học"],
       "description": "Một trong những tiểu luận quan trọng nhất về triết học chính trị và quyền tự do cá nhân.",
       "image": "https://drive.google.com/uc?export=view&id=1lvagUYpKPowalZYts8px43-zoIe2Tqis",
       "specs": {
@@ -642,10 +575,7 @@
       "title": "Clean Code: Mã Sạch",
       "author": "Robert C. Martin",
       "price": 320000,
-      "categories": [
-        "Khoa học & Kỹ thuật",
-        "Công nghệ thông tin"
-      ],
+      "categories": ["Khoa học & Kỹ thuật", "Công nghệ thông tin"],
       "description": "Sách hướng dẫn về nghệ thuật viết mã phần mềm dễ đọc, dễ bảo trì, tối ưu hiệu suất.",
       "image": "https://drive.google.com/uc?export=view&id=171On6SqgGdf0xup9kcI3Gx3Y313I340J",
       "specs": {
@@ -687,9 +617,7 @@
       "title": "Lược Sử Thời Gian",
       "author": "Stephen Hawking",
       "price": 145000,
-      "categories": [
-        "Khoa học & Kỹ thuật"
-      ],
+      "categories": ["Khoa học & Kỹ thuật"],
       "description": "Hành trình khám phá các bí ẩn của vũ trụ, từ vụ nổ Big Bang đến các lỗ đen.",
       "image": "https://drive.google.com/uc?export=view&id=1BFHwXYnQIi09vBJOv_R4RUP8PKKSniEk",
       "specs": {
@@ -708,9 +636,7 @@
       "title": "Vũ Trụ",
       "author": "Carl Sagan",
       "price": 210000,
-      "categories": [
-        "Khoa học & Kỹ thuật"
-      ],
+      "categories": ["Khoa học & Kỹ thuật"],
       "description": "Tác phẩm đưa người đọc du hành qua không gian và thời gian, khám phá 14 tỷ năm tiến hóa vũ trụ.",
       "image": "https://drive.google.com/uc?export=view&id=1tbXC3LGzJVtWAiOFQPM3Wp06ihYiIjYn",
       "specs": {
@@ -729,10 +655,7 @@
       "title": "Design Patterns",
       "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
       "price": 450000,
-      "categories": [
-        "Khoa học & Kỹ thuật",
-        "Công nghệ thông tin"
-      ],
+      "categories": ["Khoa học & Kỹ thuật", "Công nghệ thông tin"],
       "description": "Cuốn sách định nghĩa 23 mẫu thiết kế phần mềm cốt lõi, cẩm nang gối đầu giường của kỹ sư phần mềm.",
       "image": "https://drive.google.com/uc?export=view&id=11jdAFuXGB3prhntDFGc5TDEYkJ5b6pEN",
       "specs": {
@@ -751,10 +674,7 @@
       "title": "English Grammar In Use",
       "author": "Raymond Murphy",
       "price": 280000,
-      "categories": [
-        "Ngoại ngữ",
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Ngoại ngữ", "Giáo trình & Sách học thuật"],
       "description": "Tài liệu học ngữ pháp tiếng Anh tự học và luyện thi bán chạy nhất thế giới.",
       "image": "https://drive.google.com/uc?export=view&id=1pL3sQNSsb5VZtBSpzvmaYIThyIh5nj8J",
       "specs": {
@@ -773,10 +693,7 @@
       "title": "Hack Não 1500 Từ Tiếng Anh",
       "author": "Nguyễn Văn Hiệp",
       "price": 395000,
-      "categories": [
-        "Ngoại ngữ",
-        "Phát triển bản thân"
-      ],
+      "categories": ["Ngoại ngữ", "Phát triển bản thân"],
       "description": "Phương pháp học từ vựng bằng âm thanh tương tự và truyện chêm giúp ghi nhớ nhanh.",
       "image": "https://drive.google.com/uc?export=view&id=1zN0ga0Rvbyi4wnqL3P_DbvIdyxlaevMy",
       "specs": {
@@ -795,10 +712,7 @@
       "title": "Minna no Nihongo Sơ Cấp 1",
       "author": "3A Network",
       "price": 155000,
-      "categories": [
-        "Ngoại ngữ",
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Ngoại ngữ", "Giáo trình & Sách học thuật"],
       "description": "Giáo trình chuẩn quốc tế dành cho người mới bắt đầu học tiếng Nhật.",
       "image": "https://drive.google.com/uc?export=view&id=19-VsFVLAdyqf5KsQshacu8NQVxNVGpv6",
       "specs": {
@@ -817,10 +731,7 @@
       "title": "IELTS Cambridge 18 Academic",
       "author": "Cambridge Assessment English",
       "price": 220000,
-      "categories": [
-        "Ngoại ngữ",
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Ngoại ngữ", "Giáo trình & Sách học thuật"],
       "description": "Tuyển tập 4 đề thi IELTS mô phỏng độ khó thực tế của năm mới nhất.",
       "image": "https://drive.google.com/uc?export=view&id=15jxcHcJZBnMW7fd_crj0uAj0Yp0bX4Nc",
       "specs": {
@@ -839,10 +750,7 @@
       "title": "Giáo Trình Hán Ngữ Quyển 1",
       "author": "Đại học Ngôn ngữ Bắc Kinh",
       "price": 120000,
-      "categories": [
-        "Ngoại ngữ",
-        "Giáo trình & Sách học thuật"
-      ],
+      "categories": ["Ngoại ngữ", "Giáo trình & Sách học thuật"],
       "description": "Bộ sách học tiếng Trung phổ biến nhất dành cho sinh viên Việt Nam.",
       "image": "https://drive.google.com/uc?export=view&id=1Vun0m_PJ7AhCLNkI0i-T2yDAXP14CiQT",
       "specs": {
@@ -861,10 +769,7 @@
       "title": "Chí Phèo",
       "author": "Nam Cao",
       "price": 82000,
-      "categories": [
-        "Văn học",
-        "Văn học Việt Nam"
-      ],
+      "categories": ["Văn học", "Văn học Việt Nam"],
       "description": "Chí Phèo - Với những tình tiết hấp hẫn Nam Cao đã đưa người đọc tái hiện bức tranh chân thực nông thôn Việt Nam trước 1945,...",
       "image": "https://drive.google.com/uc?export=view&id=1lYjwLiC5An87xLOdav9fPf4tRcs9bDyY",
       "specs": {
@@ -883,10 +788,7 @@
       "title": "Dế Mèn Phiêu Lưu Ký",
       "author": "Tô Hoài",
       "price": 54000,
-      "categories": [
-        "Văn học",
-        "Văn học Việt Nam"
-      ],
+      "categories": ["Văn học", "Văn học Việt Nam"],
       "description": "Trong hơn nửa thế kỉ, kể từ ngày đầu tiên ra mắt bạn đọc, năm 1941, Dế Mèn phiêu lưu ký là một trong những sáng tác tâm đắc nhất của nhà văn Tô Hoài....",
       "image": "https://drive.google.com/uc?export=view&id=1eLhAgEZRXeQ5ZxhneEMWYiLhVpulbEal",
       "specs": {
@@ -905,10 +807,7 @@
       "title": "Số Đỏ",
       "author": "Vũ Trọng Phụng",
       "price": 75000,
-      "categories": [
-        "Văn học",
-        "Văn học Việt Nam"
-      ],
+      "categories": ["Văn học", "Văn học Việt Nam"],
       "description": "Tiểu thuyết Số đỏ là câu chuyện kể về Xuân, thường gọi là “Xuân tóc đỏ”...",
       "image": "https://drive.google.com/uc?export=view&id=1iXW-02pqSgV_7hz6J4vdTCfes943VzCm",
       "specs": {
@@ -927,10 +826,7 @@
       "title": "Tắt Đèn",
       "author": "Ngô Tất Tố",
       "price": 68000,
-      "categories": [
-        "Truyện dài",
-        "Tiểu thuyết Việt Nam"
-      ],
+      "categories": ["Truyện dài", "Tiểu thuyết Việt Nam"],
       "description": "Tắt đèn của nhà văn Ngô Tất Tố phản ánh rất chân thực cuộc sống khốn khổ của tầng lớp nông dân...",
       "image": "https://drive.google.com/uc?export=view&id=1160vl1p9ygt_bROhNvu0rJD8-Ua2iM6B",
       "specs": {
@@ -949,10 +845,7 @@
       "title": "Tiểu Thuyết Việt Nam",
       "author": "Phạm Ngọc Hiền",
       "price": 92000,
-      "categories": [
-        "Tiểu thuyết",
-        "Tiểu thuyết Việt Nam"
-      ],
+      "categories": ["Tiểu thuyết", "Tiểu thuyết Việt Nam"],
       "description": "Công trình nghiên cứu chuyên sâu về toàn bộ tiểu thuyết cách mạng Việt Nam 1945-1975.",
       "image": "https://drive.google.com/uc?export=view&id=1GRy6winYFT8pPGuMoNgl6_tdCEq-YMp0",
       "specs": {
@@ -971,10 +864,7 @@
       "title": "15 Nguyên Tắc Vàng Về Phát Triển Bản Thân",
       "author": "John C. Maxwell",
       "price": 92000,
-      "categories": [
-        "Kỹ năng sống",
-        "Phát triển bản thân"
-      ],
+      "categories": ["Kỹ năng sống", "Phát triển bản thân"],
       "description": "Cuốn sách giúp bạn trở thành một người học hỏi không mệt mỏi...",
       "image": "https://drive.google.com/uc?export=view&id=1-3tp2F60_gZhmkT-HZb_PUxUtjbuXAC1",
       "specs": {
@@ -993,10 +883,7 @@
       "title": "Đánh Thức Con Người Phi Thường Trong Bạn",
       "author": "Anthony Robbins",
       "price": 135000,
-      "categories": [
-        "Kỹ năng sống",
-        "Phát triển bản thân"
-      ],
+      "categories": ["Kỹ năng sống", "Phát triển bản thân"],
       "description": "Khám phá giá trị tiềm ẩn của bản thân để tạo nên những kết quả chính mình không ngờ đến.",
       "image": "https://drive.google.com/uc?export=view&id=1usO3LgVo6nCM2hyHQm4Cq-E__ghazcM5",
       "specs": {
@@ -1015,10 +902,7 @@
       "title": "Nghĩ Giàu Làm Làm",
       "author": "Napoleon Hill",
       "price": 132000,
-      "categories": [
-        "Kỹ năng sống",
-        "Phát triển bản thân"
-      ],
+      "categories": ["Kỹ năng sống", "Phát triển bản thân"],
       "description": "Cuốn sách truyền cảm hứng thành công nhiều hơn bất cứ cuốn sách kinh doanh nào trong lịch sử.",
       "image": "https://drive.google.com/uc?export=view&id=1WncS53r45F6yphBMfStwEaVFG2-L52JG",
       "specs": {
@@ -1037,11 +921,7 @@
       "title": "Phát Triển Kỹ Năng Lãnh Đạo",
       "author": "John C. Maxwell",
       "price": 143000,
-      "categories": [
-        "Kỹ năng sống",
-        "Lãnh đạo",
-        "Phát triển bản thân"
-      ],
+      "categories": ["Kỹ năng sống", "Lãnh đạo", "Phát triển bản thân"],
       "description": "Lãnh đạo là sự ảnh hưởng, không hơn, không kém.",
       "image": "https://drive.google.com/uc?export=view&id=1T06_9lz7wIlVN7ANi6RdZYFsG5jc5dp4",
       "specs": {
@@ -1060,10 +940,7 @@
       "title": "Rèn Luyện Kỹ Năng Phát Triển Bản Thân",
       "author": "Scott H. Young",
       "price": 103000,
-      "categories": [
-        "Kỹ năng sống",
-        "Phát triển bản thân"
-      ],
+      "categories": ["Kỹ năng sống", "Phát triển bản thân"],
       "description": "Rèn luyện kỹ năng để đương đầu với mọi sự đổi thay của xã hội.",
       "image": "https://drive.google.com/uc?export=view&id=17HnbnIdDaZAJD_qcHzGoOD1ux2ahIu1c",
       "specs": {
@@ -1082,10 +959,7 @@
       "title": "Người Việt trong Dòng Lịch Sử Văn Hóa",
       "author": "Nguyễn Xuân Kính",
       "price": 467000,
-      "categories": [
-        "Lịch Sử",
-        "Văn Hóa"
-      ],
+      "categories": ["Lịch Sử", "Văn Hóa"],
       "description": "Trình bày khái quát chân dung người Việt trong mối quan hệ với môi trường tự nhiên và xã hội.",
       "image": "https://drive.google.com/uc?export=view&id=1LKo-fBP_DCaH70CZns3di1LP_xXgLJJN",
       "specs": {
@@ -1104,10 +978,7 @@
       "title": "Lịch Sử và Văn Hóa Việt Nam Trong Góc Nhìn Đổi Mới",
       "author": "Nguyễn Thừa Hỷ",
       "price": 199000,
-      "categories": [
-        "Lịch Sử",
-        "Văn Hóa"
-      ],
+      "categories": ["Lịch Sử", "Văn Hóa"],
       "description": "Chuỗi kế tiếp những hệ hình kích cỡ khác nhau trong lịch sử Việt Nam.",
       "image": "https://drive.google.com/uc?export=view&id=1jBamBjIY-BLkUJo0qk237G8mXFmHesWQ",
       "specs": {
@@ -1126,10 +997,7 @@
       "title": "Núi Xanh Nay Vẫn Đó",
       "author": "Nguyễn Duy Chính",
       "price": 132000,
-      "categories": [
-        "Lịch Sử",
-        "Văn Hóa"
-      ],
+      "categories": ["Lịch Sử", "Văn Hóa"],
       "description": "Nghiên cứu về sự thay đổi mô thức chính trị thời nhà Nguyễn.",
       "image": "https://drive.google.com/uc?export=view&id=1a3KXmucp_fxOVi4sFNSor8SHq1JS1Y11",
       "specs": {
@@ -1148,10 +1016,7 @@
       "title": "Sử Việt",
       "author": "Trần Kinh Hòa",
       "price": 176000,
-      "categories": [
-        "Lịch Sử",
-        "Văn Hóa"
-      ],
+      "categories": ["Lịch Sử", "Văn Hóa"],
       "description": "Phương pháp nghiên cứu cổ sử thông qua đối chiếu đa quốc gia.",
       "image": "https://drive.google.com/uc?export=view&id=1vAB6zvs42AkHcaPMgvWjBcrSc4npTjLc",
       "specs": {
@@ -1170,10 +1035,7 @@
       "title": "Phật Giáo Việt Nam góc nhìn lịch Sử và Văn Hóa",
       "author": "Trần Thuận",
       "price": 120000,
-      "categories": [
-        "Lịch Sử",
-        "Văn Hóa"
-      ],
+      "categories": ["Lịch Sử", "Văn Hóa"],
       "description": "Quá trình truyền bá và phát triển của đạo Phật tại nước Việt.",
       "image": "https://drive.google.com/uc?export=view&id=1S27-jLFhsQ1N7AyReyfaDhc0c-GJidtH",
       "specs": {
@@ -1192,10 +1054,7 @@
       "title": "Cẩm Nang Thiết Kế",
       "author": "Robin Williams",
       "price": 225000,
-      "categories": [
-        "Thiết Kế",
-        "Nghệ Thuật"
-      ],
+      "categories": ["Thiết Kế", "Nghệ Thuật"],
       "description": "Làm quen với 4 nguyên tắc cơ bản giúp thiết kế trở nên chuyên nghiệp.",
       "image": "https://drive.google.com/uc?export=view&id=16Lx0q141iQu35fZNN33mwSGSYMV7ZD_i",
       "specs": {
@@ -1214,10 +1073,7 @@
       "title": "Graphics",
       "author": "Kee Agency",
       "price": 77000,
-      "categories": [
-        "Thiết Kế",
-        "Nghệ Thuật"
-      ],
+      "categories": ["Thiết Kế", "Nghệ Thuật"],
       "description": "Tìm hiểu và phát triển sự nghiệp trong lĩnh vực thiết kế đồ họa.",
       "image": "https://drive.google.com/uc?export=view&id=1Mc8WK9RbkbTOyErGUvMUUPM3ujO1qO48",
       "specs": {
@@ -1236,10 +1092,7 @@
       "title": "Nội Thất & Thiết Kế Nội Thất 2",
       "author": "KTS. Phạm Đình Việt",
       "price": 207000,
-      "categories": [
-        "Thiết Kế",
-        "Nghệ Thuật"
-      ],
+      "categories": ["Thiết Kế", "Nghệ Thuật"],
       "description": "Trang trí nội thất chuyên sâu cho nhà ở, công cộng và showroom.",
       "image": "https://drive.google.com/uc?export=view&id=1BISBGCOrstrnlCt54kCBEGFozLjKLKZT",
       "specs": {
@@ -1258,10 +1111,7 @@
       "title": "Nội Thất & Thiết Kế Nội Thất 1",
       "author": "KTS. Phạm Đình Việt",
       "price": 189000,
-      "categories": [
-        "Thiết Kế",
-        "Nghệ Thuật"
-      ],
+      "categories": ["Thiết Kế", "Nghệ Thuật"],
       "description": "Những vấn đề cơ bản trong trang trí nội thất công trình.",
       "image": "https://drive.google.com/uc?export=view&id=1gkHSgaQ1nAWhU-P-bWpiCiFOr6Y2ddM6",
       "specs": {
@@ -1280,10 +1130,7 @@
       "title": "Nhận Diện Nghệ Thuật Đồ Họa",
       "author": "Uyên Huy",
       "price": 560000,
-      "categories": [
-        "Thiết Kế",
-        "Nghệ Thuật"
-      ],
+      "categories": ["Thiết Kế", "Nghệ Thuật"],
       "description": "Quá trình sáng tạo các tác phẩm nghệ thuật in ấn trên giấy.",
       "image": "https://drive.google.com/uc?export=view&id=1ZxfCbIcNz6dWyVnvv6HxJiDbhg7IxNtf",
       "specs": {
