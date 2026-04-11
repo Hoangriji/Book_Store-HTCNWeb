@@ -83,10 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (prevBtn && nextBtn && track) {
         prevBtn.addEventListener('click', () => {
-            track.scrollBy({ left: -250, behavior: 'smooth' });
+            track.scrollBy({ left: -800, behavior: 'smooth' });
         });
         nextBtn.addEventListener('click', () => {
-            track.scrollBy({ left: 250, behavior: 'smooth' });
+            track.scrollBy({ left: 800, behavior: 'smooth' });
         });
     }
 });

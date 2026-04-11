@@ -63,7 +63,6 @@
   padding: 14px 20px;
   border-radius: 8px;
   margin-bottom: 24px;
-  border-left: 4px solid var(--color-primary);
 }
 
 .section-header-banner__icon {
@@ -108,8 +107,7 @@
 .sale_section {
   width: 100%;
   background: #ff6b6b;
-  padding: 20px 0 40px 0;
-  margin: 0 0 60px 0;
+  padding: 20px 0 20px 0;
 }
 
 .sale_section-header {
@@ -161,13 +159,13 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: none;
-  background: #fff;
-  color: #888;
-  font-size: 1.8rem;
+  background: white;
+  color: gray;
+  font-size: 1.4rem;
   font-weight: 700;
   cursor: pointer;
   display: flex;
@@ -176,8 +174,6 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: all 0.2s ease;
   z-index: 2;
-  line-height: 1;
-  padding-bottom: 2px;
 }
 
 #salePrev { left: -18px; }
@@ -303,7 +299,7 @@
 
 /* testimonials-section */
 .testimonials_section {
-  margin: 80px 0;
+  padding: 3rem 0;
 }
 
 .testimonials_section-title {
