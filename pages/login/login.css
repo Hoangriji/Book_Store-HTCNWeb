@@ -1,5 +1,16 @@
 @import url('/shared/css/style.css');
 
+body {
+    background-image: url(/imgs/login/bg-login.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .form {
     width: min(80%, 1020px);
     margin: 0 auto;
