@@ -21,7 +21,7 @@
 .title-about h2 {
   color: var(--color-text-light);
   text-align: center;
-  font-size: 2rem;
+  font-size: 56px;
   font-weight: 700;
   text-shadow: 4px 4px 6px var(--color-primary);
 }
