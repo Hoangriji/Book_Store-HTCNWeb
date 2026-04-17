@@ -24,7 +24,7 @@
 .contact_hero-title {
   font-family: var(--font-main);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 56px;
   word-break: break-word;
   margin-bottom: 15px;
   color: var(--color-text-light);
@@ -59,7 +59,7 @@
   color: var(--color-primary);
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 24px;
 }
 
 .contact_item {
@@ -91,6 +91,7 @@
   margin-bottom: 18px;
   color: var(--color-primary);
   font-weight: 600;
+  font-size: 18px;
 }
 
 .social_icons {
@@ -134,7 +135,7 @@
   color: var(--color-primary);
   margin-bottom: 25px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 24px;
 }
 
 .form-control {
@@ -156,13 +157,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.contact_faq h4 {
-  color: var(--color-primary);
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
 .faq_item:not(:last-child) {
   margin-bottom: 15px;
   border-bottom: 1px solid gray;
@@ -171,7 +165,13 @@
 .faq_item strong {
   display: block;
   margin-bottom: 5px;
-  font-size: 1.1rem;
+  font-size: 16px;
+}
+
+.faq_item p {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .toast-message {
@@ -226,8 +226,130 @@
   color: #333;
 }
 
+@media (max-width: 992px) {
+  .contact_hero-title {
+    font-size: 44px;
+  }
+
+  .contact_hero-desc {
+    font-size: 18px;
+  }
+
+  .contact_info h3,
+  .contact_form h3 {
+    font-size: 22px;
+  }
+
+  .contact_item p {
+    font-size: 16px;
+  }
+
+  .contact_social h5 {
+    font-size: 16px;
+  }
+
+  .contact_faq h4 {
+    font-size: 20px;
+  }
+
+  .faq_item strong {
+    font-size: 15px;
+  }
+
+  .faq_item p {
+    font-size: 14px;
+  }
+
+  .toast-content h4 {
+    font-size: 17px;
+  }
+
+  .toast-content p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_hero-title {
+    font-size: 32px;
+  }
+
+  .contact_hero-desc {
+    font-size: 16px;
+  }
+
+  .contact_content {
+    padding: 55px 0;
+  }
+
+  .contact_info h3,
+  .contact_form h3 {
+    font-size: 20px;
+  }
+
+  .contact_item p {
+    font-size: 15px;
+  }
+
+  .contact_social h5 {
+    font-size: 15px;
+  }
+
+  .contact_faq h4 {
+    font-size: 18px;
+  }
+
+  .faq_item strong {
+    font-size: 14px;
+  }
+
+  .faq_item p {
+    font-size: 13px;
+  }
+
+  .toast-content h4 {
+    font-size: 16px;
+  }
+
+  .toast-content p {
+    font-size: 13px;
+  }
+}
 
 @media (max-width: 580px) {
+  .contact_hero-title {
+    font-size: 26px !important;
+  }
+
+  .contact_hero-desc {
+    font-size: 14px;
+  }
+
+  .contact_info h3,
+  .contact_form h3 {
+    font-size: 18px;
+  }
+
+  .contact_item p {
+    font-size: 14px;
+  }
+
+  .contact_social h5 {
+    font-size: 14px;
+  }
+
+  .contact_faq h4 {
+    font-size: 16px;
+  }
+
+  .faq_item strong {
+    font-size: 13px;
+  }
+
+  .faq_item p {
+    font-size: 12px;
+  }
+
   .toast-message.show {
     right: 15px;
     left: 15px; 
@@ -272,10 +394,5 @@ body {
   .contact_faq {
     padding: 15px !important;
     width: 100% !important;
-  }
-
-  .contact_hero-title {
-    font-size: clamp(20px, 7vw, 32px) !important;
-    word-wrap: break-word;
   }
 }

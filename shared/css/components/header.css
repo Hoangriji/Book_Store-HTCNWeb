@@ -188,6 +188,10 @@
     font-size: 16px;
 }
 
+.action-label {
+    display: none;
+}
+
 .user-actions .user-actions-link:hover {
     color: var(--color-primary);
     transform: translateY(-5px);
@@ -420,7 +424,7 @@
     .user-actions {
         flex-direction: column;
         gap: 12px;
-        width: 250px;
+        width: 100%;
     }
 
     .user-actions .user-actions-link {
@@ -428,6 +432,8 @@
         font-size: 17px;
         border-radius: 0;
         justify-content: flex-start;
+        display: flex;
+        align-items: center;
         border-bottom: 2px solid gray;
         margin: 0;
         padding: 14px 16px;
@@ -435,6 +441,7 @@
 
     .user-actions-dropdown {
         width: 100%;
+        border-bottom: 2px solid gray;
     }
 
     .user-actions-dropdown .user-actions-btn {
@@ -442,9 +449,17 @@
         font-size: 17px;
         border-radius: 0;
         justify-content: flex-start;
-        border-bottom: 2px solid gray;
+        display: flex;
+        align-items: center;
+        gap: 10px;
         margin: 0;
         padding: 14px 16px;
+    }
+
+    .user-actions .user-actions-link .user-actions-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .dropdown-menu {
@@ -471,15 +486,31 @@
    .user-actions-link i,
    .user-actions-dropdown .user-actions-btn i {
         width: 25px;
+        text-align: center;
     }
 
-    .user-actions-btn{
+    .action-label {
+        display: inline-block;
+        color: var(--color-text-light);
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .user-actions .user-actions-link:hover {
+        transform: none;
+    }
+
+    .user-actions-dropdown .user-actions-btn:hover {
+        transform: none;
+    }
+
+    .user-actions-btn {
         transition: all 0.3s ease;
     }
 
-    .user-actions-link:hover .user-actions-btn,
-    .user-actions-dropdown:hover .user-actions-btn{
-        transform: translateX(10px);
+    .user-actions .user-actions-link:hover .user-actions-btn,
+    .user-actions-dropdown:hover .user-actions-btn {
+        transform: translateX(8px);
     }
 }
 
