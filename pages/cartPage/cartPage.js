@@ -1,29 +1,51 @@
-const popup = document.getElementById("checkoutPopup");
+// const popup = document.getElementById("checkoutPopup");
 
-// mở popup
-function openPopup(){
-    popup.style.display = "flex";
-}
+// // mở popup
+// function openPopup(){
+//     popup.style.display = "flex";
+// }
 
-// đóng popup
-function closePopup(){
-    popup.style.display = "none";
-}
+// // đóng popup
+// function closePopup(){
+//     popup.style.display = "none";
+// }
 
-// clear cart 
-const clearBtn = document.getElementById("clearCart");
-const cartBook = document.querySelector(".cart-book");
-const total = document.getElementById("total");
+// // clear cart 
+// const clearBtn = document.getElementById("clearCart");
+// const cartBook = document.querySelector(".cart-book");
+// const total = document.getElementById("total");
 
-clearBtn.addEventListener("click", function(){
+// clearBtn.addEventListener("click", function(){
 
-    // xóa toàn bộ sản phẩm
-    cartBook.innerHTML = `
-        <div class="cart-empty">
-            Giỏ hàng của bạn đang trống
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    `;
-    // reset total
-    total.textContent = "$0";
+//     // xóa toàn bộ sản phẩm
+//     cartBook.innerHTML = `
+//         <div class="cart-empty">
+//             Giỏ hàng của bạn đang trống
+//             <i class="fa-solid fa-cart-shopping"></i>
+//         </div>
+//     `;
+//     // reset total
+//     total.textContent = "$0";
+// });
+
+$(function () {
+    const $popup = $("#checkoutPopup");
+
+    window.openPopup = function () {
+        $popup.css("display", "flex");
+    };
+
+    window.closePopup = function () {
+        $popup.hide();
+    };
+
+    $("#clearCart").on("click", function () {
+        $(".cart-book").html(`
+            <div class="cart-empty">
+                Giỏ hàng của bạn đang trống
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        `);
+        $("#total").text("0₫");
+    });
 });

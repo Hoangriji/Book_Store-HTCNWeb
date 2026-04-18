@@ -19,8 +19,4 @@ const main = async () => {
     await initData();
 };
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', main);
-} else {
-    main();
-}
+main();

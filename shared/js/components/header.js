@@ -86,7 +86,6 @@ export const header = () => {
         const logoutBtn = headerElement.querySelector("#logoutBtn");
         if (logoutBtn) {
             logoutBtn.addEventListener("click", (e) => {
-                e.preventDefault();
                 localStorage.removeItem("currentUser");
                 window.location.href = "/index.html";
             });
@@ -99,7 +98,6 @@ export const header = () => {
             const userBtn = userDropdown.querySelector(".user-actions-btn");
             
             userBtn.addEventListener("click", (e) => {
-                e.preventDefault();
                 dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
             });
 
