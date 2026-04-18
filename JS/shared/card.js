@@ -30,13 +30,7 @@ function createCardHTML(book) {
         </div>
     `;
 
-    const isHomePage = window.location.pathname === '/' 
-        || window.location.pathname.includes('homePage')
-        || window.location.pathname.endsWith('/HTML/homepage.html');
-    
-    const detailLink = isHomePage
-        ? `./pages/detailProduct/detailProduct.html?id=${book.id}`
-        : `../detailProduct/detailProduct.html?id=${book.id}`;
+    const detailLink = `/HTML/detailProduct.html?id=${book.id}`;
 
     return `
         <div class="${book.saleStyle ? '' : 'col-auto'}">

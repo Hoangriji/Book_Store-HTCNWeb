@@ -52,12 +52,12 @@ async function initHomePage() {
 
         const viewMoreBtn = document.querySelector('.section-viewmore-btn');
         if (viewMoreBtn) {
-            viewMoreBtn.href = `/pages/categories/categories.html?from=trending`;
+            viewMoreBtn.href = `/HTML/categories.html?from=trending`;
         }
 
         const viewAllBtn = document.querySelector('.sale_section-viewall');
         if (viewAllBtn) {
-            viewAllBtn.href = `/pages/categories/categories.html?from=sale`;
+            viewAllBtn.href = `/HTML/categories.html?from=sale`;
         }
 
     } catch (error) {
@@ -73,7 +73,7 @@ function renderFeaturedCategories(categories) {
 
     grid.innerHTML = categories.map(cat => `
         <a class="categories_item"
-           href="/pages/categories/categories.html?from=category&cat=${encodeURIComponent(cat.name)}">
+           href="/HTML/categories.html?from=category&cat=${encodeURIComponent(cat.name)}">
             <div class="categories_image-wrapper">
                 <img src="${cat.img}" alt="${cat.name}" onerror="this.src='/imgs/homePage/Book1.png'">
             </div>
