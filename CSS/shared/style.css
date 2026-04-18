@@ -1,0 +1,41 @@
+@import url('/CSS/shared/variables.css');
+@import url('/CSS/shared/header.css');
+@import url('/CSS/shared/footer.css');
+
+
+/* style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+/* width  scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* scrollbar track color */
+::-webkit-scrollbar-track {
+    background: var(--color-menu);
+}
+
+/* scrollbar thumb color and shape */
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+}
+
+/* hover on scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-button-hover);
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+a {
+    text-decoration: none;
+}
