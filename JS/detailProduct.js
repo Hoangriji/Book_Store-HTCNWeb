@@ -1,3 +1,4 @@
+// Chuyển link Google Drive sang link ảnh trực tiếp
 function getDirectDriveLink(url) {
     if (url && url.includes('drive.google.com')) {
         const fileId = url.split('id=')[1];
@@ -6,11 +7,13 @@ function getDirectDriveLink(url) {
     return url;
 }
 
+// Lấy danh sách sách từ local
 function getBooksFromStorage() {
     const data = localStorage.getItem('allBooks');
     return data ? JSON.parse(data) : [];
 }
 
+// Khi trang chi tiết sách load xong
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     const bookId = parseInt(params.get("id"));
@@ -18,11 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!bookId) return;
 
     try {
+        // Lấy toàn bộ sách từ localStorage
         const allBooks = getBooksFromStorage();
         const book = allBooks.find(b => b.id === bookId);
         
         if (!book) return;
 
+        // Hiển thị thông tin sách
         document.getElementById("detailImage").src = getDirectDriveLink(book.image);
         document.getElementById("detailTitle").textContent = book.title;
         document.getElementById("detailAuthor").textContent = book.author;
@@ -72,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             `;
         }
-
+        // Hiển thị sách liên quan (random 5 cuốn khác)
         const related = allBooks
             .filter(b => b.id !== bookId)
             .sort(() => Math.random() - 0.5)
@@ -91,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Hàm tăng giảm số lượng
 function updateQty(change) {
     const input = document.getElementById('qtyInput');
     let val = parseInt(input.value) + change;

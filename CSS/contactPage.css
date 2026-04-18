@@ -32,7 +32,7 @@
 }
 
 .contact_hero-desc {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--color-text-light);
 }
@@ -72,7 +72,7 @@
 .contact_item p {
   margin: 0;
   color: var(--color-text);
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .contact_item i {
@@ -173,11 +173,11 @@
   font-size: 15px;
   line-height: 1.5;
 }
-/* --- TOAST MESSAGE BOX --- */
+
 .toast-message {
   position: fixed;
-  top: 100px; /* Khoảng cách từ trên xuống */
-  right: -400px; /* Ẩn ra ngoài màn hình bên phải */
+  top: 100px; 
+  right: -400px;
   background: white;
   padding: 20px 25px;
   border-radius: 12px;
@@ -186,11 +186,10 @@
   align-items: center;
   gap: 15px;
   z-index: 9999;
-  transition: right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35); /* Hiệu ứng nảy nhẹ */
-  border-left: 6px solid #28a745; /* Vạch xanh báo thành công */
+  transition: right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35); 
+  border-left: 6px solid #28a745; 
 }
 
-/* Class được JS thêm vào để hiển thị Toast */
 .toast-message.show {
   right: 30px;
 }
@@ -319,7 +318,7 @@
 
 @media (max-width: 580px) {
   .contact_hero-title {
-    font-size: 26px !important;
+    font-size: 28px !important;
   }
 
   .contact_hero-desc {
@@ -353,7 +352,7 @@
 
   .toast-message.show {
     right: 15px;
-    left: 15px; /* Chiếm chiều rộng trên mobile */
+    left: 15px; 
     top: 80px;
   }
 }
@@ -384,17 +383,16 @@ body {
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden !important; /* Khóa chết trục ngang */
+  overflow-x: hidden !important; 
   margin: 0;
   padding: 0;
 }
 
-/* Fix lỗi padding của các box trắng làm "phình" layout trên mobile */
 @media (max-width: 580px) {
   .contact_info,
   .contact_form,
   .contact_faq {
-    padding: 15px !important; /* Giảm từ 40px xuống 15px để nội dung không bị đẩy ra ngoài */
+    padding: 15px !important;
     width: 100% !important;
   }
 }

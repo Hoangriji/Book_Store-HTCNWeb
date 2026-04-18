@@ -29,7 +29,7 @@
 .title-about p {
   color: var(--color-text-light);
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-top: 20px;
   font-weight: 500;
 }
@@ -43,14 +43,14 @@
 
 .about-page h3 {
   text-align: center;
-  font-size: 36px;
+  font-size: 1.4rem;
   margin-bottom: 30px;
   margin-top: 20px !important;
   color: var(--color-primary);
 }
 
 .about-page p {
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 20px;
 }
@@ -153,6 +153,7 @@
 .about-card h5 {
   margin-bottom: 10px;
   color: var(--color-primary);
+  font-size: 1.2rem;
 }
 
 .team-card h5 {
@@ -286,11 +287,6 @@
   .title-about h2 {
     font-size: 28px;
   }
-
-  .title-about p {
-    font-size: 14px;
-  }
-
   .gold-text {
     font-size: 22px;
   }

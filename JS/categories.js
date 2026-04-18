@@ -1,5 +1,6 @@
 let globalAllBooks = [];
 
+// Chuyển link Google Drive sang link ảnh trực tiếp
 function getDirectDriveLink(url) {
     if (url && url.includes('drive.google.com')) {
         const fileId = url.split('id=')[1];
@@ -8,11 +9,13 @@ function getDirectDriveLink(url) {
     return url;
 }
 
+// Lấy danh sách sách từ local
 function getBooksFromStorage() {
     const data = localStorage.getItem('allBooks');
     return data ? JSON.parse(data) : [];
 }
 
+// Hàm lọc sách dựa trên giá và điều kiện, sau đó render
 function filterAndRender(minPrice, maxPrice) {
     if (!globalAllBooks.length) return;
 
@@ -24,9 +27,11 @@ function filterAndRender(minPrice, maxPrice) {
     const sortType = sortSelect ? sortSelect.value : 'Giá: Thấp đến Cao';
 
     let filtered = globalAllBooks.filter(book => {
+        // Kiểm tra giá
         const matchPrice = book.price >= minPrice && book.price <= maxPrice;
         let matchCondition = true;
         if (!isAllSelected) {
+            // Điều kiện "Mới" được xác định ngẫu nhiên dựa trên id sách 
             const hasNewBadge = book.id % 3 === 0; 
             matchCondition = isNewSelected ? hasNewBadge : !hasNewBadge;
         }
@@ -54,17 +59,22 @@ function filterAndRender(minPrice, maxPrice) {
     }
 }
 
+// Hàm khởi tạo trang Categories
 function initCategoriesPage() {
+    // Mặc định chọn "Tất cả"
     const allCondRadio = document.getElementById('allCondition');
     if (allCondRadio) allCondRadio.checked = true;
 
+    // Lấy toàn bộ sách từ localStorage
     const allBooks = getBooksFromStorage();
     if (allBooks.length === 0) return;
 
+    // Xử lý query params để sắp xếp lại sách
     const params = new URLSearchParams(window.location.search);
     const from = params.get('from');
     const cat = params.get('cat') ? decodeURIComponent(params.get('cat')) : null;
 
+    // Sao chép mảng gốc
     let sortedBooks = [...allBooks];
 
     if (from === 'trending') {
@@ -78,10 +88,12 @@ function initCategoriesPage() {
         tickCategoryCheckbox(cat);
     }
 
+    // Lưu mảng đã sắp xếp vào biến toàn cục để dùng cho filter
     globalAllBooks = sortedBooks;
     filterAndRender(0, 600000);
 }
 
+// Tư tick
 function tickCategoryCheckbox(catName) {
     const allOptions = document.querySelectorAll('.filter-group__content .filter__option');
     allOptions.forEach(opt => {
@@ -97,6 +109,7 @@ function tickCategoryCheckbox(catName) {
     });
 }
 
+// Khi trang load xong
 document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.getElementById('pageCarousel');
     if (carousel && typeof bootstrap !== 'undefined') {
@@ -113,22 +126,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateRangeLogic() {
         if (!minInput || !maxInput) return;
+        // Chuyển giá trị input (đơn vị: 10k) sang giá thực tế (đơn vị: VND)
         let minVal = parseInt(minInput.value) * 6000;
         let maxVal = parseInt(maxInput.value) * 6000;
+        // Đảm bảo minVal không lớn hơn maxVal
         if (minVal > maxVal) [minVal, maxVal] = [maxVal, minVal];
+        // Cập nhật thanh tiến trình và text hiển thị
         if (progress) {
             progress.style.left = (minVal / 600000 * 100) + '%';
             progress.style.width = ((maxVal - minVal) / 600000 * 100) + '%';
         }
+        // Cập nhật text hiển thị khoảng giá
         if (rangeText) {
             rangeText.textContent = `${minVal.toLocaleString('vi-VN')}đ - ${maxVal.toLocaleString('vi-VN')}đ`;
         }
+        // Lọc và hiển thị sách dựa trên khoảng giá và các điều kiện khác
         filterAndRender(minVal, maxVal);
     }
 
+    // chọn kiểu sắp xếp
     if (sortSelect) sortSelect.addEventListener('change', updateRangeLogic);
     conditionRadios.forEach(radio => radio.addEventListener('change', updateRangeLogic));
 
+    // Cập nhật logic khi thay đổi giá
     if (minInput && maxInput) {
         minInput.addEventListener('input', updateRangeLogic);
         maxInput.addEventListener('input', updateRangeLogic);
@@ -136,9 +156,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     priceBtns.forEach(btn => {
         btn.addEventListener('click', function() {
+            // Xóa active ở tất cả nút, sau đó thêm active cho nút được click
             priceBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
+            // Khởi tạo hai biến giá trị mặc định
             let min = 0, max = 600000;
+            // Cập nhật giá trị min và max dựa trên text của nút được click
             if (this.textContent.includes('Trên 100k')) min = 100000;
             minInput.value = min / 6000;
             maxInput.value = max / 6000;
@@ -151,7 +174,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (firstFilterGroup) {
         const filterOptions = firstFilterGroup.querySelectorAll('.filter__option');
         if (filterOptions.length > SHOW_COUNT) {
+            // Ẩn các tùy chọn vượt quá SHOW_COUNT
             filterOptions.forEach((opt, index) => { if (index >= SHOW_COUNT) opt.style.display = 'none'; });
+            // Thêm nút toggle
             const toggleBtn = document.createElement('span');
             toggleBtn.className = 'filter-toggle-btn';
             toggleBtn.textContent = 'Xem thêm ▾';
