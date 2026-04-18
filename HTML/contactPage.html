@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ FiveH Book Store</title>
+
+  <link rel="stylesheet" href="/CSS/shared/bootstrap.min.css" />
+  <link rel="stylesheet" href="/CSS/shared/style.css">
+  <link rel="stylesheet" href="/CSS/contactPage.css" />
+  <link rel="stylesheet" href="/CSS/shared/header.css" />
+  <link rel="stylesheet" href="/CSS/shared/footer.css" />
+  <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/81f80860c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="inner-header"></header>
+
+  <div class="main">
+    <section class="contact_hero">
+      <div class="container text-center">
+        <h1 class="contact_hero-title">Liên hệ FiveH Book Store</h1>
+        <p class="contact_hero-desc">
+          Chúng tôi sẵn sàng giúp đỡ và trả lời mọi câu hỏi của bạn.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact_content">
+      <div class="container">
+        <div class="row g-2 g-lg-5 m-0">
+          <div class="col-12 col-lg-6">
+            <div class="contact_left">
+              <div class="contact_info">
+                <h3>Thông Tin Cửa Hàng</h3>
+                <div class="contact_item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>12 Đường Nguyễn Văn Bảo, Thành Phố Hồ Chí Minh</p>
+                </div>
+                <div class="contact_item">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+84 123 456 789</p>
+                </div>
+                <div class="contact_item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>contact@fivehbookstore.com</p>
+                </div>
+                <div class="contact_item">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Thứ 2 - Chủ Nhật: 8:00 AM - 10:00 PM</p>
+                </div>
+                <div class="contact_social">
+                  <h5>Theo Dõi Chúng Tôi</h5>
+                  <div class="social_icons">
+                    <a href="#" class="social_icon">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social_icon">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social_icon">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact_map">
+                <iframe src="https://www.google.com/maps?q=Trường+Đại+học+Công+nghiệp+TP.HCM&output=embed" width="100%"
+                  height="250" style="border: 0" loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="contact_form">
+              <h3>Gửi Phản Hồi Đến Với Chúng Tôi</h3>
+              <form id="contactForm">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Họ & tên" required />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" required />
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="5" placeholder="Nội dung...." required></textarea>
+                </div>
+                <button type="submit" class="btn contact_btn btn-primary">
+                  Gửi Phản Hồi
+                </button>
+              </form>
+            </div>
+
+            <div class="contact_faq">
+              <h4>Câu Hỏi Thường Gặp</h4>
+              <div class="faq_item">
+                <strong>Thời gian giao hàng mất bao lâu?</strong>
+                <p>Đơn hàng sẽ được giao trong vòng 2-4 ngày làm việc.</p>
+              </div>
+              <div class="faq_item">
+                <strong>Tôi có thể trả lại sách không?</strong>
+                <p>
+                  Có, chúng tôi chấp nhận hoàn trả trong vòng 7 ngày kể từ
+                  ngày mua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="inner-footer"></footer>
+
+  <div id="toastMessage" class="toast-message">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <div class="toast-content">
+      <h4>Thành công!</h4>
+      <p>Cảm ơn bạn. Chúng tôi đã nhận được phản hồi.</p>
+    </div>
+    <i class="fa-solid fa-xmark toast-close" onclick="closeToast()"></i>
+  </div>
+
+  <script type=\"module\" src=\"/JS/shared/main.js\"></script>
+  <script src=\"/JS/contactPage.js\"></script>
+</body>
+
+</html>
