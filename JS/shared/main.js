@@ -1,6 +1,3 @@
-import { header } from './header.js';
-import { footer } from './footer.js';
-
 const initData = async () => {
     if (!localStorage.getItem('allBooks')) {
         try {
@@ -14,8 +11,6 @@ const initData = async () => {
 };
 
 const main = async () => {
-    header();
-    footer();
     await initData();
 };
 
