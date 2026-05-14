@@ -2,22 +2,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.getElementById("contactForm");
 
   if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault(); // Ngăn load lại trang
+    const name = contactForm.querySelector("input[type='text']");
+    const email = contactForm.querySelector("input[type='email']");
 
+    const nameRegex = /^[A-ZÀ-Ỹ][a-zà-ỹ]*(\s[A-ZÀ-Ỹ][a-zà-ỹ]*)+$/u;
+    const emailRegex = /^[^\s@]+@gmail\.com$/;
+
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      // Kiểm tra tên trước
+      if (!nameRegex.test(name.value.trim())) {
+        alert("Họ tên không hợp lệ!");
+        return;
+      }
+
+      // Kiểm tra email sau
+      if (!emailRegex.test(email.value.trim())) {
+        alert("Email phải đúng định dạng @gmail.com!");
+        return;
+      }
+
+      // ✅ Hợp lệ → gửi form
       const btn = contactForm.querySelector("button[type='submit']");
       const originalText = btn.innerText;
 
-      // 1. Hiệu ứng đang gửi (Loading)
       btn.innerText = "Đang gửi...";
       btn.disabled = true;
 
-      // 2. Giả lập gửi dữ liệu sau 1.5 giây
       setTimeout(() => {
-        // Gọi hàm hiển thị Toast Message Box
         showToast();
-
-        // 3. Reset lại form và nút bấm
         contactForm.reset();
         btn.innerText = originalText;
         btn.disabled = false;
@@ -26,18 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Hàm hiển thị Toast
 function showToast() {
   const toast = document.getElementById("toastMessage");
   toast.classList.add("show");
-
-  // Tự động đóng sau 3.5 giây
-  setTimeout(() => {
-    closeToast();
-  }, 3500);
+  setTimeout(() => closeToast(), 3500);
 }
 
-// Hàm đóng Toast thủ công khi nhấn nút X
 function closeToast() {
   const toast = document.getElementById("toastMessage");
   toast.classList.remove("show");
