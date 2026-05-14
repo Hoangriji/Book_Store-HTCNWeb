@@ -120,7 +120,6 @@ if (headerElement) {
   const hamburgerBtn = headerElement.querySelector(".hamburger-btn");
   const closeBtn = headerElement.querySelector(".close-menu-btn");
   const menu = headerElement.querySelector(".menu");
-  const menuLinks = headerElement.querySelectorAll(".menu a");
 
   // open menu
   if (hamburgerBtn && menu) {
@@ -145,20 +144,6 @@ if (headerElement) {
       }
     });
   }
-
-  // close menu when click active
-  menuLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      if (window.innerWidth <= 992) {
-        menu.classList.remove("active");
-        document.body.style.overflow = "";
-        const menuOverlay = headerElement.querySelector(".menu-overlay");
-        if (menuOverlay) {
-          menuOverlay.style.display = "none";
-        }
-      }
-    });
-  });
 
   // close menu when click outside
   document.addEventListener("click", (e) => {
