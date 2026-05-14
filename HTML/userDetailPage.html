@@ -38,12 +38,6 @@
                         <button class="btn w-100 text-start active nav-btn" data-section="profile">
                             <i class="fa-solid fa-address-card me-2"></i><span>Hồ sơ</span>
                         </button>
-                        <button class="btn w-100 text-start nav-btn" data-section="address">
-                            <i class="fa-solid fa-location-dot me-2"></i><span>Địa chỉ</span>
-                        </button>
-                        <button class="btn w-100 text-start nav-btn" data-section="password">
-                            <i class="fa-solid fa-key me-2"></i><span>Mật khẩu</span>
-                        </button>
                     </nav>
 
                     <!-- logout btn -->
@@ -97,130 +91,6 @@
                                 </form>
                             </div>
 
-                            <!-- Address -->
-                            <div class="content-section" id="address-section">
-                                <h3 class="mb-4 fw-bold">Số địa chỉ</h3>
-                                <div id="addressList" class="mb-5"></div>
-
-                                <form id="addressForm">
-                                    <h5 class="mb-3 fw-bold">Thêm địa chỉ mới</h5>
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="country" class="form-label fw-medium">Quốc gia <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="text" id="country" name="country" class="form-control"
-                                                placeholder="Việt Nam" required>
-                                            <div class="invalid-feedback d-block mt-1 text-danger" id="country-error">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="province" class="form-label fw-medium">Tỉnh/Thành phố <span
-                                                    class="text-danger">*</span></label>
-                                            <select id="province" name="province" class="form-select" required>
-                                                <option value="">-- Chọn tỉnh/thành phố --</option>
-                                                <option value="Hà Nội">Hà Nội</option>
-                                                <option value="Cao Bằng">Cao Bằng</option>
-                                                <option value="Tuyên Quang">Tuyên Quang</option>
-                                                <option value="Điện Biên">Điện Biên</option>
-                                                <option value="Lai Châu">Lai Châu</option>
-                                                <option value="Sơn La">Sơn La</option>
-                                                <option value="Lào Cai">Lào Cai</option>
-                                                <option value="Thái Nguyên">Thái Nguyên</option>
-                                                <option value="Lạng Sơn">Lạng Sơn</option>
-                                                <option value="Quảng Ninh">Quảng Ninh</option>
-                                                <option value="Bắc Ninh">Bắc Ninh</option>
-                                                <option value="Phú Thọ">Phú Thọ</option>
-                                                <option value="Hải Phòng">Hải Phòng</option>
-                                                <option value="Hưng Yên">Hưng Yên</option>
-                                                <option value="Ninh Bình">Ninh Bình</option>
-                                                <option value="Thanh Hóa">Thanh Hóa</option>
-                                                <option value="Nghệ An">Nghệ An</option>
-                                                <option value="Hà Tĩnh">Hà Tĩnh</option>
-                                                <option value="Quảng Trị">Quảng Trị</option>
-                                                <option value="Huế">Huế</option>
-                                                <option value="Đà Nẵng">Đà Nẵng</option>
-                                                <option value="Quảng Ngãi">Quảng Ngãi</option>
-                                                <option value="Gia Lai">Gia Lai</option>
-                                                <option value="Khánh Hòa">Khánh Hòa</option>
-                                                <option value="Đắk Lắk">Đắk Lắk</option>
-                                                <option value="Lâm Đồng">Lâm Đồng</option>
-                                                <option value="Đồng Nai">Đồng Nai</option>
-                                                <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
-                                                <option value="Tây Ninh">Tây Ninh</option>
-                                                <option value="Đồng Tháp">Đồng Tháp</option>
-                                                <option value="Vĩnh Long">Vĩnh Long</option>
-                                                <option value="An Giang">An Giang</option>
-                                                <option value="Cần Thơ">Cần Thơ</option>
-                                                <option value="Cà Mau">Cà Mau</option>
-                                            </select>
-                                            <div class="invalid-feedback d-block mt-1 text-danger" id="province-error">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="ward" class="form-label fw-medium">Xã/Phường <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="text" id="ward" name="ward" class="form-control"
-                                                placeholder="Phường Bến Nghé" required>
-                                            <div class="invalid-feedback d-block mt-1 text-danger" id="ward-error">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 mb-3">
-                                            <label for="street" class="form-label fw-medium">Đường/Số nhà <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="text" id="street" name="street" class="form-control"
-                                                placeholder="123 Nguyễn Huệ" required>
-                                            <div class="invalid-feedback d-block mt-1 text-danger" id="street-error">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex gap-2 align-items-center mt-4">
-                                        <button type="submit" class="btn btn-danger">Thêm địa chỉ</button>
-                                        <span class="text-success fw-medium" id="address-success"></span>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <!-- password  -->
-                            <div class="content-section" id="password-section">
-                                <h3 class="mb-4 fw-bold">Đổi mật khẩu</h3>
-                                <form id="passwordForm">
-                                    <div class="mb-3">
-                                        <label for="currentPassword" class="form-label fw-medium">Mật khẩu hiện tại
-                                            <span class="text-danger">*</span></label>
-                                        <input type="password" id="currentPassword" name="currentPassword"
-                                            class="form-control" required>
-                                        <div class="invalid-feedback d-block mt-1 text-danger"
-                                            id="currentPassword-error"></div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="newPassword" class="form-label fw-medium">Mật khẩu mới <span
-                                                class="text-danger">*</span></label>
-                                        <input type="password" id="newPassword" name="newPassword" class="form-control"
-                                            required>
-                                        <div class="invalid-feedback d-block mt-1 text-danger" id="newPassword-error">
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="confirmPassword" class="form-label fw-medium">Xác nhận mật khẩu mới
-                                            <span class="text-danger">*</span></label>
-                                        <input type="password" id="confirmPassword" name="confirmPassword"
-                                            class="form-control" required>
-                                        <div class="invalid-feedback d-block mt-1 text-danger"
-                                            id="confirmPassword-error"></div>
-                                    </div>
-
-                                    <div class="d-flex gap-2 align-items-center mt-4">
-                                        <button type="submit" class="btn btn-danger">Cập nhật mật khẩu</button>
-                                        <span class="text-success fw-medium" id="password-success"></span>
-                                    </div>
-                                </form>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -234,7 +104,6 @@
     <script src="/JS/shared/header.js"></script>
     <script src="/JS/shared/footer.js"></script>
     <script type="module" src="/JS/shared/main.js"></script>
-    <script src="/JS/userDetailPage.js"></script>
 </body>
 
 </html>

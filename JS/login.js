@@ -14,12 +14,6 @@ const showMessage = (message, type = "error") => {
 	messageBox.className = `message-box ${type}`;
 	messageBox.textContent = message;
 	messageBox.style.display = "block";
-
-	if (type === "success") {
-		setTimeout(() => {
-			messageBox.style.display = "none";
-		}, 2000);
-	}
 };
 
 // get data

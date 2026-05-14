@@ -14,12 +14,6 @@ const showMessage = (message, type = "error") => {
 	messageBox.className = `message-box ${type}`;
 	messageBox.textContent = message;
 	messageBox.style.display = "block";
-	
-	if (type === "success") {
-		setTimeout(() => {
-			messageBox.style.display = "none";
-		}, 2000);
-	}
 };
 
 // get data
@@ -45,7 +39,7 @@ const validateRegisterData = (data, users) => {
 	const hasLetter = /[A-Za-z]/.test(data.password);
 	const hasNumber = /\d/.test(data.password);
 
-	// check validation and return errors 
+	// check validation
 	if (data.fullname.length < 2) {
 		errors.push("Họ và tên phải có ít nhất 2 ký tự.");
 	}
