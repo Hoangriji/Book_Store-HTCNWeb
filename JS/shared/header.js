@@ -5,7 +5,7 @@ const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 // 2 state: btn login and user
 const userButton = currentUser
-// state này là trạng thái của nút khi đã đăng nhập
+// trạng thái của nút khi đã đăng nhập
   ? `
         <div class="user-actions-dropdown">
             <div class="user-actions-btn">
@@ -18,7 +18,7 @@ const userButton = currentUser
             </div>
         </div>
     `
-// state này là trạng thái của nút khi chưa đăng nhập
+// trạng thái của nút khi chưa đăng nhập
   : `
         <a href="/HTML/login.html" class="user-actions-link">
             <div class="user-actions-btn">
@@ -114,90 +114,7 @@ if (headerElement) {
         });
     }
 
-    // handle search
-    const searchBar = headerElement.querySelector(".search-bar");
-    if (searchBar) {
-        const searchInput = searchBar.querySelector("input");
-        const searchBtn = searchBar.querySelector(".search-btn");
-        let searchDropdown = searchBar.querySelector(".search-dropdown");
 
-        // create dropdown
-        if (!searchDropdown) {
-        searchDropdown = document.createElement("div");
-        searchDropdown.className = "search-dropdown";
-        searchBar.appendChild(searchDropdown);
-        }
-
-        const performSearch = () => {
-        const query = searchInput.value.trim();
-        if (query) {
-            window.location.href = `/HTML/searchPage.html?q=${encodeURIComponent(query)}`;
-        }
-        };
-
-        // handle input search
-        if (searchInput) {
-        searchInput.addEventListener("input", () => {
-            const query = searchInput.value.trim().toLowerCase();
-
-            if (!query) {
-            searchDropdown.innerHTML = "";
-            searchDropdown.style.display = "none";
-            return;
-            }
-
-            // get data
-            const allBooks = JSON.parse(localStorage.getItem("allBooks")) || [];
-
-            // filter data book
-            const results = allBooks
-            .filter(
-                (book) =>
-                book.title.toLowerCase().includes(query) ||
-                book.author.toLowerCase().includes(query),
-            )
-            .slice(0, 5); // chỉ hiển thị 5 kết quả phù hợp ở dropdown
-
-            // render dropdown
-            if (results.length === 0) {
-            searchDropdown.innerHTML =
-                "<div style='padding: 12px; color: #999;'>Không tìm thấy sản phẩm</div>";
-            } else {
-            searchDropdown.innerHTML = results
-                .map(
-                (book) => `
-                                <div class="search-dropdown-item" onclick="window.location.href='/HTML/detailProduct.html?id=${book.id}'">
-                                    <strong>${book.title}</strong>
-                                    <div style="font-size: 12px; color: #666;">${book.author}</div>
-                                    <div style="font-weight: bold; color: var(--color-primary);">${book.price.toLocaleString()}đ</div>
-                                </div>
-                            `,
-                )
-                .join("");
-            }
-            searchDropdown.style.display = "block";
-        });
-
-        // close dropdown when focus lost
-        searchInput.addEventListener("blur", () => {
-            setTimeout(() => {
-            searchDropdown.style.display = "none";
-            }, 200);
-        });
-
-        // enter keypress
-        searchInput.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-            performSearch();
-            }
-        });
-        }
-
-        // search btn
-        if (searchBtn) {
-        searchBtn.addEventListener("click", performSearch);
-    }
-  }
 
   // hamburger
   const hamburgerBtn = headerElement.querySelector(".hamburger-btn");
