@@ -160,7 +160,7 @@ if (headerElement) {
       }
     }
   });
-
+  
   // handle window resize
   window.addEventListener("resize", () => {
     if (window.innerWidth > 992) {
